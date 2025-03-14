@@ -67,6 +67,28 @@ The division of Questions from Chapters are:
 - Chapter 3 (5 questions) 12.5%
 - Chapter 6 (2 questions) 5%
 
+**How did I use these learning materials ?**
+1. Firstly, start by reading the book (1) and taking notes if necessary. Questions and exercises are at the end of each chapter for you guys to revise.
+2. Read or watch videos on Udemy or any digital learning platform about additional modules/parts of version 4.0 (see attachment)
+3. Do the mock exams (3) - don't need to put in exactly 75 minutes, the aim of this is to verify your knowledge and write down what you misunderstand. 
+4. Check your answers and read the explanation carefully --> why it's true, why it's false, and what are your mistakes.
+5. Based on the sample exams (3), summarise the number of questions in each chapter and the main content of those questions.
+--> From my exp, I found that there is one question for each test technique (2 or 3-value BVA, EP, ...), one for each Configuration management, Defect report, Testing tools and Pros/Cons of test automation part.
+---> Structure (you can find it on the ISTQB homepage)
+- Chapter 1: 8 questions
+- Chapter 2: 6 questions
+- Chapter 3: 4 questions
+- Chapter 4: 11 questions
+- Chapter 5: 9 questions
+- Chapter 6: 2 questions
+6. Read the syllabus (2) to sum up knowledge.
+7. Do the mock exams (3) again or another until you can resolve your problems.
+8. Get ready for the real exam!
+------------------------
+Small notes:
+1. The Electronic Exam presents questions in no particular order, but you can mark any for later review.
+2. Don't try to learn by heart, try to get it deeply in your own language. 
+
 - ## Preparations 📜 :
 1. Prepare those chapters first that have high weightage
 2. You need to understand below terms and read the syllabus accordingly.
