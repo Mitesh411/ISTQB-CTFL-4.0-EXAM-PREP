@@ -1,4 +1,10 @@
-# ISTQB-CTFL-4.0-EXAM-PREP
+<p align="center">
+	<a href="https://app.diplomasafe.com/en-US/s/3d17279262ab9607" target="_blank"> <img src="https://img.shields.io/badge/ISTQB-Foundation%20Level-blue?style=for-the-badge&logo=checkmarx&logoColor=white" alt="ISTQB Certified Tester"/></a>
+
+</p>
+
+# ISTQB-CTFL-4.0-EXAM-PREP 
+
 If you are a software tester looking to advance your career, getting ISTQB Certified Tester Foundation Level (CTFL) 4.0 certified is a great step.
 
 - ## ISTQB CTFL 4.0 Syllabus Overview
