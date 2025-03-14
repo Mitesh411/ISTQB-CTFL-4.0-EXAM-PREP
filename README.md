@@ -1,7 +1,11 @@
 <p align="center">
-	<a href="https://app.diplomasafe.com/en-US/s/3d17279262ab9607" target="_blank"> <img src="https://img.shields.io/badge/ISTQB-Foundation%20Level-blue?style=for-the-badge&logo=checkmarx&logoColor=white" alt="ISTQB Certified Tester"/></a>
+	<a href="https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" title="Certified Tester Foundation Level (CTFL) v4.0">
+  <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="300" height="300"/>
+</a>
+
 
 </p>
+<a href="https://app.diplomasafe.com/en-US/s/3d17279262ab9607" target="_blank"> <img src="https://img.shields.io/badge/ISTQB-Foundation%20Level-blue?style=for-the-badge&logo=checkmarx&logoColor=white" alt="ISTQB Certified Tester"/></a>
 
 # ISTQB-CTFL-4.0-EXAM-PREP 
 
