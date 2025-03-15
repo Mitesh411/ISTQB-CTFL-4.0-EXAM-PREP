@@ -55,11 +55,12 @@
 ### 1.4.5. Roles in Testing
 
 # Day Four
-- [x] **Questions on Chapter One**
+- [x] **Chapter 1 Review & Practice Questions**
 
+- [x] **Quiz**
 
 # Chapter Two ( 2 - 3 Days )
-16% --- 6 Questions --- P23-P30
+**Weight: 16% | Questions: 6 | Pages: 23-30**
 
 
 # Day Five
@@ -86,10 +87,12 @@
 ### 2.2.2. Test Types
 ### 2.2.3. Confirmation Testing and Regression Testing
 
+- [x] **Chapter 2 Review & Practice Questions**
 
+- [x] **Quiz**
 
 # Chapter Three (2-3 Days)
-10% --- 4 Questions --- P31-P36
+**Weight: 10% | Questions: 4 | Pages: 31-36**
 
 
 # Day Eight
@@ -112,9 +115,12 @@
 ### 3.2.4. Review Types
 ### 3.2.5. Success Factors for Reviews
 
+- [x] **Chapter 3 Review & Practice Questions**
+
+- [x] **Quiz**
 
 # Chapter Four (4-5 Days)
-27% --- 11 Questions --- P37-P45
+**Weight: 27% | Questions: 11 | Pages: 37-45**
 
 ## 4.1. Test Techniques Overview
 
@@ -139,6 +145,9 @@
 ### 4.5.2. Acceptance Criteria
 ### 4.5.3. Acceptance Test-driven Development (ATDD)
 
+- [x] **Chapter 4 Review & Practice Questions**
+
+- [x] **Quiz**
 
 # Chapter Five (4-5 Days)
 
@@ -182,6 +191,10 @@
 
 **5.5. Defect Management**
 
+- [x] **Chapter 5 Review & Practice Questions**
+
+- [x] **Quiz**
+
 # Chapter Six (1 Day)
 
 **Weight: 5%  |  Questions: 2  |  Pages: 57-59**
@@ -192,7 +205,9 @@
 
 **6.2. Benefits and Risks of Test Automation**
 
+- [x] **Chapter 6 Review & Practice Questions**
 
+- [x] **Quiz**
 
 # Total Study Timeline [ in Days ]
 
