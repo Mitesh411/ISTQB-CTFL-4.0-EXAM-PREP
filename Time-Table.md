@@ -1,27 +1,47 @@
-# Chapter One (3 - 4 Days)
-20% --- 8 Questions --- P14-P22
+# ISTQB Testing Certification Study Plan Overview
+
+**Total Duration:** 16 - 21 days
+
+**Study Schedule:** Chapter-by-chapter approach with daily tasks
+
+**Format:** Each chapter includes percentage weight, number of questions, and page ranges
+
+*Progress Tracking*
+
+
+# Chapter One (3-4 Days)
+
+**Weight: 20%  |  Questions: 8  |  Pages: 14-22**
 
 # Day One
 - [x] Chapter One (1.1. + 1.2.) 
 
-## 1.1. What is Testing?
-### 1.1.1. Test Objectives
-### 1.1.2. Testing and Debugging
+**1.1. What is Testing ?**
 
-## 1.2. Why is Testing Necessary?
-### 1.2.1. Testing's Contribution to Success
-### 1.2.2. Testing and Quality Assurance (QA) 
-### 1.2.3. Errors, Defects, Failures, and Root Causes
+**1.1.1. Test Objectives**
+
+**1.1.2. Testing and Debugging**
+
+**1.2. Why is Testing Necessary ?**
+
+**1.2.1. Testing's Contribution to Success**
+
+**1.2.2. Testing and Quality Assurance (QA)** 
+
+**1.2.3. Errors, Defects, Failures, and Root Causes**
 
 # Day Two
 - [x] Chapter One (1.3. + 1.5.) 
 
-## 1.3. Testing Principles
+**1.3. Testing Principles**
 
-## 1.5. Essential Skills and Good Practices in Testing
-### 1.5.1. Generic Skills Required for Testing 
-### 1.5.2. Whole Team Approach
-### 1.5.3. Independence of Testing
+**1.5. Essential Skills and Good Practices in Testing**
+
+**1.5.1. Generic Skills Required for Testing**
+
+**1.5.2. Whole Team Approach**
+
+**1.5.3. Independence of Testing**
 
 
 # Day Three 
@@ -121,50 +141,66 @@
 
 
 # Chapter Five (4-5 Days)
-23% --- 9 Questions --- P46-P56
 
-## 5.1. Test Planning
-### 5.1.1. Purpose and Content of a Test Plan
-### 5.1.2. Tester's Contribution to Iteration and Release Planning
-### 5.1.3. Entry Criteria and Exit Criteria
-### 5.1.4. Estimation Techniques
-### 5.1.5. Test Case Prioritization
-### 5.1.6. Test Pyramid
-### 5.1.7. Testing Quadrants
+**Weight: 23%  |  Questions: 9  |  Pages: 46-56**
 
-## 5.2. Risk Management
-### 5.2.1. Risk Definition and Risk Attributes
-### 5.2.2. Project Risks and Product Risks
-### 5.2.3. Product Risk Analysis
-### 5.2.4. Product Risk Control
+*Topics Covered:*
 
-## 5.3. Test Monitoring, Test Control and Test Completion 
-### 5.3.1. Metrics used in Testing
-### 5.3.2. Purpose, Content and Audience for Test Reports
-### 5.3.3. Communicating the Status of Testing
+**5.1. Test Planning**
 
-## 5.4. Configuration Management
+- *Purpose and Content of a Test Plan*
 
-## 5.5. Defect Management
+- *Tester's Contribution to Iteration and Release Planning*
 
+- *Entry & Exit Criteria*
+
+- *Estimation Techniques*
+
+- *Test Case Prioritization*
+
+- *Test Pyramid*
+
+- *Testing Quadrants*
+
+**5.2. Risk Management**
+
+- *Risk Definition & Attributes*
+
+- *Project & Product Risks*
+
+- *Product Risk Analysis & Control*
+
+**5.3. Test Monitoring, Test Control, and Test Completion**
+
+- *Metrics Used in Testing*
+
+- *Purpose, Content, and Audience for Test Reports*
+
+- *Communicating the Status of Testing*
+
+**5.4. Configuration Management**
+
+**5.5. Defect Management**
 
 # Chapter Six (1 Day)
-5% --- 2 Questions --- P57-P59
 
-## 6.1. Tool Support for Testing.
+**Weight: 5%  |  Questions: 2  |  Pages: 57-59**
 
-## 6.2. Benefits and Risks of Test Automation 
+*Topics Covered:*
 
+**6.1. Tool Support for Testing**
 
-
-# Total Days
-**Worst Case Scenario:** X_worst = 21 Days \
-**Optimal Case Scenario:** X_opt = 16 Days \
-**Best Case Scenario:** x_best; X_opt  <= x_best <= X_worst
+**6.2. Benefits and Risks of Test Automation**
 
 
 
+# Total Study Timeline [ in Days ]
 
+**Worst Case Scenario:** 21 Days
+
+**Optimal Case Scenario:** 16 Days
+
+**Best Case Scenario:** Between Optimal (16) and Worst (21) Days
 
 
 
