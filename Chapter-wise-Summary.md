@@ -191,6 +191,8 @@ Testing approach depends on contextual factors like:
 
 - Drawbacks include potential isolation, communication problems, reduced developer responsibility
 
+**[⬆ Back to Top](#Chapter1:FundamentalsofTesting)**
+
 # Chapter 2: Testing Throughout the Software Development Lifecycle
 
 **2.1 Testing in the Context of a Software Development Lifecycle (SDLC)**
