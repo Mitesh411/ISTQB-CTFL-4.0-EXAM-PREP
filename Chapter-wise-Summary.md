@@ -1,0 +1,288 @@
+# Chapter 1: Fundamentals of Testing
+**1.1 What is Testing ?**
+
+- Software testing is a set of activities to discover defects and evaluate software quality
+
+- Testing involves both verification (meeting specified requirements) and validation (meeting user needs)
+
+- Testing can be dynamic (executing software) or static (reviews, analysis without execution)
+
+- Testing is a technical activity requiring specialized knowledge, analytical skills and critical thinking
+
+**Test Objectives include:**
+
+- Evaluating work products
+
+- Finding defects and causing failures
+
+- Ensuring required coverage
+
+- Reducing quality risk
+
+- Verifying requirements fulfillment
+
+- Checking compliance with regulations
+
+- Providing information to stakeholders
+
+- Building confidence in product quality
+
+- Validating that the product works as expected
+
+**Testing vs Debugging**
+
+- Testing identifies failures through dynamic testing or defects through static testing
+
+- Debugging involves reproducing failures, diagnosing defects, fixing them, and verification through confirmation testing
+
+- Regression testing verifies fixes don't cause problems elsewhere
+
+**1.2 Why is Testing Necessary ?**
+*Testing's Contributions to Success:*
+
+- Provides cost-effective defect detection
+
+- Evaluates software quality throughout development
+
+- Represents users' needs throughout development
+
+- Helps meet contractual and regulatory requirements
+
+
+*Testing and Quality Assurance (QA):*
+
+- Testing is product-oriented and corrective (quality control)
+
+- QA is process-oriented and preventive
+
+- QA focuses on implementing and improving processes
+
+- Both use test results, but for different purposes
+
+*Errors, Defects, Failures, and Root Causes:*
+
+- Human errors produce defects, which may result in failures
+
+- Defects can be found in documentation, code, or supporting work products
+
+- Environmental conditions can also cause failures
+
+- Root cause analysis identifies fundamental reasons for problems
+
+**1.3 Testing Principles**
+
+- Testing shows defect presence, not absence - Testing reduces likelihood of undiscovered defects but cannot prove correctness
+
+- Exhaustive testing is impossible - Focus efforts using test techniques, prioritization, and risk-based approaches
+
+- Early testing saves time and money - Finding defects early reduces cost of quality
+
+- Defects cluster together - Most defects are in a small number of components (Pareto principle)
+
+- Tests wear out - Repeated tests become less effective in finding new defects
+
+- Testing is context dependent - No single universal approach works for all situations
+
+- Absence-of-defects fallacy - A system free of defects can still fail to meet users' needs
+
+**1.4 Test Activities, Testware and Test Roles**
+*Test Activities include:*
+
+- Test planning: Defining objectives and approach
+
+- Test monitoring and control: Checking progress and taking necessary actions
+
+- Test analysis: Identifying testable features and conditions
+
+- Test design: Creating test cases and identifying coverage items
+
+- Test implementation: Preparing testware needed for execution
+
+- Test execution: Running tests and analyzing results
+
+- Test completion: Creating reports and archiving testware
+
+*Test Process in Context:*
+
+Testing approach depends on contextual factors like:
+
+- Stakeholders' needs
+
+- Team skills and experience
+
+- Business domain and criticality
+
+- Technical factors and constraints
+
+- Project constraints
+
+- Organizational factors
+
+- Development lifecycle
+
+- Available tools
+
+*Testware includes:*
+
+- Planning work products (test plans, schedules)
+
+- Monitoring work products (progress reports)
+
+- Analysis work products (test conditions)
+
+- Design work products (test cases, data requirements)
+
+- Implementation work products (test procedures, scripts)
+
+- Execution work products (test logs, defect reports)
+
+- Completion work products (completion reports, lessons learned)
+
+*Traceability:*
+
+- Links test basis elements to testware and results
+
+- Supports coverage evaluation and impact analysis
+
+- Facilitates audits and governance requirements
+
+- Makes reporting more understandable to stakeholders
+
+*Roles in Testing:*
+
+- Test management role: Responsible for planning, monitoring, control, completion
+
+- Testing role: Responsible for analysis, design, implementation, execution
+
+- Roles may be performed by different people at different times
+
+**1.5 Essential Skills and Good Practices**
+*Generic Skills Required for Testing:*
+
+- Testing knowledge
+
+- Thoroughness and attention to detail
+
+- Good communication skills
+
+- Analytical and critical thinking
+
+- Technical and domain knowledge
+
+*Whole Team Approach:*
+
+- Any team member with necessary skills can perform any task
+
+- Team members share responsibility for quality
+
+- Co-location facilitates communication
+
+- Testers work closely with developers and business representatives
+
+- May not be appropriate in all contexts (e.g., safety-critical systems)
+
+*Independence of Testing:*
+
+- Independence makes testers more effective at finding defects
+
+- Different levels of independence: no independence (self-testing), peer testing, independent test team, external testers
+
+- Benefits include recognizing different kinds of failures, challenging assumptions
+
+- Drawbacks include potential isolation, communication problems, reduced developer responsibility
+
+# Chapter 2: Testing Throughout the Software Development Lifecycle
+
+**2.1 Testing in the Context of a Software Development Lifecycle (SDLC)**
+
+*Impact of SDLC on Testing:*
+
+- SDLC choice affects scope, timing, documentation, techniques, automation, and tester roles
+
+- Sequential models (waterfall) limit early dynamic testing
+
+- Iterative/incremental models allow both static and dynamic testing in each iteration
+
+- Agile approaches favor lightweight documentation and automation
+
+*Good Testing Practices across SDLCs:*
+
+- Every development activity has a corresponding test activity
+
+- Different test levels have specific objectives to avoid redundancy
+
+- Test analysis/design begins during corresponding development phase
+
+- Testers review work products as soon as drafts are available
+
+*Test-Driven Development Approaches:*
+
+- Test-Driven Development (TDD): Tests written before code, code implemented to pass tests
+
+- Acceptance Test-Driven Development (ATDD): Tests derived from acceptance criteria
+
+- Behavior-Driven Development (BDD): Expresses behavior in natural language (Given/When/Then)
+
+*DevOps and Testing:*
+
+- DevOps creates synergy between development and operations
+
+- Benefits include fast feedback, shift left, stable test environments, increased focus on non-functional testing
+
+- Challenges include establishing delivery pipeline and maintaining automation tools
+
+*Shift Left:*
+
+- Performing testing activities earlier in the SDLC
+- Practices include specification reviews, writing tests before code, CI/CD, early static analysis
+- May require more effort early but saves costs later
+
+*Retrospectives for Process Improvement:*
+
+- Meetings to discuss successes, challenges, and improvements
+- Results typically included in test completion reports
+- Benefits include increased effectiveness, improved testware, team learning, better cooperation
+
+**2.2 Test Levels and Test Types**
+
+*Test Levels:*
+
+- Component testing: Testing isolated components, often by developers
+
+- Component integration testing: Testing interfaces between components
+
+- System testing: Testing complete system behavior and capabilities
+
+- System integration testing: Testing interfaces between systems
+
+- Acceptance testing: Validating readiness for deployment (user, operational, contractual, regulatory)
+
+*Test Types:*
+
+- Functional testing: Evaluates what the system should do
+
+- Non-functional testing: Evaluates how well the system behaves (performance, compatibility, usability, reliability, security, etc.)
+
+- Black-box testing: Derives tests from specifications without knowledge of internal structure
+
+- White-box testing: Derives tests from system implementation or internal structure
+
+*Confirmation and Regression Testing:*
+
+- Confirmation testing: Verifies that defects have been fixed
+
+- Regression testing: Ensures changes haven't caused adverse effects elsewhere
+
+-Both are needed at all test levels when changes are made
+
+- Regression testing is a good candidate for automation
+
+**2.3 Maintenance Testing**
+
+- Can involve planned releases or unplanned hotfixes
+
+- Scope depends on risk level, system size, and change size
+
+- Triggers include modifications, environment upgrades/migrations, and system retirement
+
+- May require data archiving tests for retiring systems
