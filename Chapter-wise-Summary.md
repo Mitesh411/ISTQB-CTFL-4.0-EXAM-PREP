@@ -427,3 +427,19 @@ Static testing involves evaluating software work products without executing the 
 - Adequate training for participants
 
 - Effective meeting facilitation
+
+# Chapter 4: Test Analysis and Design
+
+**4.1 Test Techniques Overview**
+
+Test techniques support testers in determining what to test (analysis) and how to test (design) by helping develop sufficient test cases systematically.
+
+*Three main categories of test techniques:*
+
+*Black-box techniques:* Based on analysis of specified behavior without reference to internal structure
+
+*White-box techniques:* Based on analysis of the test object's internal structure and processing
+
+*Experience-based techniques:* Utilize testers' knowledge and experience for test design and implementation 
+
+
