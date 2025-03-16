@@ -288,3 +288,142 @@ Testing approach depends on contextual factors like:
 - Triggers include modifications, environment upgrades/migrations, and system retirement
 
 - May require data archiving tests for retiring systems
+
+# Chapter 3: Static Testing
+
+**3.1 Static Testing Basics**
+
+Static testing involves evaluating software work products without executing the code. It includes manual examination (reviews) and tool-assisted evaluation (static analysis) of various work products like code, specifications, and documentation.
+
+*Key points:*
+
+- Unlike dynamic testing, static testing doesn't require software execution
+
+- Can be performed early in the SDLC
+
+- Applies to both verification and validation
+
+- Used by testers, business representatives, and developers in collaborative activities
+
+*Work Products Examinable by Static Testing:*
+
+- Requirements specifications
+
+- Source code
+
+- Test plans and test cases
+
+- Product backlog items
+
+- Test charters
+
+- Project documentation
+
+- Contracts and models
+
+*Value of Static Testing:*
+
+- Allows defect detection in early SDLC phases
+
+- Can identify defects not detectable by dynamic testing (e.g., unreachable code)
+
+- Builds confidence in work products
+
+- Improves communication between stakeholders
+
+- Reduces overall project costs despite initial investment
+
+- More efficient for detecting certain code defects
+
+*Differences Between Static and Dynamic Testing:*
+
+- Static testing finds defects directly; dynamic testing causes failures that require analysis
+
+- Static testing can identify defects in rarely executed code paths
+
+- Static testing applies to non-executable work products
+
+- Static testing measures quality characteristics independent of code execution
+
+*Defects Easier to Find Through Static Testing:*
+
+- Requirements inconsistencies and ambiguities
+
+- Design defects (inefficient structures, poor modularization)
+
+- Coding defects (undefined variables, unreachable code)
+
+- Standards deviations
+
+- Interface specification issues
+
+- Security vulnerabilities
+
+- Test coverage gaps
+
+**3.2 Feedback and Review Process**
+*Benefits of Early and Frequent Stakeholder Feedback:*
+
+- Allows early communication of quality problems
+
+- Prevents misunderstandings about requirements
+
+- Helps development teams understand what they're building
+
+- Focuses development on valuable features
+
+**Review Process Activities:**
+
+*Planning:* Define scope, purpose, work product, quality characteristics, areas to focus on, exit criteria, and timeframes
+
+*Review Initiation:* Ensure participants have access to work products and understand responsibilities
+
+*Individual Review:* Reviewers assess quality and identify anomalies using review techniques
+
+*Communication and Analysis:* Discuss anomalies and decide on their status, ownership, and required actions
+
+*Fixing and Reporting:* Create defect reports and follow up on corrective actions
+
+**Roles and Responsibilities in Reviews:**
+
+*Manager:* Decides what to review and provides resources
+
+*Author:* Creates and fixes the work product under review
+
+*Moderator/Facilitator:* Ensures effective review meetings
+
+*Scribe/Recorder:* Collects anomalies and records review information
+
+*Reviewer:* Performs the reviews
+
+*Review Leader:* Takes overall responsibility for the review
+
+**Review Types:**
+
+*Informal Review:* No defined process or formal outputs; focuses on detecting anomalies
+
+*Walkthrough:* Led by the author; aims to evaluate quality, educate reviewers, gain consensus, and detect anomalies
+
+*Technical Review:* Led by a moderator with technically qualified reviewers; aims to reach consensus, make decisions, detect anomalies, and evaluate quality
+
+*Inspection:* Most formal review type; follows complete generic process; aims to find maximum anomalies
+
+*Success Factors for Reviews:*
+
+- Clear objectives and measurable exit criteria
+
+- Appropriate review type selection
+
+- Reviews performed on small chunks of material
+
+- Adequate feedback to stakeholders
+
+- Sufficient preparation time
+
+- Management support
+
+- Reviews as part of organizational culture
+
+- Adequate training for participants
+
+- Effective meeting facilitation
