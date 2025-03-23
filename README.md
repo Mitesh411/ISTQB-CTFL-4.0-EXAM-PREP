@@ -143,3 +143,13 @@ understanding of where you stand and which areas you need to improve.
 
 5. Industry Recognition
 - ISTQB certification adds credibility to your resume and showcases your commitment to the software testing profession.
+
+# Disclaimer
+
+- This repository is provided for informational purposes only. The creator makes no representations or warranties regarding the accuracy, completeness, or reliability of the information contained herein.
+- The creator shall not be liable for any errors, omissions, or inaccuracies in the content, nor for any actions taken in reliance thereon. Under no circumstances shall the creator be responsible for any losses, damages, or injuries arising from the use of or reliance upon the materials contained in this repository.
+
+- Users are solely responsible for verifying the accuracy and suitability of all information for their intended purposes, whether educational, assessment-related, or otherwise.
+
+- By accessing this repository, you acknowledge and agree to these terms.
+
