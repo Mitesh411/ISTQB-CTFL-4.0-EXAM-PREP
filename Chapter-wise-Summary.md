@@ -442,4 +442,179 @@ Test techniques support testers in determining what to test (analysis) and how t
 
 *Experience-based techniques:* Utilize testers' knowledge and experience for test design and implementation 
 
+**4.2 Black-box Test Techniques**
+*4.2.1 Equivalence Partitioning (EP)*
 
+- Divides data into partitions (equivalence partitions) where elements are processed similarly
+
+- Assumes one test per partition is sufficient to detect defects
+
+- Partitions include valid (should be processed) and invalid (should be rejected) values
+
+- Coverage measured as percentage of partitions exercised
+
+- For multiple parameter inputs, "Each Choice coverage" requires testing each partition at least once
+
+*4.2.2 Boundary Value Analysis (BVA)*
+
+- Focuses on testing boundaries of ordered equivalence partitions
+
+- Based on the principle that developers often make errors at boundary values
+
+*Two versions covered:*
+
+2-value BVA: Tests boundary value and closest neighbor in adjacent partition*
+
+*3-value BVA: Tests boundary value and both neighbors (more rigorous)*
+
+- Coverage measured as percentage of boundary values (and neighbors) exercised
+
+*4.2.3 Decision Table Testing*
+
+
+- Used for testing combinations of conditions that result in different outcomes
+
+- Each column represents a decision rule with unique combinations of conditions
+
+- Notation includes T (true), F (false), - (irrelevant), N/A (infeasible)
+
+- Coverage items are columns with feasible combinations
+
+- Useful for identifying overlooked combinations of conditions
+
+*4.2.4 State Transition Testing*
+
+- Models system behavior through states and transitions
+
+- Transitions triggered by events, possibly with guard conditions
+
+*Three coverage criteria discussed:*
+
+
+- All states coverage: Exercise all states
+
+- Valid transitions coverage: Exercise all valid transitions
+
+- All transitions coverage: Exercise all valid transitions and attempt invalid ones
+
+- Full all transitions coverage is recommended for mission and safety-critical software
+
+**4.3 White-box Test Techniques**
+
+*4.3.1 Statement Testing*
+
+- Coverage items are executable statements in code
+
+- Measures percentage of statements exercised by test cases
+
+- 100% coverage ensures all executable statements executed at least once
+
+- May not detect all defects (e.g., data-dependent defects)
+
+*4.3.2 Branch Testing*
+
+- Coverage items are branches in code's control flow
+
+- Measures percentage of branches exercised by test cases
+
+- 100% coverage ensures all conditional and unconditional branches exercised
+
+- Branch coverage subsumes statement coverage
+
+*4.3.3 Value of White-box Testing*
+
+- Considers entire software implementation
+
+- Can detect defects even with vague/incomplete specifications
+
+- Can be used in static testing before code execution
+
+- Provides objective measurement of coverage
+
+- Weakness: may not detect omission of requirements
+
+**4.4 Experience-based Test Techniques**
+
+*4.4.1 Error Guessing*
+
+
+- Anticipates errors based on tester's knowledge of:
+
+
+- Past application behavior
+
+- Typical developer mistakes
+
+- Failures in similar applications
+
+- Fault attacks implement error guessing by creating lists of possible errors and designing tests to expose them
+
+*4.4.2 Exploratory Testing*
+
+
+- Tests are simultaneously designed, executed, and evaluated
+
+- Often performed using session-based testing within defined time boxes
+
+- Guided by test charters containing objectives
+
+- Useful when specifications are inadequate or time pressure exists
+
+- Effectiveness depends on tester's experience and skills
+
+*4.4.3 Checklist-based Testing*
+
+- Tests cover conditions from a checklist
+
+- Checklists built from experience and understanding of system failures
+
+- Items typically phrased as questions
+
+- Checklists should be regularly updated based on defect analysis
+
+- Provides guidelines and consistency without detailed test cases
+
+**4.5 Collaboration-based Test Approaches**
+
+*4.5.1 Collaborative User Story Writing*
+
+- User stories represent valuable features for users/purchasers
+
+*Three critical aspects (3 C's):*
+
+
+- Card: Medium describing the story
+
+- Conversation: Explains usage
+
+- Confirmation: Acceptance criteria
+
+
+Good user stories follow INVEST principles: Independent, Negotiable, Valuable, Estimable, Small, Testable
+
+*4.5.2 Acceptance Criteria*
+
+- Conditions implementation must meet to be accepted
+
+- Used to define scope, reach consensus, describe scenarios, and serve as testing basis
+
+*Common formats:*
+
+
+- Scenario-oriented (Given/When/Then format)
+
+- Rule-oriented (verification lists or input-output mapping)
+
+
+
+*4.5.3 Acceptance Test-driven Development (ATDD)*
+
+- Test-first approach where test cases are created before implementation
+
+- Involves specification workshops to analyze and clarify user stories
+
+- Tests based on acceptance criteria serve as examples of software functionality
+
+- Should cover both positive paths and negative scenarios
+
+- Test cases can be automated by developers during implementation
