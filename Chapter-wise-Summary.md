@@ -29,6 +29,8 @@
 
 - Validating that the product works as expected
 
+  
+  
 **Testing vs Debugging**
 
 - Testing identifies failures through dynamic testing or defects through static testing
