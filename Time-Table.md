@@ -1,10 +1,10 @@
-🧠 ISTQB Testing Certification Study Plan Overview
+🧠 #  ISTQB Testing Certification Study Plan Overview
 
 
-📅 Total Duration: 16 – 21 Days
-📚 Format: Chapter-by-chapter approach with daily tasks
-📈 Progress Tracking: ✅ Checkboxes for completed tasks
-📝 Each Chapter Includes: Weight %, number of questions, and page ranges
+📅 **Total Duration:** 16 – 21 Days
+📚 **Format:** Chapter-by-chapter approach with daily tasks
+📈 **Progress Tracking:** ✅ Checkboxes for completed tasks
+📝 **Each Chapter Includes:** Weight %, number of questions, and page ranges
 
 
 =====================================================
