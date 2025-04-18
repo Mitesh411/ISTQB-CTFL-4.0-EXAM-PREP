@@ -1,4 +1,5 @@
-🧠 #  ISTQB Testing Certification Study Plan Overview
+
+# ISTQB Testing Certification Study Plan Overview 🧠 
 
 
 📅 **Total Duration:** 16 – 21 Days
@@ -8,8 +9,8 @@
 
 
 =====================================================
-📘 Chapter 1: Fundamentals of Testing
-🕒 Duration: 3–4 Days
+# Chapter 1: Fundamentals of Testing 📘 
+**Duration:** 3–4 Days                  🕒 
 📊 Weight: 20% | ❓ Questions: 8 | 📄 Pages: 14–22
 
 ✅ Day 1
@@ -41,11 +42,11 @@
 ✅ Day 4
  Chapter 1 Review & Practice Questions
 
- Quiz
+- [x] Quiz
 
 
 =====================================================
-📘 Chapter 2: Testing Throughout the Software Development Lifecycle
+ Chapter 2: Testing Throughout the Software Development Lifecycle 📘
 🕒 Duration: 2–3 Days
 📊 Weight: 16% | ❓ Questions: 6 | 📄 Pages: 23–30
 
@@ -69,13 +70,13 @@
   - 2.2.2 Test Types
   - 2.2.3 Confirmation & Regression Testing
 
- Chapter 2 Review & Practice Questions
+ **Chapter 2 Review & Practice Questions**
 
- Quiz
+- [x] Quiz
 
 
 =====================================================
-📘 Chapter 3: Static Testing
+# Chapter 3: Static Testing 📘
 🕒 Duration: 2–3 Days
 📊 Weight: 10% | ❓ Questions: 4 | 📄 Pages: 31–36
 
@@ -87,12 +88,12 @@
 ✅ Day 9
  3.2.2 – 3.2.5 Review Process, Roles, Types, and Success Factors
 
- Chapter 3 Review & Practice Questions
+**Chapter 3 Review & Practice Questions**
 
- Quiz
+- [x] Quiz
 
 =====================================================
-📘 Chapter 4: Test Techniques
+# Chapter 4: Test Techniques 📘
 🕒 Duration: 4–5 Days
 📊 Weight: 27% | ❓ Questions: 11 | 📄 Pages: 37–45
 
@@ -120,13 +121,14 @@ Covered Topics:
   - ATDD (Acceptance Test-Driven Development)
 
 ✅ Completed
- Chapter 4 Review & Practice Questions
 
- Quiz
+**Chapter 4 Review & Practice Questions**
+
+- [x] Quiz
 
 
 =====================================================
-📘 Chapter 5: Test Management
+# Chapter 5: Test Management 📘
 🕒 Duration: 4–5 Days
 📊 Weight: 23% | ❓ Questions: 9 | 📄 Pages: 46–56
 
@@ -146,11 +148,14 @@ Covered Topics:
 5.5 Defect Management
 
 ✅ Completed
- Chapter 5 Review & Practice Questions
+ 
+**Chapter 5 Review & Practice Questions**
 
- Quiz
+- [x] Quiz
 
-📘 Chapter 6: Tool Support for Testing
+
+=====================================================
+# Chapter 6: Tool Support for Testing 📘
 🕒 Duration: 1 Day
 📊 Weight: 5% | ❓ Questions: 2 | 📄 Pages: 57–59
 
@@ -160,11 +165,13 @@ Covered Topics:
 6.2 Test Automation – Benefits & Risks
 
 ✅ Completed
- Chapter 6 Review & Practice Questions
+ 
+**Chapter 6 Review & Practice Questions**
 
- Quiz
+- [x] Quiz
 
-📊 Total Study Timeline
+
+# Total Study Timeline 📊
 ____________________________________________________
 Scenario	          |         Estimated Duration
 ____________________________________________________
