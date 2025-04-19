@@ -62,6 +62,9 @@
 - [x]  **Quiz**
 
 
+✅ Completed
+
+
 =====================================================
  Chapter 2: Testing Throughout the Software Development Lifecycle 📘
 🕒 Duration: 2–3 Days
@@ -92,6 +95,8 @@
 **[x] Quiz
 
 
+✅ Completed
+
 =====================================================
 # Chapter 3: Static Testing 📘
 🕒 Duration: 2–3 Days
@@ -108,6 +113,9 @@
 **Chapter 3 Review & Practice Questions**
 
 **[x] Quiz
+
+✅ Completed
+
 
 =====================================================
 # Chapter 4: Test Techniques 📘
@@ -137,39 +145,63 @@ Covered Topics:
   **Acceptance Criteria
   **ATDD (Acceptance Test-Driven Development)
 
-✅ Completed
+
 
 **Chapter 4 Review & Practice Questions**
 
 **[x] Quiz
 
+✅ Completed
 
 =====================================================
 # Chapter 5: Test Management 📘
 🕒 Duration: 4–5 Days
 📊 Weight: 23% | ❓ Questions: 9 | 📄 Pages: 46–56
 
-Covered Topics:
-5.1 Test Planning
-  **Test Plans, Entry/Exit Criteria, Estimation, Prioritization
-  **Test Pyramid & Testing Quadrants
+*Topics Covered:*
 
-5.2 Risk Management
-  **Risk Types, Analysis & Control
+**5.1. Test Planning**
 
-5.3 Monitoring & Control
-  **Metrics, Reporting, Status Communication
+- *Purpose and Content of a Test Plan*
 
-5.4 Configuration Management
+- *Tester's Contribution to Iteration and Release Planning*
 
-5.5 Defect Management
+- *Entry & Exit Criteria*
+
+- *Estimation Techniques*
+
+- *Test Case Prioritization*
+
+- *Test Pyramid*
+
+- *Testing Quadrants*
+
+**5.2. Risk Management**
+
+- *Risk Definition & Attributes*
+
+- *Project & Product Risks*
+
+- *Product Risk Analysis & Control*
+
+**5.3. Test Monitoring, Test Control, and Test Completion**
+
+- *Metrics Used in Testing*
+
+- *Purpose, Content, and Audience for Test Reports*
+
+- *Communicating the Status of Testing*
+
+**5.4. Configuration Management**
+
+**5.5. Defect Management**
+
+- [x] **Chapter 5 Review & Practice Questions** 
+
+- [x] **Quiz**
+
 
 ✅ Completed
- 
-**Chapter 5 Review & Practice Questions**
-
-**[x] Quiz
-
 
 =====================================================
 # Chapter 6: Tool Support for Testing 📘
@@ -187,6 +219,8 @@ Covered Topics:
 - [x] **Chapter 6 Review & Practice Questions**
 
 - [x] **Quiz**
+
+✅ Completed
 
 # Total Study Timeline 📊
 ____________________________________________________
