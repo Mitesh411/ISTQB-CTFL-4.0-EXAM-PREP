@@ -34,6 +34,8 @@
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | 1  |    20 % |    8 |  14–22   | 3–4 days | Fundamentals of Testing |
 
+
+
 ✅ Day 1
 
 **Section 1.1: What is Testing?**
@@ -89,13 +91,11 @@
 =====================================================
  # Chapter 2: Testing Throughout the Software Development Lifecycle 📘
 
-🕒 **Duration:** 2–3 Days
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
 
-📊 **Weight:** 16% | 
 
-❓ **Questions:** 6 | 
-
-📄 **Pages:** 23–30
 
 ✅ Day 5
  Section 2.1: Testing in the SDLC
@@ -127,13 +127,11 @@
 =====================================================
 # Chapter 3: Static Testing 📘
 
-🕒 **Duration:** 2–3 Days
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
 
-📊 **Weight:** 10% | 
 
-❓ **Questions:** 4 | 
-
-📄 **Pages:** 31–36
 
 ✅ Day 8
  3.1 Static Testing Basics
@@ -153,13 +151,11 @@
 =====================================================
 # Chapter 4: Test Techniques 📘
 
-🕒 **Duration:** 4–5 Days
 
-📊 **Weight:** 27% | 
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
 
-❓ **Questions:** 11 | 
-
-📄 **Pages:** 37–45
 
 Covered Topics:
 4.1 Overview of Test Techniques
@@ -195,13 +191,12 @@ Covered Topics:
 =====================================================
 # Chapter 5: Test Management 📘
 
-🕒 **Duration:** 4–5 Days
 
-📊 **Weight:** 23% | 
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
 
-❓ **Questions:** 9 | 
 
-📄 **Pages:** 46–56
 
 *Topics Covered:*
 
@@ -251,13 +246,12 @@ Covered Topics:
 =====================================================
 # Chapter 6: Tool Support for Testing 📘
 
-🕒 **Duration:** 1 Day
 
-📊 **Weight:** 5% | 
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
 
-❓ **Questions:** 2 | 
 
-📄 **Pages:** 57–59
 
 *Topics Covered:*
 
