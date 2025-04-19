@@ -16,13 +16,14 @@
 
 =====================================================
 # Chapter 1: Fundamentals of Testing 📘 
-**Duration:** 3–4 Days 🕒 
 
-**Weight:** 20% 📊 |  
+🕒 **Duration:** 3–4 Days 
 
-**Questions:** 8  ❓|  
+📊 **Weight:** 20%  |  
 
-**Pages:** 14–22 📄
+❓ **Questions:** 8  |  
+
+📄 **Pages:** 14–22 
 
 ✅ Day 1
 
@@ -116,8 +117,14 @@
 
 =====================================================
 # Chapter 3: Static Testing 📘
-🕒 Duration: 2–3 Days
-📊 Weight: 10% | ❓ Questions: 4 | 📄 Pages: 31–36
+
+🕒 **Duration:** 2–3 Days
+
+📊 **Weight:** 10% | 
+
+❓ **Questions:** 4 | 
+
+📄 **Pages:** 31–36
 
 ✅ Day 8
  3.1 Static Testing Basics
@@ -136,8 +143,14 @@
 
 =====================================================
 # Chapter 4: Test Techniques 📘
-🕒 Duration: 4–5 Days
-📊 Weight: 27% | ❓ Questions: 11 | 📄 Pages: 37–45
+
+🕒 **Duration:** 4–5 Days
+
+📊 **Weight:** 27% | 
+
+❓ **Questions:** 11 | 
+
+📄 **Pages:** 37–45
 
 Covered Topics:
 4.1 Overview of Test Techniques
@@ -172,8 +185,14 @@ Covered Topics:
 
 =====================================================
 # Chapter 5: Test Management 📘
-🕒 Duration: 4–5 Days
-📊 Weight: 23% | ❓ Questions: 9 | 📄 Pages: 46–56
+
+🕒 **Duration:** 4–5 Days
+
+📊 **Weight:** 23% | 
+
+❓ **Questions:** 9 | 
+
+📄 **Pages:** 46–56
 
 *Topics Covered:*
 
@@ -223,9 +242,13 @@ Covered Topics:
 =====================================================
 # Chapter 6: Tool Support for Testing 📘
 
-🕒 Duration: 1 Day
+🕒 **Duration:** 1 Day
 
-📊 Weight: 5% | ❓ Questions: 2 | 📄 Pages: 57–59
+📊 **Weight:** 5% | 
+
+❓ **Questions:** 2 | 
+
+📄 **Pages:** 57–59
 
 *Topics Covered:*
 
