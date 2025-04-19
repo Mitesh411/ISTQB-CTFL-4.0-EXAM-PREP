@@ -59,7 +59,7 @@
 
  **Chapter 1 Review & Practice Questions**
 
-**[x] Quiz**
+- [x]  **Quiz**
 
 
 =====================================================
