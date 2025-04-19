@@ -1,158 +1,221 @@
-# ISTQB Testing Certification Study Plan Overview
 
-**Total Duration:** 16 - 21 days
-
-**Study Schedule:** Chapter-by-chapter approach with daily tasks
-
-**Format:** Each chapter includes percentage weight, number of questions, and page ranges
-
-*Progress Tracking*
+# ISTQB Testing Certification Study Plan Overview 🧠 
 
 
-# Chapter One (3-4 Days)
+📅 **Total Duration:** 16 – 21 Days
 
-**Weight: 20%  |  Questions: 8  |  Pages: 14-22**
 
-# Day One
-- [x] Chapter One (1.1. + 1.2.) 
+📚 **Format:** Chapter-by-chapter approach with daily tasks
 
-**1.1. What is Testing ?**
 
-**1.1.1. Test Objectives**
+📈 **Progress Tracking:** ✅ Checkboxes for completed tasks
 
-**1.1.2. Testing and Debugging**
 
-**1.2. Why is Testing Necessary ?**
-
-**1.2.1. Testing's Contribution to Success**
-
-**1.2.2. Testing and Quality Assurance (QA)** 
-
-**1.2.3. Errors, Defects, Failures, and Root Causes**
-
-# Day Two
-- [x] Chapter One (1.3. + 1.5.) 
-
-**1.3. Testing Principles**
-
-**1.5. Essential Skills and Good Practices in Testing**
-
-**1.5.1. Generic Skills Required for Testing**
-
-**1.5.2. Whole Team Approach**
-
-**1.5.3. Independence of Testing**
+📝 **Each Chapter Includes:** Weight %, number of questions, and page ranges
 
 
 
-# Day Three 
-- [x] Chapter One (1.4.) 
+# Study Schedule Overview
 
-## 1.4. Test Activities, Testware & Test Roles
-### 1.4.1. Test Activities and Tasks
-### 1.4.2. Test Process in Context
-### 1.4.3. Testware
-### 1.4.4. Traceability between the Test Basis and Testware
-### 1.4.5. Roles in Testing
-
-# Day Four
-- [x] **Chapter 1 Review & Practice Questions**
-
-- [x] **Quiz**
-
-# Chapter Two ( 2 - 3 Days )
-**Weight: 16% | Questions: 6 | Pages: 23-30**
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 1 | 20 % | 8 |  14–22 | 3–4 days | Fundamentals of Testing |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
 
 
-# Day Five
-- [x] Chapter Two (2.1.1 + 2.1.2 + 2.1.3 + 2.1.4) 
+=====================================================
+# Chapter 1: Fundamentals of Testing 📘 
 
-## 2.1. Testing in the Context of a Software Development Lifecycle
-### 2.1.1. Impact of the Software Development Lifecycle on Testing.
-### 2.1.2. Software Development Lifecycle and Good Testing Practices
-### 2.1.3. Testing as a Driver for Software Development
-### 2.1.4. DevOps and Testing
-
-# Day Six
-- [x] Chapter Two (2.1.5. + 2.1.6. + 2.3.) 
-
-### 2.1.5. Shift-Left Approach
-### 2.1.6. Retrospectives and Process Improvement
-## 2.3. Maintenance Testing
-
-# Day Seven
-- [x] Chapter Two (2.2.1 + 2.2.2. + 2.2.3. + Questions on Chapter Two)
-
-## 2.2. Test Levels and Test Types 
-### 2.2.1. Test Levels 
-### 2.2.2. Test Types
-### 2.2.3. Confirmation Testing and Regression Testing
-
-- [x] **Chapter 2 Review & Practice Questions**
-
-- [x] **Quiz**
-
-# Chapter Three (2-3 Days)
-**Weight: 10% | Questions: 4 | Pages: 31-36**
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 1  |    20 % |    8 |  14–22   | 3–4 days | Fundamentals of Testing |
 
 
-# Day Eight
-- [x] Chapter Three (3.1. + 3.2.1)
 
-## 3.1. Static Testing Basics
-### 3.1.1. Work Products Examinable by Static Testing
-### 3.1.2. Value of Static Testing
-### 3.1.3. Differences between Static Testing and Dynamic Testing
+✅ Day 1
 
-## 3.2. Feedback and Review Process
-### 3.2.1. Benefits of Early and Frequent Stakeholder Feedback 
+**Section 1.1: What is Testing?**
 
-# Day Nine
-- [x] Chapter Three (3.2.2 + End of chapter + Questions on Chapter Three + Quiz)
+  **1.1.1 Test Objectives**
+
+  **1.1.2 Testing and Debugging**
+
+ **Section 1.2: Why is Testing Necessary?**
+
+   **1.2.1 Testing’s Contribution to Success**
+
+   **1.2.2 Testing and QA**
+
+   **1.2.3 Errors, Defects, Failures, Root Causes**
+
+✅ Day 2
+
+ **Section 1.3: Testing Principles**
+
+ **Section 1.5: Essential Skills and Practices**
+
+  **1.5.1 Generic Skills**
+
+  **1.5.2 Whole Team Approach**
+
+  **1.5.3 Independence of Testing**
+
+✅ Day 3
+
+**Section 1.4: Test Activities, Testware, & Test Roles**
+
+  **1.4.1 Test Activities & Tasks**
+
+  **1.4.2 Test Process in Context**
+
+  **1.4.3 Testware**
+
+  **1.4.4 Traceability**
+
+  **1.4.5 Roles in Testing**
+
+✅ Day 4
+
+ **Chapter 1 Review & Practice Questions**
+
+- [x]  **Quiz**
 
 
-### 3.2.2. Review Process Activities
-### 3.2.3. Roles and Responsibilities in Reviews
-### 3.2.4. Review Types
-### 3.2.5. Success Factors for Reviews
+✅ Completed
 
-- [x] **Chapter 3 Review & Practice Questions**
 
-- [x] **Quiz**
+=====================================================
+ # Chapter 2: Testing Throughout the Software Development Lifecycle📘
 
-# Chapter Four (4-5 Days)
-**Weight: 27% | Questions: 11 | Pages: 37-45**
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
 
-## 4.1. Test Techniques Overview
 
-## 4.2. Black-Box Test Techniques
-### 4.2.1. Equivalence Partitioning
-### 4.2.2. Boundary Value Analysis
-### 4.2.3. Decision Table Testing
-### 4.2.4. State Transition Testing
 
-## 4.3. White-Box Test Techniques
-### 4.3.1. Statement Testing and Statement Coverage
-### 4.3.2. Branch Testing and Branch Coverage
-### 4.3.3. The Value of White-box Testing
+✅ Day 5
+ Section 2.1: Testing in the SDLC
 
-## 4.4. Experience-based Test Techniques
-### 4.4.1. Error Guessing
-### 4.4.2. Exploratory Testing
-### 4.4.3. Checklist-Based Testing
+  **2.1.1 Lifecycle Impact**
 
-## 4.5. Collaboration-based Test Approaches.
-### 4.5.1. Collaborative User Story Writing
-### 4.5.2. Acceptance Criteria
-### 4.5.3. Acceptance Test-driven Development (ATDD)
+  **2.1.2 Good Testing Practices**
 
-- [x] **Chapter 4 Review & Practice Questions**
+  **2.1.3 Testing as a Driver**
+
+  **2.1.4 DevOps & Testing**
+
+✅ Day 6
+ 2.1.5 Shift-Left Approach
+
+ 2.1.6 Retrospectives & Improvement
+
+ 2.3 Maintenance Testing
+
+✅ Day 7
+ Section 2.2: Test Levels and Types
+
+  **2.2.1 Test Levels**
+
+  **2.2.2 Test Types**
+
+  **2.2.3 Confirmation & Regression Testing**
+
+ **Chapter 2 Review & Practice Questions**
 
 - [x] **Quiz**
 
-# Chapter Five (4-5 Days)
+✅ Completed
 
-**Weight: 23%  |  Questions: 9  |  Pages: 46-56**
+=====================================================
+# Chapter 3: Static Testing 📘
+
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
+
+
+
+✅ Day 8
+ 3.1 Static Testing Basics
+
+ 3.2.1 Early Stakeholder Feedback
+
+✅ Day 9
+
+ 3.2.2 – 3.2.5 Review Process, Roles, Types, and Success Factors
+
+**Chapter 3 Review & Practice Questions**
+
+- [x] **Quiz**
+
+✅ Completed
+
+
+=====================================================
+# Chapter 4: Test Techniques 📘
+
+
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
+
+
+Covered Topics:
+4.1 Overview of Test Techniques
+
+4.2 Black-Box Techniques:
+
+  **Equivalence Partitioning**
+
+  **Boundary Value Analysis**
+
+  **Decision Table Testing**
+
+  **State Transition Testing**
+
+4.3 White-Box Techniques:
+
+  **Statement & Branch Coverage**
+
+  **Value of White-box Testing**
+
+4.4 Experience-Based Techniques:
+
+  **Error Guessing**
+
+  **Exploratory Testing**
+
+  **Checklist-Based Testing**
+
+4.5 Collaboration-Based Approaches:
+
+  **User Story Writing**
+
+  **Acceptance Criteria**
+
+  **ATDD (Acceptance Test-Driven Development)**
+
+
+
+**Chapter 4 Review & Practice Questions**
+
+- [x] **Quiz**
+
+✅ Completed
+
+=====================================================
+# Chapter 5: Test Management 📘
+
+
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
+
+
 
 *Topics Covered:*
 
@@ -192,13 +255,22 @@
 
 **5.5. Defect Management**
 
-- [x] **Chapter 5 Review & Practice Questions**
+- [x] **Chapter 5 Review & Practice Questions** 
 
 - [x] **Quiz**
 
-# Chapter Six (1 Day)
 
-**Weight: 5%  |  Questions: 2  |  Pages: 57-59**
+✅ Completed
+
+=====================================================
+# Chapter 6: Tool Support for Testing 📘
+
+
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
+
+
 
 *Topics Covered:*
 
@@ -210,15 +282,12 @@
 
 - [x] **Quiz**
 
-# Total Study Timeline [ in Days ]
+✅ Completed
 
-**Worst Case Scenario:** 21 Days
-
-**Optimal Case Scenario:** 16 Days
-
-**Best Case Scenario:** Between Optimal (16) and Worst (21) Days
-
-
-
-
-
+# Total Study Timeline 📊
+____________________________________________________
+| Scenario | Estimated Duration | 
+| ------ | ------ | 
+| ✅ Best Case	 |   16    Days  
+⚖️ Optimal Case	                        |           18–19 Days
+🐢 Worst Case	                        |           21    Days
