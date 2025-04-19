@@ -14,35 +14,36 @@
 📊 Weight: 20% | ❓ Questions: 8 | 📄 Pages: 14–22
 
 ✅ Day 1
- Section 1.1: What is Testing?
-  - 1.1.1 Test Objectives
-  - 1.1.2 Testing and Debugging
 
- Section 1.2: Why is Testing Necessary?
-  - 1.2.1 Testing’s Contribution to Success
-  - 1.2.2 Testing and QA
-  - 1.2.3 Errors, Defects, Failures, Root Causes
+**Section 1.1: What is Testing?**
+  **1.1.1 Test Objectives**
+  **1.1.2 Testing and Debugging**
+
+ **Section 1.2: Why is Testing Necessary?**
+   **1.2.1 Testing’s Contribution to Success**
+   **1.2.2 Testing and QA**
+   **1.2.3 Errors, Defects, Failures, Root Causes**
 
 ✅ Day 2
- Section 1.3: Testing Principles
+ **Section 1.3: Testing Principles**
 
- Section 1.5: Essential Skills and Practices
-  - 1.5.1 Generic Skills
-  - 1.5.2 Whole Team Approach
-  - 1.5.3 Independence of Testing
+ **Section 1.5: Essential Skills and Practices**
+  **1.5.1 Generic Skills**
+  **1.5.2 Whole Team Approach**
+  **1.5.3 Independence of Testing**
 
 ✅ Day 3
- Section 1.4: Test Activities, Testware, & Test Roles
-  - 1.4.1 Test Activities & Tasks
-  - 1.4.2 Test Process in Context
-  - 1.4.3 Testware
-  - 1.4.4 Traceability
-  - 1.4.5 Roles in Testing
+**Section 1.4: Test Activities, Testware, & Test Roles**
+  **1.4.1 Test Activities & Tasks**
+  **1.4.2 Test Process in Context**
+  **1.4.3 Testware**
+  **1.4.4 Traceability**
+  **1.4.5 Roles in Testing**
 
 ✅ Day 4
- Chapter 1 Review & Practice Questions
+ **Chapter 1 Review & Practice Questions**
 
-- [x] Quiz
+**[x] Quiz
 
 
 =====================================================
@@ -52,10 +53,10 @@
 
 ✅ Day 5
  Section 2.1: Testing in the SDLC
-  - 2.1.1 Lifecycle Impact
-  - 2.1.2 Good Testing Practices
-  - 2.1.3 Testing as a Driver
-  - 2.1.4 DevOps & Testing
+  **2.1.1 Lifecycle Impact
+  **2.1.2 Good Testing Practices
+  **2.1.3 Testing as a Driver
+  **2.1.4 DevOps & Testing
 
 ✅ Day 6
  2.1.5 Shift-Left Approach
@@ -66,13 +67,13 @@
 
 ✅ Day 7
  Section 2.2: Test Levels and Types
-  - 2.2.1 Test Levels
-  - 2.2.2 Test Types
-  - 2.2.3 Confirmation & Regression Testing
+  **2.2.1 Test Levels
+  **2.2.2 Test Types
+  **2.2.3 Confirmation & Regression Testing
 
  **Chapter 2 Review & Practice Questions**
 
-- [x] Quiz
+**[x] Quiz
 
 
 =====================================================
@@ -90,7 +91,7 @@
 
 **Chapter 3 Review & Practice Questions**
 
-- [x] Quiz
+**[x] Quiz
 
 =====================================================
 # Chapter 4: Test Techniques 📘
@@ -101,30 +102,30 @@ Covered Topics:
 4.1 Overview of Test Techniques
 
 4.2 Black-Box Techniques:
-  - Equivalence Partitioning
-  - Boundary Value Analysis
-  - Decision Table Testing
-  - State Transition Testing
+  **Equivalence Partitioning
+  **Boundary Value Analysis
+  **Decision Table Testing
+  **State Transition Testing
 
 4.3 White-Box Techniques:
-  - Statement & Branch Coverage
-  - Value of White-box Testing
+  **Statement & Branch Coverage
+  **Value of White-box Testing
 
 4.4 Experience-Based Techniques:
-  - Error Guessing
-  - Exploratory Testing
-  - Checklist-Based Testing
+  **Error Guessing
+  **Exploratory Testing
+  **Checklist-Based Testing
 
 4.5 Collaboration-Based Approaches:
-  - User Story Writing
-  - Acceptance Criteria
-  - ATDD (Acceptance Test-Driven Development)
+  **User Story Writing
+  **Acceptance Criteria
+  **ATDD (Acceptance Test-Driven Development)
 
 ✅ Completed
 
 **Chapter 4 Review & Practice Questions**
 
-- [x] Quiz
+**[x] Quiz
 
 
 =====================================================
@@ -134,14 +135,14 @@ Covered Topics:
 
 Covered Topics:
 5.1 Test Planning
-  - Test Plans, Entry/Exit Criteria, Estimation, Prioritization
-  - Test Pyramid & Testing Quadrants
+  **Test Plans, Entry/Exit Criteria, Estimation, Prioritization
+  **Test Pyramid & Testing Quadrants
 
 5.2 Risk Management
-  - Risk Types, Analysis & Control
+  **Risk Types, Analysis & Control
 
 5.3 Monitoring & Control
-  - Metrics, Reporting, Status Communication
+  **Metrics, Reporting, Status Communication
 
 5.4 Configuration Management
 
@@ -151,7 +152,7 @@ Covered Topics:
  
 **Chapter 5 Review & Practice Questions**
 
-- [x] Quiz
+**[x] Quiz
 
 
 =====================================================
@@ -168,7 +169,7 @@ Covered Topics:
  
 **Chapter 6 Review & Practice Questions**
 
-- [x] Quiz
+**[x] Quiz
 
 
 # Total Study Timeline 📊
