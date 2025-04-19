@@ -190,8 +190,11 @@ Covered Topics:
 
 # Total Study Timeline 📊
 ____________________________________________________
+
 Scenario	          |         Estimated Duration
 ____________________________________________________
 ✅ Best Case	        |           16    Days
+
 ⚖️ Optimal Case	     |           18–19 Days
+
 🐢 Worst Case	     |           21    Days
