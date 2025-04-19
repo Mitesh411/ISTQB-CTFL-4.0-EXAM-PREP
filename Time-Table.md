@@ -14,6 +14,19 @@
 📝 **Each Chapter Includes:** Weight %, number of questions, and page ranges
 
 
+
+# Study Schedule Overview
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 1 | 20 % | 8 |  14–22 | 3–4 days | Fundamentals of Testing |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
+
+
 =====================================================
 # Chapter 1: Fundamentals of Testing 📘 
 
