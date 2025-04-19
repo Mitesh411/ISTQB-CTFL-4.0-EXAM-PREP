@@ -173,28 +173,28 @@ Covered Topics:
 
 =====================================================
 # Chapter 6: Tool Support for Testing 📘
+
 🕒 Duration: 1 Day
+
 📊 Weight: 5% | ❓ Questions: 2 | 📄 Pages: 57–59
 
-Covered Topics:
-6.1 Tool Support Overview
+*Topics Covered:*
 
-6.2 Test Automation – Benefits & Risks
+**6.1. Tool Support for Testing**
 
-✅ Completed
- 
-**Chapter 6 Review & Practice Questions**
+**6.2. Benefits and Risks of Test Automation**
 
-**[x] Quiz
+- [x] **Chapter 6 Review & Practice Questions**
 
+- [x] **Quiz**
 
 # Total Study Timeline 📊
 ____________________________________________________
 
-Scenario	          |         Estimated Duration
+**Scenario**	                            |         **Estimated Duration**
 ____________________________________________________
-✅ Best Case	        |           16    Days
+✅ Best Case	                           |           16    Days
 
-⚖️ Optimal Case	     |           18–19 Days
+⚖️ Optimal Case	                        |           18–19 Days
 
-🐢 Worst Case	     |           21    Days
+🐢 Worst Case	                        |           21    Days
