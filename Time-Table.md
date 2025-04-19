@@ -99,10 +99,14 @@
 
 ✅ Day 5
  Section 2.1: Testing in the SDLC
-  **2.1.1 Lifecycle Impact
-  **2.1.2 Good Testing Practices
-  **2.1.3 Testing as a Driver
-  **2.1.4 DevOps & Testing
+
+  **2.1.1 Lifecycle Impact**
+
+  **2.1.2 Good Testing Practices**
+
+  **2.1.3 Testing as a Driver**
+
+  **2.1.4 DevOps & Testing**
 
 ✅ Day 6
  2.1.5 Shift-Left Approach
@@ -113,14 +117,16 @@
 
 ✅ Day 7
  Section 2.2: Test Levels and Types
-  **2.2.1 Test Levels
-  **2.2.2 Test Types
-  **2.2.3 Confirmation & Regression Testing
+
+  **2.2.1 Test Levels**
+
+  **2.2.2 Test Types**
+
+  **2.2.3 Confirmation & Regression Testing**
 
  **Chapter 2 Review & Practice Questions**
 
-**[x] Quiz
-
+- [x] **Quiz**
 
 ✅ Completed
 
@@ -139,11 +145,12 @@
  3.2.1 Early Stakeholder Feedback
 
 ✅ Day 9
+
  3.2.2 – 3.2.5 Review Process, Roles, Types, and Success Factors
 
 **Chapter 3 Review & Practice Questions**
 
-**[x] Quiz
+- [x] **Quiz**
 
 ✅ Completed
 
@@ -161,30 +168,42 @@ Covered Topics:
 4.1 Overview of Test Techniques
 
 4.2 Black-Box Techniques:
-  **Equivalence Partitioning
-  **Boundary Value Analysis
-  **Decision Table Testing
-  **State Transition Testing
+
+  **Equivalence Partitioning**
+
+  **Boundary Value Analysis**
+
+  **Decision Table Testing**
+
+  **State Transition Testing**
 
 4.3 White-Box Techniques:
-  **Statement & Branch Coverage
-  **Value of White-box Testing
+
+  **Statement & Branch Coverage**
+
+  **Value of White-box Testing**
 
 4.4 Experience-Based Techniques:
-  **Error Guessing
-  **Exploratory Testing
-  **Checklist-Based Testing
+
+  **Error Guessing**
+
+  **Exploratory Testing**
+
+  **Checklist-Based Testing**
 
 4.5 Collaboration-Based Approaches:
-  **User Story Writing
-  **Acceptance Criteria
-  **ATDD (Acceptance Test-Driven Development)
+
+  **User Story Writing**
+
+  **Acceptance Criteria**
+
+  **ATDD (Acceptance Test-Driven Development)**
 
 
 
 **Chapter 4 Review & Practice Questions**
 
-**[x] Quiz
+- [x] **Quiz**
 
 ✅ Completed
 
