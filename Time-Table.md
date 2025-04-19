@@ -16,34 +16,50 @@
 ✅ Day 1
 
 **Section 1.1: What is Testing?**
+
   **1.1.1 Test Objectives**
+
   **1.1.2 Testing and Debugging**
 
  **Section 1.2: Why is Testing Necessary?**
+
    **1.2.1 Testing’s Contribution to Success**
+
    **1.2.2 Testing and QA**
+
    **1.2.3 Errors, Defects, Failures, Root Causes**
 
 ✅ Day 2
+
  **Section 1.3: Testing Principles**
 
  **Section 1.5: Essential Skills and Practices**
+
   **1.5.1 Generic Skills**
+
   **1.5.2 Whole Team Approach**
+
   **1.5.3 Independence of Testing**
 
 ✅ Day 3
+
 **Section 1.4: Test Activities, Testware, & Test Roles**
+
   **1.4.1 Test Activities & Tasks**
+
   **1.4.2 Test Process in Context**
+
   **1.4.3 Testware**
+
   **1.4.4 Traceability**
+
   **1.4.5 Roles in Testing**
 
 ✅ Day 4
+
  **Chapter 1 Review & Practice Questions**
 
-**[x] Quiz
+**[x] Quiz**
 
 
 =====================================================
