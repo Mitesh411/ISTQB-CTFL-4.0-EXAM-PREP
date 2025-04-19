@@ -30,13 +30,9 @@
 =====================================================
 # Chapter 1: Fundamentals of Testing 📘 
 
-🕒 **Duration:** 3–4 Days 
-
-📊 **Weight:** 20%  |  
-
-❓ **Questions:** 8  |  
-
-📄 **Pages:** 14–22 
+| Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 1  |    20 % |    8 |  14–22   | 3–4 days | Fundamentals of Testing |
 
 ✅ Day 1
 
