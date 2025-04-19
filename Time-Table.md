@@ -89,7 +89,7 @@
 
 
 =====================================================
- # Chapter 2: Testing Throughout the Software Development Lifecycle 📘
+ # Chapter 2: Testing Throughout the Software Development Lifecycle📘
 
 | Chapter | 📊  Weight | ❓Questions |  📄 Pages | 🕒 Duration | Topics |
 | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -267,11 +267,8 @@ Covered Topics:
 
 # Total Study Timeline 📊
 ____________________________________________________
-
-**Scenario**	                            |         **Estimated Duration**
-____________________________________________________
-✅ Best Case	                           |           16    Days
-
+| Scenario | Estimated Duration | 
+| ------ | ------ | 
+| ✅ Best Case	 |   16    Days  
 ⚖️ Optimal Case	                        |           18–19 Days
-
 🐢 Worst Case	                        |           21    Days
