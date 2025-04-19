@@ -16,8 +16,13 @@
 
 =====================================================
 # Chapter 1: Fundamentals of Testing 📘 
-**Duration:** 3–4 Days                  🕒 
-📊 Weight: 20% | ❓ Questions: 8 | 📄 Pages: 14–22
+**Duration:** 3–4 Days 🕒 
+
+**Weight:** 20% 📊 |  
+
+**Questions:** 8  ❓|  
+
+**Pages:** 14–22 📄
 
 ✅ Day 1
 
@@ -72,9 +77,15 @@
 
 
 =====================================================
- Chapter 2: Testing Throughout the Software Development Lifecycle 📘
-🕒 Duration: 2–3 Days
-📊 Weight: 16% | ❓ Questions: 6 | 📄 Pages: 23–30
+ # Chapter 2: Testing Throughout the Software Development Lifecycle 📘
+
+🕒 **Duration:** 2–3 Days
+
+📊 **Weight:** 16% | 
+
+❓ **Questions:** 6 | 
+
+📄 **Pages:** 23–30
 
 ✅ Day 5
  Section 2.1: Testing in the SDLC
