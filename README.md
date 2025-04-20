@@ -9,7 +9,7 @@
 
 # ISTQB-CTFL-4.0-EXAM-PREP 
 
-If you are a software tester looking to advance your career, getting ISTQB Certified Tester Foundation Level (CTFL) 4.0 certified is a great step.
+The ISTQB Certified Tester Foundation Level (CTFL) 4.0 certification is a globally recognized credential for software testers. It validates foundational knowledge in software testing principles, techniques, and tools. This guide provides a comprehensive and structured approach to help you prepare effectively for the CTFL 4.0 examination. If you are a software tester looking to advance your career, getting ISTQB Certified Tester Foundation Level (CTFL) 4.0 certified is a great step.
 
 - ## ISTQB CTFL 4.0 Syllabus Overview
 The ISTQB Certified Tester Foundation Level 4.0 (CTFL 4.0) syllabus
