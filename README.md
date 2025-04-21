@@ -167,6 +167,10 @@ A: ISTQB certifications do not expire, but staying updated with current practice
 -   The creator makes no representations or warranties regarding the accuracy or completeness of the information.
 -   Users are solely responsible for verifying the accuracy and suitability of all information.
 -   By using this repository, you acknowledge and agree to these terms.
+---
+
+> ⭐ **Star this repo** if you found it helpful!  
+> 💬 For questions or suggestions, feel free to open an [issue](#) or drop a comment!
 
 ----------
 
