@@ -129,17 +129,16 @@ Each MCQ has a weightage of 2.5 Marks which makes it 100. To pass the ISTQB exam
 
   
 
-- Chapter 4: 11 questions (27.5%)
 
-- Chapter 5: 9 questions (22.5%)
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 1 | 20 % | 8 |  14–22 | 3–4 days | Fundamentals of Testing |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
 
-- Chapter 1: 8 questions (20%)
-
-- Chapter 2: 5 questions (12.5%)
-
-- Chapter 3: 5 questions (12.5%)
-
-- Chapter 6: 2 questions (5%)
 
   
 
