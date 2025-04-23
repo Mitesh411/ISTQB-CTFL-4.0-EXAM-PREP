@@ -174,4 +174,16 @@ A: ISTQB certifications do not expire, but staying updated with current practice
 
 ----------
 
+ # Contributing 🤝
+
+We welcome feedback, improvements, and collaboration!
+
+git clone https://github.com/Mitesh411/ISTQB-CTFL-4.0-EXAM-PREP.git
+
+    Fork the repo
+
+    Make your edits
+
+    Submit a pull request with a clear description
+
 <p align="center"> <img src="https://img.shields.io/badge/Happy%20Testing!-Good%20Luck-brightgreen?style=for-the-badge" alt="Happy Testing!"/> </p>
