@@ -35,7 +35,7 @@ These techniques derive test cases from specifications without code access.
         
     -   Coverage: Percentage of boundary values (and neighbors for 3-value) tested.
         
-    -   Example: For a partition [1–100], 2-value BVA tests 1, 0, 100, 101; 3-value tests 0, 1, 2, 99, 100, 101.
+    -   Example: For a partition [1–100], 2-value BVA tests 0, 1, 100, 101; 3-value tests 0, 1, 2, 99, 100, 101.
         
 -   **Decision Table Testing**:
     
