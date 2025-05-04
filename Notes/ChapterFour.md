@@ -1,3 +1,7 @@
+<p align="center"> <a href="https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" title="Certified Tester Foundation Level (CTFL) v4.0"> <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200" alt="ISTQB CTFL 4.0 Logo"/>
+
+
+
 ## Chapter 4: Test Analysis and Design
 
 ### 4.1 Test Techniques Overview
@@ -35,7 +39,7 @@ These techniques derive test cases from specifications without code access.
         
     -   Coverage: Percentage of boundary values (and neighbors for 3-value) tested.
         
-    -   Example: For a partition [1–100], 2-value BVA tests 1, 0, 100, 101; 3-value tests 0, 1, 2, 99, 100, 101.
+    -   Example: For a partition [1–100], 2-value BVA tests 0, 1, 100, 101; 3-value tests 0, 1, 2, 99, 100, 101.
         
 -   **Decision Table Testing**:
     
