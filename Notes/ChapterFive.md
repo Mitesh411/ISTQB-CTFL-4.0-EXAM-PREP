@@ -1,3 +1,6 @@
+<p align="center"> <a href="https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" title="Certified Tester Foundation Level (CTFL) v4.0"> <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200" alt="ISTQB CTFL 4.0 Logo"/>
+
+
 
 ## Chapter 5: Managing the Test Activities
 
