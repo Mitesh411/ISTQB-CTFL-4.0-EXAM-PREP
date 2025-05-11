@@ -207,6 +207,14 @@ Testing approach depends on contextual factors like:
 
 **[⬆ Back to Top](#Chapter1:FundamentalsofTesting)**
 
+
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
+
 # Chapter 2: Testing Throughout the Software Development Lifecycle
 
 **2.1 Testing in the Context of a Software Development Lifecycle (SDLC)**
