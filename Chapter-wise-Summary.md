@@ -765,6 +765,12 @@ A defect report typically includes:
 
 - References to related test cases
 
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
 
 # Chapter 6: Test Tools
 
