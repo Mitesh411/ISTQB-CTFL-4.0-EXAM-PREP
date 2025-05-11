@@ -707,7 +707,7 @@ Groups test types into four categories:
 
 - Collecting data from completed activities to consolidate experience.
 
-*Metrics Used in Testing: *
+*Metrics Used in Testing:*
 
 - Various metrics track progress, quality, defects, risk, coverage, and costs.
 
