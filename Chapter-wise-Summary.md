@@ -450,6 +450,14 @@ Static testing involves evaluating software work products without executing the 
 
 - Effective meeting facilitation
 
+
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
+
 # Chapter 4: Test Analysis and Design
 
 **4.1 Test Techniques Overview**
