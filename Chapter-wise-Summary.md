@@ -311,6 +311,13 @@ Testing approach depends on contextual factors like:
 
 - May require data archiving tests for retiring systems
 
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
+
 # Chapter 3: Static Testing
 
 **3.1 Static Testing Basics**
