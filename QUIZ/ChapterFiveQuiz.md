@@ -12,7 +12,7 @@
     
 3.  **How do testers contribute to release planning in an iterative SDLC?** (FL-5.1.2)  
     a) By writing code for the product backlog  
-    b) By participating in writing testable user stories and estimating test effort  
+   `b) By participating in writing testable user stories and estimating test effort`      
     c) By managing the project budget  
     d) By deploying the software to production  
     **Correct Answer**: b) By participating in writing testable user stories and estimating test effort  
