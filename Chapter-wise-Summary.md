@@ -641,7 +641,12 @@ Good user stories follow INVEST principles: Independent, Negotiable, Valuable, E
 
 - Test cases can be automated by developers during implementation
 
+### Chapter Weightage Breakdown
 
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
 
 # Chapter 5: Managing the Test Activities
 
