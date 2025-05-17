@@ -1,3 +1,15 @@
+
+<p align="center"> <a href="https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" title="Certified Tester Foundation Level (CTFL) v4.0"> <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200" alt="ISTQB CTFL 4.0 Logo"/>
+
+
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 1 | 20 % | 8 |  14–22 | 3–4 days | Fundamentals of Testing |
+
+
 # Chapter 1: Fundamentals of Testing
 **1.1 What is Testing ?**
 
@@ -195,6 +207,14 @@ Testing approach depends on contextual factors like:
 
 **[⬆ Back to Top](#Chapter1:FundamentalsofTesting)**
 
+
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 2 | 16 % | 6 | 23–30 | 2–3 days | Testing in SDLC |
+
 # Chapter 2: Testing Throughout the Software Development Lifecycle
 
 **2.1 Testing in the Context of a Software Development Lifecycle (SDLC)**
@@ -290,6 +310,13 @@ Testing approach depends on contextual factors like:
 - Triggers include modifications, environment upgrades/migrations, and system retirement
 
 - May require data archiving tests for retiring systems
+
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 3 | 10 % | 4 | 31–36 | 2–3 days | Static Testing |
 
 # Chapter 3: Static Testing
 
@@ -429,6 +456,14 @@ Static testing involves evaluating software work products without executing the 
 - Adequate training for participants
 
 - Effective meeting facilitation
+
+
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 4 | 27 % | 11 | 37–45 | 4–5 days | Test Techniques |
 
 # Chapter 4: Test Analysis and Design
 
@@ -621,7 +656,12 @@ Good user stories follow INVEST principles: Independent, Negotiable, Valuable, E
 
 - Test cases can be automated by developers during implementation
 
+### Chapter Weightage Breakdown
 
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 5 | 23 % | 9 | 46–56 | 4–5 days | Test Management |
 
 # Chapter 5: Managing the Test Activities
 
@@ -707,7 +747,7 @@ Groups test types into four categories:
 
 - Collecting data from completed activities to consolidate experience.
 
-*Metrics Used in Testing: *
+*Metrics Used in Testing:*
 
 - Various metrics track progress, quality, defects, risk, coverage, and costs.
 
@@ -745,6 +785,12 @@ A defect report typically includes:
 
 - References to related test cases
 
+### Chapter Weightage Breakdown
+
+
+| Chapter | Weight | Questions | Pages | Duration | Topics |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| 6  | 5 % | 2 | 57–59 | 1 day | Tool Support |
 
 # Chapter 6: Test Tools
 
