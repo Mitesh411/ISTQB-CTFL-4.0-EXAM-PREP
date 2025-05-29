@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practice Exam 1</title>
+  <style>
+    /* Reset & basic typography */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background: #f4f4f4;
+    }
+
+    /* Header / Hero */
+    .hero {
+      background: linear-gradient(to right, #2196f3, #4caf50);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    .hero .btn-group {
+      display: inline-flex;
+      gap: 12px;
+    }
+    .hero .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: 4px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+    .hero .btn:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* Main content */
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    main .intro p {
+      margin-bottom: 16px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    main hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 30px 0;
+    }
+    main h2 {
+      color: #4caf50;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    /* Questions */
+    .question {
+      margin-bottom: 30px;
+    }
+    .question p {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .question label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .question input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .answer-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      color: #fff;
+      background: #4caf50;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .answer-btn:hover {
+      background: #45a049;
+    }
+    .correct-answer {
+      display: none;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+    .wrong-answer {
+      background-color: #ff0048 !important; /* Cherry red */
+      color: #fff !important;
+      border-radius: 4px;
+    }
+    .right-answer {
+      background-color: #32cd32 !important; /* Lime green */
+      color: #fff !important;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Practice Exam 1</h1>
+    <p>
+      If you are preparing for ISTQB CTFL 4.0, this guide will help you with quick revision before the exam. 
+      
+    </p>
+    <div class="btn-group">
+      <a href="#" class="btn">Dashboard</a>
+      <a href="#" class="btn">Other Certification Notes</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>
+        Select the correct answers for each question, including multiple-choice options when applicable, and click 
+        <strong>Submit</strong> to view your results. The quiz calculates your score and percentage, highlighting any incorrect questions 
+        to help you identify areas for improvement.
+      </p>
+      <p>
+        Click on the <strong>Answer</strong> button for the correct answer and its explanation.
+      </p>
+      <p>
+        If this practice exam has been helpful to you please share it with others and react to this below.
+      </p>
+    </div>
+
+    <hr>
+
+    <h2>Practice Exam 1</h2>
+
+    <form>
+      <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1.</strong> Which of the following best describes the relationship between testing and quality assurance (QA)?</p>
+        <label><input type="checkbox" name="q1" value="A"> A. Testing and QA are the same activities.</label>
+        <label><input type="checkbox" name="q1" value="B"> B. Testing is a product-oriented, corrective approach, while QA is a process-oriented, preventive approach.</label>
+        <label><input type="checkbox" name="q1" value="C"> C. QA focuses on finding defects, while testing focuses on improving processes.</label>
+        <label><input type="checkbox" name="q1" value="D"> D. Testing is part of QA and they cannot be separated.</label>
+        <button type="button" class="answer-btn">Answer</button>
+        <p class="correct-answer">Correct Answer: B. Testing is a product-oriented, corrective approach, while QA is a process-oriented, preventive approach.</p>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2.</strong> Which of the following is an example of horizontal scaling in the AWS Cloud?</p>
+        <label><input type="checkbox" name="q2" value="A"> A. Replacing an existing EC2 instance with a larger, more powerful one.</label>
+        <label><input type="checkbox" name="q2" value="B"> B. Increasing the compute capacity of a single EC2 instance to address the growing demands of an application.</label>
+        <label><input type="checkbox" name="q2" value="C"> C. Adding more RAM capacity to an EC2 instance.</label>
+        <label><input type="checkbox" name="q2" value="D"> D. Adding more EC2 instances of the same size to handle an increase in traffic.</label>
+        <button type="button" class="answer-btn">Answer</button>
+        <p class="correct-answer">Correct Answer: D. Adding more EC2 instances of the same size to handle an increase in traffic.</p>
+      </div>
+    </form>
+  </main>
+
+  <script>
+  // Correct answers for each question (by value)
+  const correctAnswers = {
+    q1: ['B'],
+    q2: ['D']
+  };
+
+  document.querySelectorAll('.answer-btn').forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+      const q = btn.closest('.question');
+      const answer = q.querySelector('.correct-answer');
+      answer.style.display = 'block';
+
+      // Get question name (q1, q2, etc.)
+      const input = q.querySelector('input[type="checkbox"]');
+      if (!input) return;
+      const qName = input.name;
+      const correct = correctAnswers[qName];
+
+      // Remove previous highlights
+      q.querySelectorAll('label').forEach(label => {
+        label.classList.remove('wrong-answer');
+        label.classList.remove('right-answer');
+      });
+
+      // Highlight selections
+      q.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        if (cb.checked && !correct.includes(cb.value)) {
+          cb.parentElement.classList.add('wrong-answer');
+        }
+        if (cb.checked && correct.includes(cb.value)) {
+          cb.parentElement.classList.add('right-answer');
+        }
+      });
+    });
+  });
+  </script>
+</body>
+</html>
