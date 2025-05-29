@@ -112,6 +112,16 @@
       font-weight: bold;
       color: #2e7d32;
     }
+    .wrong-answer {
+      background-color: #ff0048 !important; /* Cherry red */
+      color: #fff !important;
+      border-radius: 4px;
+    }
+    .right-answer {
+      background-color: #32cd32 !important; /* Lime green */
+      color: #fff !important;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -120,7 +130,7 @@
     <h1>Practice Exam 1</h1>
     <p>
       If you are preparing for ISTQB CTFL 4.0, this guide will help you with quick revision before the exam. 
-      I share the notes I used to study and pass exam.
+      
     </p>
     <div class="btn-group">
       <a href="#" class="btn">Dashboard</a>
@@ -173,15 +183,41 @@
   </main>
 
   <script>
-    // Attach click handlers to each Answer button
-    document.querySelectorAll('.answer-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const q = btn.closest('.question');
-        const answer = q.querySelector('.correct-answer');
-        // Reveal the answer
-        answer.style.display = 'block';
+  // Correct answers for each question (by value)
+  const correctAnswers = {
+    q1: ['B'],
+    q2: ['D']
+  };
+
+  document.querySelectorAll('.answer-btn').forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+      const q = btn.closest('.question');
+      const answer = q.querySelector('.correct-answer');
+      answer.style.display = 'block';
+
+      // Get question name (q1, q2, etc.)
+      const input = q.querySelector('input[type="checkbox"]');
+      if (!input) return;
+      const qName = input.name;
+      const correct = correctAnswers[qName];
+
+      // Remove previous highlights
+      q.querySelectorAll('label').forEach(label => {
+        label.classList.remove('wrong-answer');
+        label.classList.remove('right-answer');
+      });
+
+      // Highlight selections
+      q.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        if (cb.checked && !correct.includes(cb.value)) {
+          cb.parentElement.classList.add('wrong-answer');
+        }
+        if (cb.checked && correct.includes(cb.value)) {
+          cb.parentElement.classList.add('right-answer');
+        }
       });
     });
+  });
   </script>
 </body>
 </html>
