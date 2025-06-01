@@ -14,7 +14,7 @@
 **Q:** **What is the difference between verification and validation in testing?**  
 **A:** Verification checks if the system meets specified requirements, while validation checks if the system meets users’ and stakeholders’ needs in its operational environment.
 
-**Q:** **strong text**What is the difference between dynamic and static testing?  
+**Q:** **What is the difference between dynamic and static testing?** 
 **A:** Dynamic testing involves executing software; static testing does not (it includes reviews and static analysis).
 
 ----------
