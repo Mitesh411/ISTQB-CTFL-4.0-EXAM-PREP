@@ -69,3 +69,91 @@
     c) Fixing all defects may not meet user needs or business goals  
     d) Defects are evenly distributed across components  
     **Answer**: ***c) Fixing all defects may not meet user needs or business goals***
+----------
+11. What is the main purpose of testing?  
+A. To ensure the code runs without errors  
+B. To find and fix all the bugs  
+C. To evaluate quality and reduce the risk of software failure  
+D. To write perfect software  
+✅ Correct Answer: C
+
+----------
+
+12. Which of the following is a typical test objective?  
+A. Reduce code size  
+B. Find and fix all bugs  
+C. Build confidence in software quality  
+D. Reduce the number of developers  
+✅ Correct Answer: C
+
+----------
+
+13. How is testing different from debugging?  
+A. Testing is done only after debugging  
+B. Debugging is a static process, while testing is dynamic  
+C. Testing finds failures; debugging identifies and fixes the causes  
+D. Testing involves fixing defects; debugging reports them  
+✅ Correct Answer: C
+
+----------
+
+14. What is the correct order in the cause-effect chain?  
+A. Failure → Defect → Error → Root cause  
+B. Error → Defect → Failure → Root cause  
+C. Root cause → Error → Defect → Failure  
+D. Defect → Error → Root cause → Failure  
+✅ Correct Answer: C
+
+----------
+
+15. Which principle states that testing everything is impossible?  
+A. Testing shows presence, not absence of defects  
+B. Exhaustive testing is impossible  
+C. Defects cluster together  
+D. Early testing saves time and money  
+✅ Correct Answer: B
+
+----------
+
+16. What is the main benefit of early testing?  
+A. It reduces the amount of code written  
+B. It saves time and cost by identifying defects early  
+C. It delays the project until code is written  
+D. It ensures zero defects  
+✅ Correct Answer: B
+
+----------
+
+17. What is the purpose of test traceability?  
+A. To map code to test environments  
+B. To monitor software performance  
+C. To link test cases to requirements and risks  
+D. To replace documentation  
+✅ Correct Answer: C
+
+----------
+
+18. What is meant by "testware"?  
+A. Test automation tools  
+B. The people performing the testing  
+C. All artifacts produced during testing  
+D. The test object  
+✅ Correct Answer: C
+
+----------
+
+19. Which of the following is a benefit of independent testing?  
+A. Developers get more control  
+B. Testers can find different defects due to different perspectives  
+C. No communication is needed  
+D. Development time increases  
+✅ Correct Answer: B
+
+----------
+
+20. What is the “whole team approach” in testing?  
+A. Only the QA team is responsible for testing  
+B. Everyone in the team contributes to quality and testing  
+C. Developers test; testers code  
+D. Testing is outsourced to another company  
+✅ Correct Answer: B
