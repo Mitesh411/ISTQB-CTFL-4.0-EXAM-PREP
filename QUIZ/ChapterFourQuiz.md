@@ -10,7 +10,7 @@ B. White-box testing
 C. Experience-based testing  
 D. Equivalence partitioning
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: White-box testing relies on the internal structure and code of the test object, unlike black-box or experience-based techniques.
 
 ### Question 2
@@ -22,7 +22,7 @@ B. Test one value from each partition, including valid and invalid partitions.
 C. Test only the boundary values of each partition.  
 D. Test all states in the system.
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: For 100% coverage in equivalence partitioning, one test case per partition (valid and invalid) is sufficient, as all values in a partition are expected to behave similarly.
 
 ### Question 3
@@ -34,7 +34,7 @@ B. Testing the boundaries of equivalence partitions.
 C. Testing the internal logic of the code.  
 D. Testing based on tester experience.
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: BVA focuses on testing the boundary values of equivalence partitions, where defects are more likely to occur.
 
 ### Question 4
@@ -46,7 +46,7 @@ B. A unique combination of conditions and associated actions.
 C. A single test case covering all conditions.  
 D. A boundary value for an input.
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: Each column in a decision table represents a decision rule, defining a unique combination of conditions and the resulting actions.
 
 ### Question 5
@@ -58,7 +58,7 @@ B. Valid transitions coverage
 C. All transitions coverage  
 D. 0-switch coverage
 
-**Correct Answer**: C  
+  ✅ **Correct Answer**: C  
 **Explanation**: All transitions coverage requires testing all valid transitions and attempting invalid transitions, making it the most comprehensive criterion.
 
 ### Question 6
@@ -70,7 +70,7 @@ B. All statements and branches are exercised.
 C. All possible paths through the code are tested.  
 D. All requirements are implemented.
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: 100% branch coverage ensures all branches (conditional and unconditional) are exercised, which also guarantees 100% statement coverage.
 
 ### Question 7
@@ -82,7 +82,7 @@ B. Exploratory testing
 C. Checklist-based testing  
 D. Boundary value analysis
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: Exploratory testing involves designing, executing, and evaluating tests concurrently while exploring the system, often using session-based approaches.
 
 ### Question 8
@@ -94,7 +94,7 @@ B. It should be testable.
 C. It should depend on other user stories.  
 D. It should avoid stakeholder collaboration.
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: According to INVEST, good user stories should be Independent, Negotiable, Valuable, Estimable, Small, and Testable.
 
 ### Question 9
@@ -106,7 +106,7 @@ B. Before the user story is implemented.
 C. During the execution of the user story.  
 D. Only after defects are found.
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: ATDD is a test-first approach where test cases are created before implementing the user story, based on its acceptance criteria.
 
 ### Question 10
@@ -118,5 +118,48 @@ B. Given/When/Then format
 C. Tabulated input-output mapping  
 D. Free-form text
 
-**Correct Answer**: B  
+  ✅ **Correct Answer**: B  
 **Explanation**: The Given/When/Then format is commonly used for scenario-oriented acceptance criteria, particularly in Behavior-Driven Development (BDD).
+
+ ### Question 11   
+  Which test design technique is most suitable when the system behavior depends on different combinations of inputs?  
+       a) State Transition Testing  
+       b) Decision Table Testing  
+       c) Boundary Value Analysis  
+       d) Checklist-based Testing  
+       ✅ Answer: b  
+   
+         
+   ### Question 12 
+   What is the primary benefit of Equivalence Partitioning?  
+       a) Reduces the number of test cases  
+       b) Ensures code coverage  
+       c) Identifies boundary defects  
+       d) Increases exploratory coverage  
+       ✅ Answer: a  
+         
+      
+   ### Question 13     
+   Which technique would be most useful for validating navigation flows in an application?  
+       a) Decision Tables  
+       b) Equivalence Partitioning  
+       c) State Transition Testing  
+       d) Statement Testing  
+       ✅ Answer: c  
+         
+   ### Question 14    
+    A tester designs tests to ensure each line of code is executed at least once. Which technique is being used
+       a) Statement Testing  
+       b) Branch Testing  
+       c) Decision Table Testing  
+       d) State Transition Testing  
+       ✅ Answer: a  
+         
+   ### Question 15     
+   Error Guessing is primarily based on:  
+       a) Coverage metrics  
+       b) Tester’s domain knowledge and intuition  
+       c) Acceptance criteria  
+       d) Code structure  
+       ✅ Answer: b
+
