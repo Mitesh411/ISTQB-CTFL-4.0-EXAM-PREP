@@ -1,23 +1,39 @@
+**Sample Exam – Questions**
+**Sample Exam set A**
+**Version 1.7**
+
+
 Question #1 (1 Point)
+
 Which of the following statements describe a valid test objective?
 a) To prove that there are no unfixed defects in the system under test
 b) To prove that there will be no failures after the implementation of the system into production
-c) To reduce the risk level of the test object and to build confidence in the quality level
+**c) To reduce the risk level of the test object and to build confidence in the quality level**
 d) To verify that there are no untested combinations of inputs
 
+Select ONE option.
+
+----
 Question #2 (1 Point)
 Which of the following options shows an example of test activities that contribute to success?
-a) Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products
+**a) Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products**
 b) Testers try not to disturb the developers while coding, so that the developers write better code
 c) Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing
 d) Certified testers will design much better test cases than non-certified testers
 
+Select ONE option.
+
+----
 Question #3 (1 Point)
 You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Your manager is happy, but you are not. Which testing principle explains your skepticism?
-a) Tests wear out
+**a) Tests wear out**
 b) Absence-of-defects fallacy
 c) Defects cluster together
 d) Exhaustive testing is impossible
+
+Select ONE option.
+
+----
 
 Question #4 (1 Point)
 You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality. Which of the following activities is a part of test analysis?
@@ -667,14 +683,24 @@ b) One of the identified risks was "Lack of support of open-source databases", s
 c) During the quantitative risk analysis, the team estimated the total level of all identified risks and reported it as the total residual risk before testing
 d) Risk assessment revealed a very high level of performance risks, so it was decided to perform detailed performance efficiency testing early in the SDLC
 
+Select ONE option.
+
 Question #A25 (1 Point)
 Which TWO of the following options are common metrics used for reporting on the quality level of the test object?
-a) Number of defects found during system testing
+**a) Number of defects found during system testing**
 b) Total effort on test design divided by the number of designed test cases
 c) Number of executed test procedures
-d) Number of defects found divided by the size of a work product
+**d) Number of defects found divided by the size of a work product**
 e) Time needed to repair a defect
+
+Select TWO options.
+    
 
 Question #A26 (1 Point)
 Which of the following pieces of information contained in a test progress report is the LEAST useful for business representatives?
 a) Impediments to testing
+**b) Branch coverage achieved**
+c) Test progress
+d) New risks within the test cycle
+
+Select ONE option
