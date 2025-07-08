@@ -9,8 +9,11 @@ Which of the following statements describe a valid test objective?
 
 
 a) To prove that there are no unfixed defects in the system under test
+
 b) To prove that there will be no failures after the implementation of the system into production
+
 **c) To reduce the risk level of the test object and to build confidence in the quality level**
+
 d) To verify that there are no untested combinations of inputs
 
 Select ONE option.
@@ -22,8 +25,11 @@ Question #2 (1 Point)
 Which of the following options shows an example of test activities that contribute to success?
 
 **a) Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products**
+
 b) Testers try not to disturb the developers while coding, so that the developers write better code
+
 c) Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing
+
 d) Certified testers will design much better test cases than non-certified testers
 
 Select ONE option.
@@ -36,8 +42,11 @@ You have been assigned as a tester to a team producing a new system incrementall
 
 
 **a) Tests wear out**
+
 b) Absence-of-defects fallacy
+
 c) Defects cluster together
+
 d) Exhaustive testing is impossible
 
 Select ONE option.
