@@ -54,66 +54,126 @@ Select ONE option.
 ----
 
 Question #4 (1 Point)
+
 You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality. Which of the following activities is a part of test analysis?
+
 a) Estimating that testing the integration with the payment service will take 8 person-days
+
 b) Deciding that the team should test if it is possible to properly share payment between many users
-c) Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be paid
+
+c) Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be 
+paid
+
 d) Analyzing the discrepancy between the actual result and expected result after executing a test case that checks the process of payment with a credit card, and reporting a defect
 
+----
+
+
 Question #5 (1 Point)
+
 Which of the following factors have a SIGNIFICANT influence on the test approach?
+
 i. The SDLC
+
 ii. The number of defects detected in previous projects
+
 iii. The identified product risks
+
 iv. New regulatory requirements forcing formal white-box testing
+
 v. The test environment setup
 
 a) i, ii have significant influence
+
 b) i, iii, iv have significant influence
+
 c) ii, iv, v have significant influence
+
 d) iii, v have significant influence
 
+----
+
 Question #6 (1 Point)
+
 Which TWO of the following tasks belong MAINLY to a testing role?
+
 a) Configure test environments
+
 b) Maintain the product backlog
+
 c) Design solutions to new requirements
+
 d) Create the test plan
+
 e) Analyze the test basis
 
+----
+
 Question #7 (1 Point)
+
 Which of the following skills (i-v) are the MOST important skills of a tester?
+
 i. Having domain knowledge
+
 ii. Creating a product vision
+
 iii. Being a good team player
+
 iv. Planning and organizing the work of the team
+
 v. Critical thinking
 
 a) ii and iv are important
+
 b) i, iii and v are important
+
 c) i, ii and v are important
+
 d) iii and iv are important
 
+----
+
 Question #8 (1 Point)
+
 How is the whole team approach present in the interactions between testers and business representatives?
+
 a) Business representatives decide on test automation approaches
+
 b) Testers help business representatives to define a test strategy
+
 c) Business representatives are not part of the whole team approach
+
 d) Testers help business representatives to create suitable acceptance tests
 
+----
+
 Question #9 (1 Point)
+
 Consider the following rule: “for every SDLC activity there is a corresponding test activity”. In which SDLC models does this rule hold?
+
 a) Only in sequential development models
+
 b) Only in iterative development models
+
 c) Only in iterative and incremental development models
+
 d) In sequential, incremental, and iterative development models
 
+----
+
 Question #10 (1 Point)
+
 Which of the following statements BEST describes the acceptance test-driven development (ATDD) approach?
+
 a) In ATDD, acceptance criteria are typically created based on the given/when/then format
+
 b) In ATDD, test cases are mainly created at component testing and are code-oriented
+
 c) In ATDD, tests are created, based on acceptance criteria to drive the development of the related software
+
 d) in ATDD, tests are based on the desired behavior of the software, which makes it easier for team members to understand them
+
+----
 
 Question #11 (1 Point)
 Which of the following is NOT an example of the shift-left approach?
