@@ -460,6 +460,7 @@ b) 2
 c) 7
 
 d) 3
+
 ----
 Question #24 (1 Point)
 
@@ -472,6 +473,7 @@ b) Any test suite containing more test cases than your test suite will also achi
 c) Each path in the code has been executed at least once
 
 d) Every combination of input values has been tested at least once
+
 ----
 Question #25 (1 Point)
 
@@ -484,6 +486,7 @@ b) White-box coverage metrics can help identify additional tests to increase cod
 c) White-box test techniques can be used in static testing
 
 d) White-box testing can help identify gaps in requirements implementation
+
 ----
 Question #26 (1 Point)
 
@@ -496,6 +499,7 @@ b) Error guessing involves using your personal experience of development and the
 c) Error guessing requires you to imagine that you are the user of the test object and to guess errors the user could make interacting with it
 
 d) Error guessing requires you to rapidly duplicate the development task to identify the sort of errors a developer might make
+
 ----
 Question #27 (1 Point)
 
@@ -588,6 +592,8 @@ c) Estimated defect density is reached
 d) Requirements are translated into given/when/then format
 
 e) Regression tests are automated
+
+
 ----
 
 Question #32 (1 Point)
@@ -609,6 +615,7 @@ b) 14 person-hours
 c) 11 person-hours
 
 d) 10 person-hours
+
 ----
 
 Question #33 (1 Point)
@@ -637,6 +644,7 @@ b) TC 005
 c) TC 002
 
 d) TC 001
+
 ----
 
 Question #34 (1 Point)
@@ -668,6 +676,7 @@ b) 1D, 2A, 3C, 4B
 c) 1C, 2B, 3D, 4A
 
 d) 1D, 2B, 3C, 4A
+
 ----
 
 Question #35 (1 Point)
@@ -693,6 +702,7 @@ b) Contingency plan
 c) Risk mitigation
 
 d) Risk transfer
+
 ----
 
 Question #36 (1 Point)
@@ -706,6 +716,7 @@ b) Defect report
 c) Test completion report
 
 d) Burndown chart
+
 ----
 
 Question #37 (1 Point)
@@ -747,6 +758,7 @@ b) References and defect status
 c) Test environment and test item
 
 d) Priority and severity
+
 ----
 
 Question #39 (1 Point)
@@ -760,6 +772,7 @@ b) Test analysis
 c) Test design and test implementation
 
 d) Test completion
+
 ----
 
 Question #40 (1 Point)
@@ -791,6 +804,7 @@ b) Software testing
 c) Requirement elicitation
 
 d) Defect management
+
 ----
 
 Question #A2 (1 Point)
@@ -804,6 +818,7 @@ b) It is correct. These names can be used interchangeably because both testing a
 c) It is not correct. Testing is something more; testing includes all activities with regard to quality. QA focuses on quality-related processes
 
 d) It is not correct. QA is focused on quality-related processes while testing concentrates on demonstrating that a component or system is fit for purpose and to detect defects
+
 ----
 Question #A3 (1 Point)
 
@@ -818,6 +833,7 @@ b) A failure
 c) An error
 
 d) A defect
+
 ----
 Question #A4 (1 Point)
 
@@ -840,6 +856,7 @@ b) Test monitoring and test control
 c) Test analysis
 
 d) Test design
+
 ----
 Question #A5 (1 Point)
 
@@ -852,6 +869,7 @@ b) Analyzing the traceability between test cases and test results will give info
 c) Performing the impact analysis of a change will help selecting the right test cases for regression testing
 
 d) Analyzing the traceability between the test basis, the test objects and the test cases will help in selecting test data to achieve the assumed coverage of the test object
+
 ----
 
 Question #A6 (1 Point)
@@ -871,6 +889,7 @@ defect reporting through the defect management system
 d) When specifications contain ambiguities and inconsistencies, assumptions are made on their interpretation, and an independent tester can be useful in questioning those assumptions 
 
 and the interpretation made by the developer
+
 ----
 Question #A7 (1 Point)
 
@@ -885,6 +904,7 @@ c) Test planning
 d) Acceptance test execution
 
 e) Maintenance testing
+
 ----
 
 Question #A8 (1 Point)
@@ -908,6 +928,7 @@ b) iii, v are advantages
 c) i, iii are advantages
 
 d) ii, iv, v are advantages
+
 ----
 
 Question #A9 (1 Point)
@@ -925,6 +946,7 @@ b) Non-functional, because they measure the system’s performance
 c) Functional, because the test cases interact with the user interface
 
 d) White-box, because we need to know the internal structure of the program to measure the order processing time
+
 ----
 
 Question #A10 (1 Point)
@@ -940,6 +962,7 @@ b) Regression testing
 c) Reliability testing
 
 d) Integration testing
+
 ----
 
 Question #A11 (1 Point)
@@ -965,6 +988,7 @@ b) i, ii, iii and iv can be reviewed
 c) i, ii, iii, and v can be reviewed
 
 d) iii, iv, v can be reviewed
+
 ----
 
 Question #A12 (1 Point)
@@ -988,7 +1012,9 @@ b) i, iii, iv are true for static testing
 c) ii, iii are true for static testing
 
 d) ii, iv, v are true for static testing
+
 ----
+
 Question #A13 (1 Point)
 
 Which of the following statements about formal reviews is TRUE?
@@ -1000,7 +1026,9 @@ b) The review process has several activities
 c) Documentation to be reviewed is not distributed before the review meeting, with the exception of the work product for specific review types
 
 d) Defects found during the review are not reported since they are not found by dynamic testing
+
 ----
+
 Question #A14 (1 Point)
 
 What task may management take on during a formal review?
@@ -1012,7 +1040,9 @@ b) Deciding what is to be reviewed
 c) Ensuring the effective running of review meetings, and moderating, if necessary
 
 d) Recording review information such as review decisions
+
 ----
+
 Question #A15 (1 Point)
 
 A wine storage system uses a control device that measures the wine cell temperature T (measured in °C, rounded to the nearest degree) and alarms the user if it deviates from the optimal 
@@ -1036,6 +1066,7 @@ b) 10, 12, 14
 c) 10, 11, 12, 13, 14
 
 d) 10, 11, 13, 14
+
 ----
 
 Question #A16 (1 Point)
@@ -1049,7 +1080,9 @@ b) If the test cases exercise all unconditional branches in the code, then 100% 
 c) If 100% statement coverage is achieved, then 100% branch coverage is also achieved
 
 d) If 100% branch coverage is achieved, then all decision outcomes in each decision statement in the code are exercised
+
 ----
+
 Question #A17 (1 Point)
 
 You are testing a mobile application that allows customers to access and manage their bank accounts. You are running a test suite that involves evaluating each screen, and each field on 
@@ -1065,7 +1098,9 @@ b) Exploratory
 c) Checklist-based
 
 d) Error guessing
+
 ----
+
 Question #A18 (1 Point)
 
 Which of the following BEST describe the collaborative approach to user story writing?
@@ -1097,6 +1132,7 @@ b) Risk register
 c) Context of testing
 
 d) Test approach
+
 ----
 
 Question #A20 (1 Point)
@@ -1138,6 +1174,7 @@ b) It suggests that each low-level test checks a large part of the functionality
 c) It describes distribution of test types across the SDLC
 
 d) It has no impact on the construction of automated tests
+
 ----
 
 Question #A22 (1 Point)
