@@ -797,7 +797,7 @@ Question #A1 (1 Point)
 
 You were given a task to analyze and fix causes of failures in a new system to be released. Which activity are you performing?
 
-a) Debugging
+**a) Debugging**
 
 b) Software testing
 
@@ -817,7 +817,7 @@ b) It is correct. These names can be used interchangeably because both testing a
 
 c) It is not correct. Testing is something more; testing includes all activities with regard to quality. QA focuses on quality-related processes
 
-d) It is not correct. QA is focused on quality-related processes while testing concentrates on demonstrating that a component or system is fit for purpose and to detect defects
+**d) It is not correct. QA is focused on quality-related processes while testing concentrates on demonstrating that a component or system is fit for purpose and to detect defects**
 
 ----
 Question #A3 (1 Point)
@@ -832,7 +832,7 @@ b) A failure
 
 c) An error
 
-d) A defect
+**d) A defect**
 
 ----
 Question #A4 (1 Point)
@@ -855,7 +855,7 @@ b) Test monitoring and test control
 
 c) Test analysis
 
-d) Test design
+**d) Test design**
 
 ----
 Question #A5 (1 Point)
@@ -866,7 +866,7 @@ a) Performing the impact analysis of a change will give information about the co
 
 b) Analyzing the traceability between test cases and test results will give information about the estimated level of residual risk
 
-c) Performing the impact analysis of a change will help selecting the right test cases for regression testing
+**c) Performing the impact analysis of a change will help selecting the right test cases for regression testing**
 
 d) Analyzing the traceability between the test basis, the test objects and the test cases will help in selecting test data to achieve the assumed coverage of the test object
 
@@ -886,9 +886,9 @@ c) An independent test team can work separately from the developers, need not be
 
 defect reporting through the defect management system
 
-d) When specifications contain ambiguities and inconsistencies, assumptions are made on their interpretation, and an independent tester can be useful in questioning those assumptions 
+**d) When specifications contain ambiguities and inconsistencies, assumptions are made on their interpretation, and an independent tester can be useful in questioning those assumptions** 
 
-and the interpretation made by the developer
+**and the interpretation made by the developer**
 
 ----
 Question #A7 (1 Point)
@@ -897,9 +897,9 @@ You are working as a tester in the team that follows the V-model. Which of the f
 
 a) Dynamic test execution
 
-b) Static testing
+**b) Static testing**
 
-c) Test planning
+**c) Test planning**
 
 d) Acceptance test execution
 
@@ -911,11 +911,11 @@ Question #A8 (1 Point)
 
 Which of the following are advantages of DevOps?
 
-i. Faster product release and faster time to market
+**i. Faster product release and faster time to market**
 
 ii. Increases the need for repetitive manual testing
 
-iii. Constant availability of executable software
+**iii. Constant availability of executable software**
 
 iv. Reduction in the number of regression tests associated with code refactoring
 
@@ -925,7 +925,7 @@ a) i, ii, iv are advantages
 
 b) iii, v are advantages
 
-c) i, iii are advantages
+**c) i, iii are advantages**
 
 d) ii, iv, v are advantages
 
@@ -941,7 +941,7 @@ and the test results were checked against the requirements. What test type did y
 
 a) Functional, because the test cases cover the user’s business requirement for the system
 
-b) Non-functional, because they measure the system’s performance
+**b) Non-functional, because they measure the system’s performance**
 
 c) Functional, because the test cases interact with the user interface
 
@@ -955,7 +955,7 @@ Your organization’s test strategy suggests that once a system is going to be r
 
 performed?
 
-a) Maintenance testing
+**a) Maintenance testing**
 
 b) Regression testing
 
@@ -969,15 +969,15 @@ Question #A11 (1 Point)
 
 The following is a list of the work products produced in the SDLC.
 
-i. Business requirements
+**i. Business requirements**
 
-ii. Schedule
+**ii. Schedule**
 
-iii. Test budget
+**iii. Test budget**
 
 iv. Third-party executable code
 
-v. User stories and their acceptance criteria
+**v. User stories and their acceptance criteria**
 
 Which of them can be reviewed?
 
@@ -985,7 +985,7 @@ a) i and iv can be reviewed
 
 b) i, ii, iii and iv can be reviewed
 
-c) i, ii, iii, and v can be reviewed
+**c) i, ii, iii, and v can be reviewed**
 
 d) iii, iv, v can be reviewed
 
@@ -997,13 +997,13 @@ Decide which of the following statements (i-v) are true for static testing.
 
 i. Abnormal external behaviors are easier to identify with this testing
 
-ii. Discrepancies from a coding standard are easier to find with this testing
+**ii. Discrepancies from a coding standard are easier to find with this testing**
 
 iii. It identifies failures caused by defects when the software is run
 
-iv. Its test objective is to identify defects as early as possible
+**iv. Its test objective is to identify defects as early as possible**
 
-v. Missing coverage for critical security requirements is easier to find and fix
+**v. Missing coverage for critical security requirements is easier to find and fix**
 
 a) i, iv, v are true for static testing
 
@@ -1011,7 +1011,7 @@ b) i, iii, iv are true for static testing
 
 c) ii, iii are true for static testing
 
-d) ii, iv, v are true for static testing
+**d) ii, iv, v are true for static testing**
 
 ----
 
@@ -1021,7 +1021,7 @@ Which of the following statements about formal reviews is TRUE?
 
 a) Some reviews do not require more than one role
 
-b) The review process has several activities
+**b) The review process has several activities**
 
 c) Documentation to be reviewed is not distributed before the review meeting, with the exception of the work product for specific review types
 
@@ -1035,7 +1035,7 @@ What task may management take on during a formal review?
 
 a) Taking overall responsibility for the review
 
-b) Deciding what is to be reviewed
+**b) Deciding what is to be reviewed**
 
 c) Ensuring the effective running of review meetings, and moderating, if necessary
 
@@ -1063,7 +1063,7 @@ a) 11, 12, 13
 
 b) 10, 12, 14
 
-c) 10, 11, 12, 13, 14
+**c) 10, 11, 12, 13, 14**
 
 d) 10, 11, 13, 14
 
@@ -1079,7 +1079,7 @@ b) If the test cases exercise all unconditional branches in the code, then 100% 
 
 c) If 100% statement coverage is achieved, then 100% branch coverage is also achieved
 
-d) If 100% branch coverage is achieved, then all decision outcomes in each decision statement in the code are exercised
+**d) If 100% branch coverage is achieved, then all decision outcomes in each decision statement in the code are exercised**
 
 ----
 
@@ -1095,7 +1095,7 @@ a) Black-box
 
 b) Exploratory
 
-c) Checklist-based
+**c) Checklist-based**
 
 d) Error guessing
 
@@ -1107,7 +1107,7 @@ Which of the following BEST describe the collaborative approach to user story wr
 
 a) User stories are created by testers and developers and then accepted by business representatives
 
-b) User stories are created by business representatives, developers, and testers together
+**b) User stories are created by business representatives, developers, and testers together**
 
 c) User stories are created by business representatives and verified by developers and testers
 
@@ -1131,7 +1131,7 @@ b) Risk register
 
 c) Context of testing
 
-d) Test approach
+**d) Test approach**
 
 ----
 
@@ -1155,7 +1155,7 @@ Which of the following is the BEST example of the next step?
 
 a) The product owner has to step in and make a final decision
 
-b) Accept 13 as the final test estimate as this has most of the votes
+**b) Accept 13 as the final test estimate as this has most of the votes**
 
 c) No further action is needed. Consensus has been reached
 
@@ -1167,7 +1167,7 @@ Question #A21 (1 Point)
 
 Which of the following is TRUE regarding the test pyramid?
 
-a) It emphasizes having far more tests at the lower test levels
+**a) It emphasizes having far more tests at the lower test levels**
 
 b) It suggests that each low-level test checks a large part of the functionality
 
@@ -1187,7 +1187,7 @@ a) It is also very high. High risk impact always implies high risk likelihood
 
 b) It is very low. High risk impact always implies low risk likelihood
 
-c) One cannot say anything about risk likelihood. Risk impact and risk likelihood are independent.
+**c) One cannot say anything about risk likelihood. Risk impact and risk likelihood are independent.**
 
 d) Risk likelihood is not important with such a high-risk impact. One does not need to define it.
 
@@ -1197,19 +1197,19 @@ Question #A23 (1 Point)
 
 The following list contains risks that have been identified for a new software product to be developed:
 
-i. Management moves two experienced testers to another project
+**i. Management moves two experienced testers to another project**
 
 ii. The system does not comply with security standards
 
 iii. System response time exceeds user requirements
 
-iv. Stakeholders have inaccurate expectations
+**iv. Stakeholders have inaccurate expectations**
 
 v. Disabled people have problems when using the system
 
 Which of them are project risks?
 
-a) i, iv are project risks
+**a) i, iv are project risks**
 
 b) iv, v are project risks
 
@@ -1228,7 +1228,7 @@ b) One of the identified risks was "Lack of support of open-source databases", s
 
 c) During the quantitative risk analysis, the team estimated the total level of all identified risks and reported it as the total residual risk before testing
 
-d) Risk assessment revealed a very high level of performance risks, so it was decided to perform detailed performance efficiency testing early in the SDLC
+**d) Risk assessment revealed a very high level of performance risks, so it was decided to perform detailed performance efficiency testing early in the SDLC**
 
 Select ONE option.
 
