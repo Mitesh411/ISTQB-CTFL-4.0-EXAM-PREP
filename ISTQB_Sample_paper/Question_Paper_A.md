@@ -59,7 +59,7 @@ You work in a team that develops a mobile application for food ordering. In the 
 
 a) Estimating that testing the integration with the payment service will take 8 person-days
 
-b) Deciding that the team should test if it is possible to properly share payment between many users
+**b) Deciding that the team should test if it is possible to properly share payment between many users**
 
 c) Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be 
 paid
@@ -73,19 +73,19 @@ Question #5 (1 Point)
 
 Which of the following factors have a SIGNIFICANT influence on the test approach?
 
-i. The SDLC
+**i. The SDLC**
 
 ii. The number of defects detected in previous projects
 
-iii. The identified product risks
+**iii. The identified product risks**
 
-iv. New regulatory requirements forcing formal white-box testing
+**iv. New regulatory requirements forcing formal white-box testing**
 
 v. The test environment setup
 
 a) i, ii have significant influence
 
-b) i, iii, iv have significant influence
+**b) i, iii, iv have significant influence**
 
 c) ii, iv, v have significant influence
 
@@ -97,7 +97,7 @@ Question #6 (1 Point)
 
 Which TWO of the following tasks belong MAINLY to a testing role?
 
-a) Configure test environments
+**a) Configure test environments**
 
 b) Maintain the product backlog
 
@@ -105,7 +105,7 @@ c) Design solutions to new requirements
 
 d) Create the test plan
 
-e) Analyze the test basis
+**e) Analyze the test basis**
 
 ----
 
@@ -113,19 +113,19 @@ Question #7 (1 Point)
 
 Which of the following skills (i-v) are the MOST important skills of a tester?
 
-i. Having domain knowledge
+**i. Having domain knowledge**
 
 ii. Creating a product vision
 
-iii. Being a good team player
+**iii. Being a good team player**
 
 iv. Planning and organizing the work of the team
 
-v. Critical thinking
+**v. Critical thinking**
 
 a) ii and iv are important
 
-b) i, iii and v are important
+**b) i, iii and v are important**
 
 c) i, ii and v are important
 
@@ -143,7 +143,7 @@ b) Testers help business representatives to define a test strategy
 
 c) Business representatives are not part of the whole team approach
 
-d) Testers help business representatives to create suitable acceptance tests
+**d) Testers help business representatives to create suitable acceptance tests**
 
 ----
 
@@ -157,7 +157,7 @@ b) Only in iterative development models
 
 c) Only in iterative and incremental development models
 
-d) In sequential, incremental, and iterative development models
+**d) In sequential, incremental, and iterative development models**
 
 ----
 
@@ -169,7 +169,7 @@ a) In ATDD, acceptance criteria are typically created based on the given/when/th
 
 b) In ATDD, test cases are mainly created at component testing and are code-oriented
 
-c) In ATDD, tests are created, based on acceptance criteria to drive the development of the related software
+**c) In ATDD, tests are created, based on acceptance criteria to drive the development of the related software**
 
 d) in ATDD, tests are based on the desired behavior of the software, which makes it easier for team members to understand them
 
@@ -185,7 +185,7 @@ b) Writing a component test before the corresponding code is written
 
 c) Executing a performance efficiency test for a component during component testing
 
-d) Writing a test script before setting up the configuration management process
+**d) Writing a test script before setting up the configuration management process**
 
 ----
 
@@ -197,7 +197,7 @@ a) Retrospectives are very popular these days and clients would appreciate it if
 
 b) Organizing retrospectives will save the organization money because without them end user representatives do not provide immediate feedback about the product
 
-c) Process weaknesses identified during the retrospective can be analyzed and serve as a to do list for the organization’s continuous process improvement program
+**c) Process weaknesses identified during the retrospective can be analyzed and serve as a to do list for the organization’s continuous process improvement program**
 
 d) Retrospectives embrace five values including courage and respect, which are crucial to maintain continuous improvement in the organization
 
@@ -223,7 +223,7 @@ C. System testing
 
 D. Acceptance testing
 
-a) 1D, 2B, 3A, 4C
+**a) 1D, 2B, 3A, 4C**
 
 b) 1D, 2B, 3C, 4A
 
@@ -249,7 +249,7 @@ Tests are repeated once you are informed that all defects found in the test run 
 
 a) Only 4, 7, 8, 9
 
-b) Only 5, 7
+**b) Only 5, 7**
 
 c) Only 4, 6, 8, 9
 
@@ -261,7 +261,7 @@ Question #15 (1 Point)
 
 Which of the following is NOT a benefit of static testing?
 
-a) Having less expensive defect management due to the ease of detecting defects later in the SDLC
+**a) Having less expensive defect management due to the ease of detecting defects later in the SDLC**
 
 b) Fixing defects found during static testing is generally much less expensive than fixing defects found during dynamic testing
 
@@ -281,7 +281,7 @@ b) It forces customers to prioritize their requirements based on agreed risks
 
 c) It provides a measure for the quality of changes
 
-d) It helps avoid requirements misunderstandings
+**d) It helps avoid requirements misunderstandings**
 
 ----
 
@@ -303,7 +303,7 @@ Which of the following review types is MOST likely being used?
 
 a) Informal review
 
-b) Walkthrough
+**b) Walkthrough**
 
 c) Technical review
 
@@ -321,7 +321,7 @@ b) Splitting large work products into small parts to make the required effort le
 
 c) Participants should avoid behaviors that might indicate boredom, exasperation, or hostility to other participants
 
-d) Failures found should be acknowledged, appreciated, and handled objectively
+**d) Failures found should be acknowledged, appreciated, and handled objectively**
 
 ----
 
@@ -333,7 +333,7 @@ a) Test cases are created based on detailed design information
 
 b) Items tested within the interface code section are used to measure coverage
 
-c) The test techniques heavily rely on the tester’s knowledge of the software and the business domain
+**c) The test techniques heavily rely on the tester’s knowledge of the software and the business domain**
 
 d) The test cases are used to identify deviations from the requirements
 
@@ -355,7 +355,7 @@ What is the minimal number of test cases to achieve 100% EP coverage for valid p
 
 a) 3
 
-b) 4
+**b) 4**
 
 c) 5
 
@@ -397,7 +397,7 @@ TC6	80	good
 
 What is the 2-value boundary value analysis (BVA) coverage for the final result that is achieved with the existing test cases?
 
-a) 50%
+**a) 50%**
 
 b) 60%
 
@@ -441,7 +441,7 @@ b) R2
 
 c) R6
 
-d) R8
+**d) R8**
 
 ----
 
@@ -459,14 +459,14 @@ b) 2
 
 c) 7
 
-d) 3
+**d) 3**
 
 ----
 Question #24 (1 Point)
 
 Your test suite achieved 100% statement coverage. What is the consequence of this fact?
 
-a) Each instruction in the code that contains a defect has been executed at least once
+**a) Each instruction in the code that contains a defect has been executed at least once**
 
 b) Any test suite containing more test cases than your test suite will also achieve 100% statement coverage
 
@@ -485,14 +485,14 @@ b) White-box coverage metrics can help identify additional tests to increase cod
 
 c) White-box test techniques can be used in static testing
 
-d) White-box testing can help identify gaps in requirements implementation
+**d) White-box testing can help identify gaps in requirements implementation**
 
 ----
 Question #26 (1 Point)
 
 Which of the following BEST describes the concept behind error guessing?
 
-a) Error guessing involves using your knowledge and experience of defects found in the past and typical errors made by developers
+**a) Error guessing involves using your knowledge and experience of defects found in the past and typical errors made by developers**
 
 b) Error guessing involves using your personal experience of development and the errors you made as a developer
 
@@ -511,7 +511,7 @@ a) Checklist-based testing
 
 b) Error guessing
 
-c) Exploratory testing
+**c) Exploratory testing**
 
 d) Branch testing
 
@@ -523,7 +523,7 @@ Which of the following BEST describes the way acceptance criteria can be documen
 
 a) Performing retrospectives to determine the actual needs of the stakeholders regarding a given user story
 
-b) Using the given/when/then format to describe an example test condition related to a given user story
+**b) Using the given/when/then format to describe an example test condition related to a given user story**
 
 c) Using verbal communication to reduce the risk of misunderstanding the acceptance criteria by others
 
@@ -556,7 +556,7 @@ The editor can reassign to the "content owner" role to make updates
 
 Which of the following is the BEST example of an ATDD test for this user story?
 
-a) Test if the editor can save the document after edit the page content
+**a) Test if the editor can save the document after edit the page content**
 
 b) Test if the content owner can log in and make updates to the content
 
@@ -574,7 +574,7 @@ a) Testers determine the priority of the user stories to be developed
 
 b) Testers focus only on the functional aspects of the system to be tested
 
-c) Testers participate in the detailed risk identification and risk assessment of user stories
+**c) Testers participate in the detailed risk identification and risk assessment of user stories**
 
 d) Testers guarantee the release of high-quality software through early test design during the release planning
 
