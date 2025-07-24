@@ -13,6 +13,7 @@
       color: #333;
       background: #f4f4f4;
     }
+    
 
     /* Header / Hero */
     .hero {
@@ -76,21 +77,76 @@
     /* Questions */
     .question {
       margin-bottom: 30px;
+      position: relative;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      padding: 20px;
+      background: #fafafa;
+      transition: all 0.3s ease;
     }
+    
+    .question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    
     .question p {
       margin-bottom: 12px;
       font-size: 0.95rem;
+      flex: 1;
     }
+    
+    .timer {
+      background: #ff6b6b;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      min-width: 80px;
+      text-align: center;
+      margin-left: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    
+    .timer.warning {
+      background: #ff4757;
+      animation: pulse 1s infinite;
+    }
+    
+    .timer.expired {
+      background: #2f3542;
+      animation: none;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
     .question label {
       display: block;
       margin-bottom: 8px;
       font-size: 0.9rem;
       cursor: pointer;
+      padding: 8px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
     }
+    
+    .question label:hover {
+      background: #e8f5e8;
+    }
+    
     .question input[type="checkbox"] {
       margin-right: 8px;
       vertical-align: middle;
     }
+    
     .answer-btn {
       display: inline-block;
       margin-top: 8px;
@@ -103,24 +159,97 @@
       cursor: pointer;
       transition: background 0.3s;
     }
+    
     .answer-btn:hover {
       background: #45a049;
     }
+    
     .correct-answer {
       display: none;
       margin-top: 10px;
       font-weight: bold;
       color: #2e7d32;
+      padding: 10px;
+      background: #e8f5e8;
+      border-radius: 4px;
+      border-left: 4px solid #4caf50;
     }
+    
     .wrong-answer {
-      background-color: #ff0048 !important; /* Cherry red */
+      background-color: #ff4757 !important;
       color: #fff !important;
       border-radius: 4px;
+      animation: shake 0.6s ease-in-out;
     }
+    
     .right-answer {
-      background-color: #32cd32 !important; /* Lime green */
+      background-color: #2ed573 !important;
       color: #fff !important;
       border-radius: 4px;
+      animation: bounce 0.6s ease-in-out;
+    }
+    
+    /* Animations */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+      20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+    
+    @keyframes fadeInScale {
+      0% { 
+        opacity: 0; 
+        transform: scale(0.5);
+      }
+      100% { 
+        opacity: 1; 
+        transform: scale(1);
+      }
+    }
+    
+    /* Smiley Animation */
+    .smiley {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 2rem;
+      animation: fadeInScale 0.5s ease-out, rotate 2s ease-in-out infinite;
+      z-index: 10;
+    }
+    
+    @keyframes rotate {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(-10deg) scale(1.1); }
+      75% { transform: rotate(10deg) scale(1.1); }
+    }
+    
+    /* Sad face for wrong answers */
+    .sad-face {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 2rem;
+      animation: fadeInScale 0.5s ease-out;
+      z-index: 10;
+    }
+    
+    /* Question state styles */
+    .question.correct-state {
+      border-color: #2ed573;
+      background: #f0fff4;
+      box-shadow: 0 4px 12px rgba(46, 213, 115, 0.2);
+    }
+    
+    .question.wrong-state {
+      border-color: #ff4757;
+      background: #fff5f5;
+      box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
     }
   </style>
 </head>
@@ -159,8 +288,11 @@
 
     <form>
       <!-- Question 1 -->
-      <div class="question">
-        <p><strong>1.</strong> Which of the following best describes the relationship between testing and quality assurance (QA)?</p>
+      <div class="question" data-question="q1">
+        <div class="question-header">
+          <p><strong>1.</strong> Which of the following best describes the relationship between testing and quality assurance (QA)?</p>
+          <div class="timer" data-timer="q1">01:00</div>
+        </div>
         <label><input type="checkbox" name="q1" value="A"> A. Testing and QA are the same activities.</label>
         <label><input type="checkbox" name="q1" value="B"> B. Testing is a product-oriented, corrective approach, while QA is a process-oriented, preventive approach.</label>
         <label><input type="checkbox" name="q1" value="C"> C. QA focuses on finding defects, while testing focuses on improving processes.</label>
@@ -170,15 +302,49 @@
       </div>
 
       <!-- Question 2 -->
-      <div class="question">
-        <p><strong>2.</strong> Which of the following is an example of horizontal scaling in the AWS Cloud?</p>
-        <label><input type="checkbox" name="q2" value="A"> A. Replacing an existing EC2 instance with a larger, more powerful one.</label>
-        <label><input type="checkbox" name="q2" value="B"> B. Increasing the compute capacity of a single EC2 instance to address the growing demands of an application.</label>
-        <label><input type="checkbox" name="q2" value="C"> C. Adding more RAM capacity to an EC2 instance.</label>
-        <label><input type="checkbox" name="q2" value="D"> D. Adding more EC2 instances of the same size to handle an increase in traffic.</label>
+      <div class="question" data-question="q2">
+        <div class="question-header">
+          <p><strong>2.</strong> What is the primary purpose of a test plan?</p>
+          <div class="timer" data-timer="q2">01:00</div>
+        </div>
+        <label><input type="checkbox" name="q2" value="A"> A. To execute test cases automatically.</label>
+        <label><input type="checkbox" name="q2" value="B"> B. To track defects found during testing.</label>
+        <label><input type="checkbox" name="q2" value="C"> C. To define the coding standards for development.</label>
+        <label><input type="checkbox" name="q2" value="D"> D. To document test objectives, resources, and processes for a test project.</label>
         <button type="button" class="answer-btn">Answer</button>
-        <p class="correct-answer">Correct Answer: D. Adding more EC2 instances of the same size to handle an increase in traffic.</p>
+        <p class="correct-answer">Correct Answer: D. To document test objectives, resources, and processes for a test project.</p>
       </div>
+
+      <!-- Question 3 -->
+        <div class="question" data-question="q3">
+        <div class="question-header">
+          <p><strong>3.</strong> What is a primary objective of software testing?</p>
+          <div class="timer" data-timer="q3">01:00</div>
+        </div>
+        <label><input type="checkbox" name="q3" value="A"> A. To ensure the software is completely defect-free</label>
+        <label><input type="checkbox" name="q3" value="B"> B. To validate that the software meets stakeholder needs</label>
+        <label><input type="checkbox" name="q3" value="C"> C. To replace the need for debugging</label>
+        <label><input type="checkbox" name="q3" value="D"> D. To eliminate the need for quality assurance</label>
+        <button type="button" class="answer-btn">Answer</button>
+        <p class="correct-answer">Correct Answer: B. To validate that the software meets stakeholder needs.</p>
+      </div>
+
+      <!-- Question 4 -->
+
+      <!-- Question 5 -->
+
+
+      <!-- Question 6 -->
+
+      <!-- Question 7 -->
+
+      <!-- Question 8 -->
+
+      <!-- Question 9 -->
+
+      <!-- Question 10 -->
+       
+     <!-- Question 11 -->
     </form>
   </main>
 
@@ -186,8 +352,100 @@
   // Correct answers for each question (by value)
   const correctAnswers = {
     q1: ['B'],
-    q2: ['D']
+    q2: ['D'],
+    q3: ['B']
   };
+
+  // Timer functionality
+  const timers = {};
+  
+  function startTimer(questionId) {
+    if (timers[questionId]) return; // Timer already started
+    
+    let timeLeft = 60; // 60 seconds
+    const timerElement = document.querySelector(`[data-timer="${questionId}"]`);
+    
+    timers[questionId] = setInterval(() => {
+      timeLeft--;
+      
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      
+      if (timeLeft <= 10) {
+        timerElement.classList.add('warning');
+      }
+      
+      if (timeLeft <= 0) {
+        clearInterval(timers[questionId]);
+        timerElement.textContent = 'Time Up!';
+        timerElement.classList.remove('warning');
+        timerElement.classList.add('expired');
+        delete timers[questionId];
+      }
+    }, 1000);
+  }
+
+  // Start timers when user first interacts with a question
+  document.querySelectorAll('.question').forEach(question => {
+    const questionId = question.dataset.question;
+    let timerStarted = false;
+    
+    question.addEventListener('click', () => {
+      if (!timerStarted) {
+        startTimer(questionId);
+        timerStarted = true;
+      }
+    });
+  });
+
+  // Vibration function (if supported)
+  function vibrateDevice() {
+    if (navigator.vibrate) {
+      navigator.vibrate([100, 50, 100, 50, 100]);
+    }
+  }
+
+  // Add emoji animations
+  function addSmiley(questionElement) {
+    // Remove any existing emoji
+    const existingEmoji = questionElement.querySelector('.smiley, .sad-face');
+    if (existingEmoji) {
+      existingEmoji.remove();
+    }
+    
+    const smiley = document.createElement('div');
+    smiley.className = 'smiley';
+    smiley.textContent = '😊';
+    questionElement.appendChild(smiley);
+    
+    // Remove smiley after animation
+    setTimeout(() => {
+      if (smiley.parentNode) {
+        smiley.remove();
+      }
+    }, 3000);
+  }
+
+  function addSadFace(questionElement) {
+    // Remove any existing emoji
+    const existingEmoji = questionElement.querySelector('.smiley, .sad-face');
+    if (existingEmoji) {
+      existingEmoji.remove();
+    }
+    
+    const sadFace = document.createElement('div');
+    sadFace.className = 'sad-face';
+    sadFace.textContent = '😢';
+    questionElement.appendChild(sadFace);
+    
+    // Remove sad face after animation
+    setTimeout(() => {
+      if (sadFace.parentNode) {
+        sadFace.remove();
+      }
+    }, 3000);
+  }
 
   document.querySelectorAll('.answer-btn').forEach((btn, idx) => {
     btn.addEventListener('click', () => {
@@ -201,21 +459,47 @@
       const qName = input.name;
       const correct = correctAnswers[qName];
 
-      // Remove previous highlights
+      // Remove previous highlights and states
       q.querySelectorAll('label').forEach(label => {
         label.classList.remove('wrong-answer');
         label.classList.remove('right-answer');
       });
+      q.classList.remove('correct-state', 'wrong-state');
+
+      let hasCorrectAnswer = false;
+      let hasWrongAnswer = false;
 
       // Highlight selections
       q.querySelectorAll('input[type="checkbox"]').forEach(cb => {
         if (cb.checked && !correct.includes(cb.value)) {
           cb.parentElement.classList.add('wrong-answer');
+          hasWrongAnswer = true;
         }
         if (cb.checked && correct.includes(cb.value)) {
           cb.parentElement.classList.add('right-answer');
+          hasCorrectAnswer = true;
         }
       });
+
+      // Add overall question state and animations
+      if (hasCorrectAnswer && !hasWrongAnswer) {
+        q.classList.add('correct-state');
+        addSmiley(q);
+      } else if (hasWrongAnswer) {
+        q.classList.add('wrong-state');
+        addSadFace(q);
+        vibrateDevice();
+      }
+
+      // Stop the timer for this question
+      const questionId = q.dataset.question;
+      if (timers[questionId]) {
+        clearInterval(timers[questionId]);
+        delete timers[questionId];
+        const timerElement = q.querySelector(`[data-timer="${questionId}"]`);
+        timerElement.textContent = 'Completed';
+        timerElement.style.background = '#4caf50';
+      }
     });
   });
   </script>
