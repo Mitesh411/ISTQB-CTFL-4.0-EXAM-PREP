@@ -33,13 +33,14 @@ body {
       color: white;
       padding: 8px 12px;
       border-radius: 20px;
-      font-size: 0.85rem;
+      font-size: 2rem;
       font-weight: bold;
       min-width: 80px;
       text-align: center;
       margin-left: 15px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
+      margin-bottom: 30px;
     }
     
 
