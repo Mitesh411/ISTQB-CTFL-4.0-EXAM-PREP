@@ -146,6 +146,162 @@ body {
     color: white !important;
     border-color: #ff4500 !important;
     animation: shake-incorrect 0.6s ease-in-out;
+<<<<<<< HEAD
+=======
+}
+
+/* Shake Animations */
+@keyframes shake-correct {
+    0%, 100% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-5px) scale(1.02); 
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(5px) scale(0.98); 
+    }
+}
+
+@keyframes shake-incorrect {
+    0%, 100% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-8px) scale(1.05); 
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(8px) scale(0.95); 
+    }
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-skip {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-next {
+    background: #28a745;
+    color: white;
+}
+
+.btn-exit {
+    background: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Results Section */
+.results-section {
+    display: none;
+    text-align: center;
+}
+
+.score {
+    font-size: 48px;
+    color: #28a745;
+    margin: 20px 0;
+}
+
+/* Loading Screen */
+.loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .quiz-content {
+        padding: 20px;
+    }
+    
+    .timer-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .timer {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+    
+    .quiz-counter {
+        font-size: 16px;
+    }
+    
+    .question {
+        font-size: 20px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+    
+    .quiz-content {
+        padding: 15px;
+    }
+    
+    .question {
+        font-size: 18px;
+    }
+    
+    .option {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    .score {
+        font-size: 36px;
+    }
+>>>>>>> 22d5f4bf4e702dfa0eba4f71318fde31f933cb22
 }
 
 /* Shake Animations */
