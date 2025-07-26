@@ -1,747 +1,829 @@
-[
-  {
-    "question": "What is a primary objective of software testing?",
-    "options": [
-      "To ensure the software is completely defect-free",
-      "To validate that the software meets stakeholder needs",
-      "To replace the need for debugging",
-      "To eliminate the need for quality assurance"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How does testing differ from debugging?",
-    "options": [
-      "Testing fixes defects, while debugging identifies them",
-      "Testing identifies defects or triggers failures, while debugging diagnoses and fixes defects",
-      "Testing is performed only statically, while debugging is dynamic",
-      "Testing is a process-oriented activity, while debugging is product-oriented"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which of the following is a testing principle?",
-    "options": [
-      "Testing proves the absence of defects",
-      "Exhaustive testing is always feasible",
-      "Defects cluster together in a small number of components",
-      "Testing is independent of context"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is the main difference between testing and quality assurance (QA)?",
-    "options": [
-      "Testing is process-oriented, while QA is product-oriented",
-      "Testing focuses on defect detection, while QA focuses on process improvement",
-      "Testing is performed only by testers, while QA is performed by developers",
-      "Testing ensures compliance with regulations, while QA does not"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which activity is part of the test implementation phase?",
-    "options": [
-      "Defining test objectives and approach",
-      "Creating test data and test scripts",
-      "Comparing actual progress against the test plan",
-      "Analyzing lessons learned for future projects"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Why is traceability between the test basis and testware important?",
-    "options": [
-      "It ensures all defects are fixed during debugging",
-      "It supports coverage evaluation and impact analysis",
-      "It eliminates the need for test automation",
-      "It replaces the need for test planning"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which skill is particularly relevant for testers to effectively identify defects?",
-    "options": [
-      "Project management",
-      "Thoroughness and attention to detail",
-      "Knowledge of hardware design",
-      "Financial analysis"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a benefit of the whole team approach in testing?",
-    "options": [
-      "It ensures complete independence of testers",
-      "It enhances collaboration and leverages diverse skill sets",
-      "It eliminates the need for test automation",
-      "It reduces the need for stakeholder involvement"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a drawback of high independence in testing?",
-    "options": [
-      "Independent testers may find fewer defects",
-      "It may lead to isolation from the development team",
-      "It eliminates the need for communication skills",
-      "It ensures all defects are found"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What does the testing principle \"absence-of-defects fallacy\" imply?",
-    "options": [
-      "Defect-free software guarantees user satisfaction",
-      "Testing can prove the absence of defects",
-      "Fixing all defects may not meet user needs or business goals",
-      "Defects are evenly distributed across components"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is the main purpose of testing?",
-    "options": [
-      "To ensure the code runs without errors",
-      "To find and fix all the bugs",
-      "To evaluate quality and reduce the risk of software failure",
-      "To write perfect software"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "Which of the following is a typical test objective?",
-    "options": [
-      "Reduce code size",
-      "Find and fix all bugs",
-      "Build confidence in software quality",
-      "Reduce the number of developers"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "How is testing different from debugging?",
-    "options": [
-      "Testing is done only after debugging",
-      "Debugging is a static process, while testing is dynamic",
-      "Testing finds failures; debugging identifies and fixes the causes",
-      "Testing involves fixing defects; debugging reports them"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is the correct order in the cause-effect chain?",
-    "options": [
-      "Failure → Defect → Error → Root cause",
-      "Error → Defect → Failure → Root cause",
-      "Root cause → Error → Defect → Failure",
-      "Defect → Error → Root cause → Failure"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "Which principle states that testing everything is impossible?",
-    "options": [
-      "Testing shows presence, not absence of defects",
-      "Exhaustive testing is impossible",
-      "Defects cluster together",
-      "Early testing saves time and money"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is the main benefit of early testing?",
-    "options": [
-      "It reduces the amount of code written",
-      "It saves time and cost by identifying defects early",
-      "It delays the project until code is written",
-      "It ensures zero defects"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is the purpose of test traceability?",
-    "options": [
-      "To map code to test environments",
-      "To monitor software performance",
-      "To link test cases to requirements and risks",
-      "To replace documentation"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is meant by \"testware\"?",
-    "options": [
-      "Test automation tools",
-      "The people performing the testing",
-      "All artifacts produced during testing",
-      "The test object"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "Which of the following is a benefit of independent testing?",
-    "options": [
-      "Developers get more control",
-      "Testers can find different defects due to different perspectives",
-      "No communication is needed",
-      "Development time increases"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is the “whole team approach” in testing?",
-    "options": [
-      "Only the QA team is responsible for testing",
-      "Everyone in the team contributes to quality and testing",
-      "Developers test; testers code",
-      "Testing is outsourced to another company"
-    ],
-    "answer": 1
-  },
-  
-  {
-    "question": "How does the choice of SDLC impact testing?",
-    "options": [
-      "It has no impact on testing activities",
-      "It affects the scope, timing, and automation of test activities",
-      "It eliminates the need for regression testing",
-      "It ensures testing is only performed at the end of the SDLC"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which is a good testing practice applicable to all SDLC models?",
-    "options": [
-      "Performing only dynamic testing",
-      "Aligning test activities with development activities",
-      "Avoiding regression testing",
-      "Limiting testing to acceptance testing"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which of the following is an example of a test-first approach?",
-    "options": [
-      "Waterfall model",
-      "Test-Driven Development (TDD)",
-      "V-model",
-      "Big-bang integration"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a benefit of DevOps for testing?",
-    "options": [
-      "It eliminates the need for manual testing",
-      "It reduces regression risk through automated testing",
-      "It removes the need for test environments",
-      "It ensures all testing is performed manually"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What does the \"shift left\" approach in testing emphasize?",
-    "options": [
-      "Performing testing only at the end of the SDLC",
-      "Conducting testing earlier in the SDLC",
-      "Eliminating the need for non-functional testing",
-      "Focusing solely on regression testing"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a key benefit of retrospectives in testing?",
-    "options": [
-      "They ensure all defects are fixed",
-      "They support continuous process improvement",
-      "They eliminate the need for test planning",
-      "They replace the need for test automation"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which test level focuses on testing the interfaces between components?",
-    "options": [
-      "Component testing",
-      "System testing",
-      "Component integration testing",
-      "Acceptance testing"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is the main objective of non-functional testing?",
-    "options": [
-      "To verify what the system does",
-      "To check how well the system behaves",
-      "To test the internal structure of the system",
-      "To ensure all defects are fixed"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How does confirmation testing differ from regression testing?",
-    "options": [
-      "Confirmation testing checks for new defects, while regression testing fixes defects",
-      "Confirmation testing verifies defect fixes, while regression testing ensures no new issues from changes",
-      "Confirmation testing is always automated, while regression testing is manual",
-      "Confirmation testing is performed only at the system level, while regression testing is at the component level"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a common trigger for maintenance testing?",
-    "options": [
-      "Developing a new system from scratch",
-      "Modifying an operational system with enhancements or fixes",
-      "Eliminating the need for regression testing",
-      "Performing only black-box testing"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which of the following work products is typically NOT suitable for static testing?",
-    "options": [
-      "Requirement specification documents",
-      "Source code",
-      "Third-party executable code",
-      "Test plans"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is a key difference between static testing and dynamic testing?",
-    "options": [
-      "Static testing requires executable code, while dynamic testing does not.",
-      "Static testing finds defects directly, while dynamic testing identifies defects through failures.",
-      "Static testing can only be applied to executable work products.",
-      "Dynamic testing is performed early in the SDLC, while static testing is performed later."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a primary benefit of early and frequent stakeholder feedback in static testing?",
-    "options": [
-      "It increases the cost of the review process.",
-      "It ensures defects are only found during dynamic testing.",
-      "It prevents misunderstandings about requirements and reduces rework.",
-      "It eliminates the need for formal reviews."
-    ],
-    "answer": 2
-  },
-  {
-    "question": "Which role in a review process is responsible for ensuring effective review meetings and creating a safe environment for discussion?",
-    "options": [
-      "Author",
-      "Moderator",
-      "Scribe",
-      "Manager"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which review type is the most formal and follows the complete generic review process to maximize anomaly detection?",
-    "options": [
-      "Informal review",
-      "Walkthrough",
-      "Technical review",
-      "Inspection"
-    ],
-    "answer": 3
-  },
+{
+  "questions": [
     {
-    "question": "Which test technique is based on the internal structure of the test object and requires knowledge of the code?",
-    "options": ["Black-box testing", "White-box testing", "Experience-based testing", "Equivalence partitioning"],
-    "answer": 1
-  },
-  {
-    "question": "In equivalence partitioning, what is the coverage criterion for achieving 100% coverage?",
-    "options": [
-      "Test all possible combinations of partitions.",
-      "Test one value from each partition, including valid and invalid partitions.",
-      "Test only the boundary values of each partition.",
-      "Test all states in the system."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is the main focus of Boundary Value Analysis (BVA)?",
-    "options": [
-      "Testing all possible combinations of conditions.",
-      "Testing the boundaries of equivalence partitions.",
-      "Testing the internal logic of the code.",
-      "Testing based on tester experience."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "In decision table testing, what does a column represent?",
-    "options": [
-      "A single state in the system.",
-      "A unique combination of conditions and associated actions.",
-      "A single test case covering all conditions.",
-      "A boundary value for an input."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which coverage criterion in state transition testing ensures that both valid and invalid transitions are tested?",
-    "options": [
-      "All states coverage",
-      "Valid transitions coverage",
-      "All transitions coverage",
-      "0-switch coverage"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What does 100% branch coverage guarantee in white-box testing?",
-    "options": [
-      "All defects in the code are detected.",
-      "All statements and branches are exercised.",
-      "All possible paths through the code are tested.",
-      "All requirements are implemented."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which experience-based test technique involves simultaneously designing, executing, and evaluating tests while learning about the system?",
-    "options": [
-      "Error guessing",
-      "Exploratory testing",
-      "Checklist-based testing",
-      "Boundary value analysis"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a key characteristic of a good user story according to the INVEST criteria?",
-    "options": [
-      "It should be large and complex.",
-      "It should be testable.",
-      "It should depend on other user stories.",
-      "It should avoid stakeholder collaboration."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "In Acceptance Test-driven Development (ATDD), when are test cases created?",
-    "options": [
-      "After the user story is implemented.",
-      "Before the user story is implemented.",
-      "During the execution of the user story.",
-      "Only after defects are found."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which format is commonly used for writing scenario-oriented acceptance criteria?",
-    "options": [
-      "Bullet point verification list",
-      "Given/When/Then format",
-      "Tabulated input-output mapping",
-      "Free-form text"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which test design technique is most suitable when the system behavior depends on different combinations of inputs?",
-    "options": [
-      "State Transition Testing",
-      "Decision Table Testing",
-      "Boundary Value Analysis",
-      "Checklist-based Testing"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is the primary benefit of Equivalence Partitioning?",
-    "options": [
-      "Reduces the number of test cases",
-      "Ensures code coverage",
-      "Identifies boundary defects",
-      "Increases exploratory coverage"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Which technique would be most useful for validating navigation flows in an application?",
-    "options": [
-      "Decision Tables",
-      "Equivalence Partitioning",
-      "State Transition Testing",
-      "Statement Testing"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "A tester designs tests to ensure each line of code is executed at least once. Which technique is being used?",
-    "options": [
-      "Statement Testing",
-      "Branch Testing",
-      "Decision Table Testing",
-      "State Transition Testing"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Error Guessing is primarily based on:",
-    "options": [
-      "Coverage metrics",
-      "Tester’s domain knowledge and intuition",
-      "Acceptance criteria",
-      "Code structure"
-    ],
-    "answer": 1
-  },
+      "id": 1,
+      "question": "What is a primary objective of software testing?",
+      "options": [
+        "To ensure the software is completely defect-free",
+        "To validate that the software meets stakeholder needs",
+        "To replace the need for debugging",
+        "To eliminate the need for quality assurance"
+      ],
+      "correct": 1
+    },
     {
-    "question": "What is the primary purpose of a test plan?",
-    "options": [
-      "To execute test cases automatically",
-      "To document test objectives, resources, and processes for a test project",
-      "To track defects found during testing",
-      "To define the coding standards for development"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How do testers contribute to release planning in an iterative SDLC?",
-    "options": [
-      "By writing code for the product backlog",
-      "By participating in writing testable user stories and estimating test effort",
-      "By managing the project budget",
-      "By deploying the software to production"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which of the following is a typical exit criterion for a test level?",
-    "options": [
-      "Availability of test data",
-      "All planned tests have been executed",
-      "Availability of the test environment",
-      "Completion of code development"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which estimation technique uses historical data to derive ratios for test effort?",
-    "options": [
-      "Wideband Delphi",
-      "Three-point estimation",
-      "Estimation based on ratios",
-      "Extrapolation"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What is the main factor considered in risk-based test case prioritization?",
-    "options": [
-      "The availability of test tools",
-      "The results of risk analysis",
-      "The number of test cases",
-      "The experience of the testers"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "In the test pyramid model, what characterizes tests at the bottom layer?",
-    "options": [
-      "They are slow and check large functionalities",
-      "They are fast, isolated, and numerous",
-      "They are manual and business-facing",
-      "They focus on user acceptance testing"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which testing quadrant includes exploratory and usability testing?",
-    "options": [
-      "Q1 (Technology-facing, support team)",
-      "Q2 (Business-facing, support team)",
-      "Q3 (Business-facing, critique product)",
-      "Q4 (Technology-facing, critique product)"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "How is risk level determined in risk management?",
-    "options": [
-      "By the number of test cases executed",
-      "By combining risk likelihood and risk impact",
-      "By the availability of test resources",
-      "By the number of defects found"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which of the following is an example of a project risk?",
-    "options": [
-      "Incorrect calculations in the software",
-      "Delays in work product deliveries",
-      "Poor user experience",
-      "Security vulnerabilities"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How does product risk analysis influence testing?",
-    "options": [
-      "It determines the programming language used",
-      "It influences the thoroughness and scope of testing",
-      "It defines the test environment setup",
-      "It sets the project budget"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which metric is commonly used in test monitoring?",
-    "options": [
-      "Number of lines of code written",
-      "Defect detection percentage",
-      "Number of developers in the team",
-      "Project budget allocation"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is typically included in a test progress report?",
-    "options": [
-      "Detailed code review findings",
-      "Test progress and impediments for testing",
-      "Final product deployment plan",
-      "Employee performance evaluations"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which method is suitable for communicating test status in a distributed team?",
-    "options": [
-      "Face-to-face meetings only",
-      "Formal test reports",
-      "Code comments",
-      "Whiteboard sketches"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How does configuration management support testing?",
-    "options": [
-      "By writing test cases for developers",
-      "By ensuring traceability and version control of test items",
-      "By automating test execution",
-      "By defining test objectives"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a key objective of a defect report?",
-    "options": [
-      "To allocate project budget",
-      "To provide sufficient information for defect resolution",
-      "To define test case priorities",
-      "To document the test environment setup"
-    ],
-    "answer": 1
-  },  {
-    "question": "Which of the following tools is used to facilitate the management of the Software Development Life Cycle (SDLC)?",
-    "options": [
-      "Non-functional testing tools",
-      "Test execution and test coverage tools",
-      "Test management tools",
-      "Collaboration tools"
-    ],
-    "answer": 2
-  },
-  {
-    "question": "What type of test tool supports the generation of test cases and test data?",
-    "options": [
-      "Static testing tools",
-      "Test design and test implementation tools",
-      "DevOps tools",
-      "Tools supporting scalability and deployment"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which tool category supports non-functional testing that is difficult to perform manually?",
-    "options": [
-      "Collaboration tools",
-      "Non-functional testing tools",
-      "Test management tools",
-      "Static testing tools"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "In the context of testing, which of the following can be considered a test tool?",
-    "options": [
-      "A programming IDE",
-      "A spreadsheet used for tracking test progress",
-      "A word processor for writing code",
-      "A database management system for development"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Which type of tool supports the automated build processes in a DevOps pipeline?",
-    "options": [
-      "Test execution and test coverage tools",
-      "DevOps tools",
-      "Static testing tools",
-      "Tools supporting scalability and deployment"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a key benefit of test automation?",
-    "options": [
-      "Increased manual testing effort",
-      "Reduced test execution times for earlier defect detection",
-      "Higher dependency on vendor support",
-      "Increased human errors in test execution"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "How does test automation improve consistency in testing?",
-    "options": [
-      "By requiring more manual intervention",
-      "By executing tests in the same order with the same frequency",
-      "By increasing the complexity of test scripts",
-      "By relying on human critical thinking"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What is a potential risk of test automation?",
-    "options": [
-      "Easier access to test progress data",
-      "Unrealistic expectations about tool benefits",
-      "Reduced time for designing new tests",
-      "More objective coverage assessment"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "What risk is associated with using an open-source test automation tool?",
-    "options": [
-      "Improved compatibility with development platforms",
-      "Potential abandonment with no further updates",
-      "Reduced maintenance effort for test scripts",
-      "Faster test execution times"
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Why might a test automation tool fail to deliver expected benefits?",
-    "options": [
-      "It provides more time for testers to design new tests",
-      "It is incompatible with the development platform",
-      "It reduces repetitive manual work",
-      "It offers objective coverage metrics"
-    ],
-    "answer": 1
-  }
-]
+      "id": 2,
+      "question": "How does testing differ from debugging?",
+      "options": [
+        "Testing fixes defects, while debugging identifies them",
+        "Testing identifies defects or triggers failures, while debugging diagnoses and fixes defects",
+        "Testing is performed only statically, while debugging is dynamic",
+        "Testing is a process-oriented activity, while debugging is product-oriented"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a testing principle?",
+      "options": [
+        "Testing proves the absence of defects",
+        "Exhaustive testing is always feasible",
+        "Defects cluster together in a small number of components",
+        "Testing is independent of context"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 4,
+      "question": "What is the main difference between testing and quality assurance (QA)?",
+      "options": [
+        "Testing is process-oriented, while QA is product-oriented",
+        "Testing focuses on defect detection, while QA focuses on process improvement",
+        "Testing is performed only by testers, while QA is performed by developers",
+        "Testing ensures compliance with regulations, while QA does not"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "question": "Which activity is part of the test implementation phase?",
+      "options": [
+        "Defining test objectives and approach",
+        "Creating test data and test scripts",
+        "Comparing actual progress against the test plan",
+        "Analyzing lessons learned for future projects"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "question": "Why is traceability between the test basis and testware important?",
+      "options": [
+        "It ensures all defects are fixed during debugging",
+        "It supports coverage evaluation and impact analysis",
+        "It eliminates the need for test automation",
+        "It replaces the need for test planning"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "question": "Which skill is particularly relevant for testers to effectively identify defects?",
+      "options": [
+        "Project management",
+        "Thoroughness and attention to detail",
+        "Knowledge of hardware design",
+        "Financial analysis"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "question": "What is a benefit of the whole team approach in testing?",
+      "options": [
+        "It ensures complete independence of testers",
+        "It enhances collaboration and leverages diverse skill sets",
+        "It eliminates the need for test automation",
+        "It reduces the need for stakeholder involvement"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 9,
+      "question": "What is a drawback of high independence in testing?",
+      "options": [
+        "Independent testers may find fewer defects",
+        "It may lead to isolation from the development team",
+        "It eliminates the need for communication skills",
+        "It ensures all defects are found"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 10,
+      "question": "What does the testing principle \"absence-of-defects fallacy\" imply?",
+      "options": [
+        "Defect-free software guarantees user satisfaction",
+        "Testing can prove the absence of defects",
+        "Fixing all defects may not meet user needs or business goals",
+        "Defects are evenly distributed across components"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 11,
+      "question": "What is the main purpose of testing?",
+      "options": [
+        "To ensure the code runs without errors",
+        "To find and fix all the bugs",
+        "To evaluate quality and reduce the risk of software failure",
+        "To write perfect software"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a typical test objective?",
+      "options": [
+        "Reduce code size",
+        "Find and fix all bugs",
+        "Build confidence in software quality",
+        "Reduce the number of developers"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 13,
+      "question": "How is testing different from debugging?",
+      "options": [
+        "Testing is done only after debugging",
+        "Debugging is a static process, while testing is dynamic",
+        "Testing finds failures; debugging identifies and fixes the causes",
+        "Testing involves fixing defects; debugging reports them"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 14,
+      "question": "What is the correct order in the cause-effect chain?",
+      "options": [
+        "Failure → Defect → Error → Root cause",
+        "Error → Defect → Failure → Root cause",
+        "Root cause → Error → Defect → Failure",
+        "Defect → Error → Root cause → Failure"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 15,
+      "question": "Which principle states that testing everything is impossible?",
+      "options": [
+        "Testing shows presence, not absence of defects",
+        "Exhaustive testing is impossible",
+        "Defects cluster together",
+        "Early testing saves time and money"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 16,
+      "question": "What is the main benefit of early testing?",
+      "options": [
+        "It reduces the amount of code written",
+        "It saves time and cost by identifying defects early",
+        "It delays the project until code is written",
+        "It ensures zero defects"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 17,
+      "question": "What is the purpose of test traceability?",
+      "options": [
+        "To map code to test environments",
+        "To monitor software performance",
+        "To link test cases to requirements and risks",
+        "To replace documentation"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 18,
+      "question": "What is meant by \"testware\"?",
+      "options": [
+        "Test automation tools",
+        "The people performing the testing",
+        "All artifacts produced during testing",
+        "The test object"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is a benefit of independent testing?",
+      "options": [
+        "Developers get more control",
+        "Testers can find different defects due to different perspectives",
+        "No communication is needed",
+        "Development time increases"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 20,
+      "question": "What is the “whole team approach” in testing?",
+      "options": [
+        "Only the QA team is responsible for testing",
+        "Everyone in the team contributes to quality and testing",
+        "Developers test; testers code",
+        "Testing is outsourced to another company"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 21,
+      "question": "How does the choice of SDLC impact testing?",
+      "options": [
+        "It has no impact on testing activities",
+        "It affects the scope, timing, and automation of test activities",
+        "It eliminates the need for regression testing",
+        "It ensures testing is only performed at the end of the SDLC"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 22,
+      "question": "Which is a good testing practice applicable to all SDLC models?",
+      "options": [
+        "Performing only dynamic testing",
+        "Aligning test activities with development activities",
+        "Avoiding regression testing",
+        "Limiting testing to acceptance testing"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is an example of a test-first approach?",
+      "options": [
+        "Waterfall model",
+        "Test-Driven Development (TDD)",
+        "V-model",
+        "Big-bang integration"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 24,
+      "question": "What is a benefit of DevOps for testing?",
+      "options": [
+        "It eliminates the need for manual testing",
+        "It reduces regression risk through automated testing",
+        "It removes the need for test environments",
+        "It ensures all testing is performed manually"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 25,
+      "question": "What does the \"shift left\" approach in testing emphasize?",
+      "options": [
+        "Performing testing only at the end of the SDLC",
+        "Conducting testing earlier in the SDLC",
+        "Eliminating the need for non-functional testing",
+        "Focusing solely on regression testing"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 26,
+      "question": "What is a key benefit of retrospectives in testing?",
+      "options": [
+        "They ensure all defects are fixed",
+        "They support continuous process improvement",
+        "They eliminate the need for test planning",
+        "They replace the need for test automation"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "question": "Which test level focuses on testing the interfaces between components?",
+      "options": [
+        "Component testing",
+        "System testing",
+        "Component integration testing",
+        "Acceptance testing"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 28,
+      "question": "What is the main objective of non-functional testing?",
+      "options": [
+        "To verify what the system does",
+        "To check how well the system behaves",
+        "To test the internal structure of the system",
+        "To ensure all defects are fixed"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 29,
+      "question": "How does confirmation testing differ from regression testing?",
+      "options": [
+        "Confirmation testing checks for new defects, while regression testing fixes defects",
+        "Confirmation testing verifies defect fixes, while regression testing ensures no new issues from changes",
+        "Confirmation testing is always automated, while regression testing is manual",
+        "Confirmation testing is performed only at the system level, while regression testing is at the component level"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 30,
+      "question": "What is a common trigger for maintenance testing?",
+      "options": [
+        "Developing a new system from scratch",
+        "Modifying an operational system with enhancements or fixes",
+        "Eliminating the need for regression testing",
+        "Performing only black-box testing"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 31,
+      "question": "Which of the following work products is typically NOT suitable for static testing?",
+      "options": [
+        "Requirement specification documents",
+        "Source code",
+        "Third-party executable code",
+        "Test plans"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 32,
+      "question": "What is a key difference between static testing and dynamic testing?",
+      "options": [
+        "Static testing requires executable code, while dynamic testing does not.",
+        "Static testing finds defects directly, while dynamic testing identifies defects through failures.",
+        "Static testing can only be applied to executable work products.",
+        "Dynamic testing is performed early in the SDLC, while static testing is performed later."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 33,
+      "question": "What is a primary benefit of early and frequent stakeholder feedback in static testing?",
+      "options": [
+        "It increases the cost of the review process.",
+        "It ensures defects are only found during dynamic testing.",
+        "It prevents misunderstandings about requirements and reduces rework.",
+        "It eliminates the need for formal reviews."
+      ],
+      "correct": 2
+    },
+    {
+      "id": 34,
+      "question": "Which role in a review process is responsible for ensuring effective review meetings and creating a safe environment for discussion?",
+      "options": [
+        "Author",
+        "Moderator",
+        "Scribe",
+        "Manager"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 35,
+      "question": "Which review type is the most formal and follows the complete generic review process to maximize anomaly detection?",
+      "options": [
+        "Informal review",
+        "Walkthrough",
+        "Technical review",
+        "Inspection"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 36,
+      "question": "Which test technique is based on the internal structure of the test object and requires knowledge of the code?",
+      "options": [
+        "Black-box testing",
+        "White-box testing",
+        "Experience-based testing",
+        "Equivalence partitioning"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 37,
+      "question": "In equivalence partitioning, what is the coverage criterion for achieving 100% coverage?",
+      "options": [
+        "Test all possible combinations of partitions.",
+        "Test one value from each partition, including valid and invalid partitions.",
+        "Test only the boundary values of each partition.",
+        "Test all states in the system."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 38,
+      "question": "What is the main focus of Boundary Value Analysis (BVA)?",
+      "options": [
+        "Testing all possible combinations of conditions.",
+        "Testing the boundaries of equivalence partitions.",
+        "Testing the internal logic of the code.",
+        "Testing based on tester experience."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 39,
+      "question": "In decision table testing, what does a column represent?",
+      "options": [
+        "A single state in the system.",
+        "A unique combination of conditions and associated actions.",
+        "A single test case covering all conditions.",
+        "A boundary value for an input."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 40,
+      "question": "Which coverage criterion in state transition testing ensures that both valid and invalid transitions are tested?",
+      "options": [
+        "All states coverage",
+        "Valid transitions coverage",
+        "All transitions coverage",
+        "0-switch coverage"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 41,
+      "question": "What does 100% branch coverage guarantee in white-box testing?",
+      "options": [
+        "All defects in the code are detected.",
+        "All statements and branches are exercised.",
+        "All possible paths through the code are tested.",
+        "All requirements are implemented."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 42,
+      "question": "Which experience-based test technique involves simultaneously designing, executing, and evaluating tests while learning about the system?",
+      "options": [
+        "Error guessing",
+        "Exploratory testing",
+        "Checklist-based testing",
+        "Boundary value analysis"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 43,
+      "question": "What is a key characteristic of a good user story according to the INVEST criteria?",
+      "options": [
+        "It should be large and complex.",
+        "It should be testable.",
+        "It should depend on other user stories.",
+        "It should avoid stakeholder collaboration."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 44,
+      "question": "In Acceptance Test-driven Development (ATDD), when are test cases created?",
+      "options": [
+        "After the user story is implemented.",
+        "Before the user story is implemented.",
+        "During the execution of the user story.",
+        "Only after defects are found."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 45,
+      "question": "Which format is commonly used for writing scenario-oriented acceptance criteria?",
+      "options": [
+        "Bullet point verification list",
+        "Given/When/Then format",
+        "Tabulated input-output mapping",
+        "Free-form text"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 46,
+      "question": "Which test design technique is most suitable when the system behavior depends on different combinations of inputs?",
+      "options": [
+        "State Transition Testing",
+        "Decision Table Testing",
+        "Boundary Value Analysis",
+        "Checklist-based Testing"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 47,
+      "question": "What is the primary benefit of Equivalence Partitioning?",
+      "options": [
+        "Reduces the number of test cases",
+        "Ensures code coverage",
+        "Identifies boundary defects",
+        "Increases exploratory coverage"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 48,
+      "question": "Which technique would be most useful for validating navigation flows in an application?",
+      "options": [
+        "Decision Tables",
+        "Equivalence Partitioning",
+        "State Transition Testing",
+        "Statement Testing"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 49,
+      "question": "A tester designs tests to ensure each line of code is executed at least once. Which technique is being used?",
+      "options": [
+        "Statement Testing",
+        "Branch Testing",
+        "Decision Table Testing",
+        "State Transition Testing"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 50,
+      "question": "Error Guessing is primarily based on:",
+      "options": [
+        "Coverage metrics",
+        "Tester’s domain knowledge and intuition",
+        "Acceptance criteria",
+        "Code structure"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 51,
+      "question": "What is the primary purpose of a test plan?",
+      "options": [
+        "To execute test cases automatically",
+        "To document test objectives, resources, and processes for a test project",
+        "To track defects found during testing",
+        "To define the coding standards for development"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 52,
+      "question": "How do testers contribute to release planning in an iterative SDLC?",
+      "options": [
+        "By writing code for the product backlog",
+        "By participating in writing testable user stories and estimating test effort",
+        "By managing the project budget",
+        "By deploying the software to production"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 53,
+      "question": "Which of the following is a typical exit criterion for a test level?",
+      "options": [
+        "Availability of test data",
+        "All planned tests have been executed",
+        "Availability of the test environment",
+        "Completion of code development"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 54,
+      "question": "Which estimation technique uses historical data to derive ratios for test effort?",
+      "options": [
+        "Wideband Delphi",
+        "Three-point estimation",
+        "Estimation based on ratios",
+        "Extrapolation"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 55,
+      "question": "What is the main factor considered in risk-based test case prioritization?",
+      "options": [
+        "The availability of test tools",
+        "The results of risk analysis",
+        "The number of test cases",
+        "The experience of the testers"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 56,
+      "question": "In the test pyramid model, what characterizes tests at the bottom layer?",
+      "options": [
+        "They are slow and check large functionalities",
+        "They are fast, isolated, and numerous",
+        "They are manual and business-facing",
+        "They focus on user acceptance testing"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 57,
+      "question": "Which testing quadrant includes exploratory and usability testing?",
+      "options": [
+        "Q1 (Technology-facing, support team)",
+        "Q2 (Business-facing, support team)",
+        "Q3 (Business-facing, critique product)",
+        "Q4 (Technology-facing, critique product)"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 58,
+      "question": "How is risk level determined in risk management?",
+      "options": [
+        "By the number of test cases executed",
+        "By combining risk likelihood and risk impact",
+        "By the availability of test resources",
+        "By the number of defects found"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 59,
+      "question": "Which of the following is an example of a project risk?",
+      "options": [
+        "Incorrect calculations in the software",
+        "Delays in work product deliveries",
+        "Poor user experience",
+        "Security vulnerabilities"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 60,
+      "question": "How does product risk analysis influence testing?",
+      "options": [
+        "It determines the programming language used",
+        "It influences the thoroughness and scope of testing",
+        "It defines the test environment setup",
+        "It sets the project budget"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 61,
+      "question": "Which metric is commonly used in test monitoring?",
+      "options": [
+        "Number of lines of code written",
+        "Defect detection percentage",
+        "Number of developers in the team",
+        "Project budget allocation"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 62,
+      "question": "What is typically included in a test progress report?",
+      "options": [
+        "Detailed code review findings",
+        "Test progress and impediments for testing",
+        "Final product deployment plan",
+        "Employee performance evaluations"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 63,
+      "question": "Which method is suitable for communicating test status in a distributed team?",
+      "options": [
+        "Face-to-face meetings only",
+        "Formal test reports",
+        "Code comments",
+        "Whiteboard sketches"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 64,
+      "question": "How does configuration management support testing?",
+      "options": [
+        "By writing test cases for developers",
+        "By ensuring traceability and version control of test items",
+        "By automating test execution",
+        "By defining test objectives"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 65,
+      "question": "What is a key objective of a defect report?",
+      "options": [
+        "To allocate project budget",
+        "To provide sufficient information for defect resolution",
+        "To define test case priorities",
+        "To document the test environment setup"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 66,
+      "question": "Which of the following tools is used to facilitate the management of the Software Development Life Cycle (SDLC)?",
+      "options": [
+        "Non-functional testing tools",
+        "Test execution and test coverage tools",
+        "Test management tools",
+        "Collaboration tools"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 67,
+      "question": "What type of test tool supports the generation of test cases and test data?",
+      "options": [
+        "Static testing tools",
+        "Test design and test implementation tools",
+        "DevOps tools",
+        "Tools supporting scalability and deployment"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 68,
+      "question": "Which tool category supports non-functional testing that is difficult to perform manually?",
+      "options": [
+        "Collaboration tools",
+        "Non-functional testing tools",
+        "Test management tools",
+        "Static testing tools"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 69,
+      "question": "In the context of testing, which of the following can be considered a test tool?",
+      "options": [
+        "A programming IDE",
+        "A spreadsheet used for tracking test progress",
+        "A word processor for writing code",
+        "A database management system for development"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 70,
+      "question": "Which type of tool supports the automated build processes in a DevOps pipeline?",
+      "options": [
+        "Test execution and test coverage tools",
+        "DevOps tools",
+        "Static testing tools",
+        "Tools supporting scalability and deployment"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 71,
+      "question": "What is a key benefit of test automation?",
+      "options": [
+        "Increased manual testing effort",
+        "Reduced test execution times for earlier defect detection",
+        "Higher dependency on vendor support",
+        "Increased human errors in test execution"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 72,
+      "question": "How does test automation improve consistency in testing?",
+      "options": [
+        "By requiring more manual intervention",
+        "By executing tests in the same order with the same frequency",
+        "By increasing the complexity of test scripts",
+        "By relying on human critical thinking"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 73,
+      "question": "What is a potential risk of test automation?",
+      "options": [
+        "Easier access to test progress data",
+        "Unrealistic expectations about tool benefits",
+        "Reduced time for designing new tests",
+        "More objective coverage assessment"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 74,
+      "question": "What risk is associated with using an open-source test automation tool?",
+      "options": [
+        "Improved compatibility with development platforms",
+        "Potential abandonment with no further updates",
+        "Reduced maintenance effort for test scripts",
+        "Faster test execution times"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 75,
+      "question": "Why might a test automation tool fail to deliver expected benefits?",
+      "options": [
+        "It provides more time for testers to design new tests",
+        "It is incompatible with the development platform",
+        "It reduces repetitive manual work",
+        "It offers objective coverage metrics"
+      ],
+      "correct": 1
+    }
+  ]
+}
