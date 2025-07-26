@@ -1,80 +1,296 @@
+// Quiz state variables
 let questions = [];
-let currentQuestion = 0;
+let currentQuestionIndex = 0;
 let score = 0;
+let attempted = 0;
+let skipped = 0;
+let selectedAnswer = null;
+let timeRemaining = 3600; // 60 minutes in seconds
 let timerInterval;
+let quizStarted = false;
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('questions.json')
-    .then(res => res.json())
-    .then(data => {
-      questions = data;
-      startTimer(60 * 60); // 60 minutes in seconds
-      showQuestion();
-    })
-    .catch(() => {
-      document.getElementById('quiz').innerHTML = 'Failed to load quiz data.';
+// DOM elements
+const loadingDiv = document.getElementById('loading');
+const startScreen = document.getElementById('start-screen');
+const questionSection = document.getElementById('question-section');
+const resultsSection = document.getElementById('results-section');
+const timerElement = document.getElementById('timer');
+const counterElement = document.getElementById('quiz-counter');
+const progressElement = document.getElementById('progress-fill');
+const questionText = document.getElementById('question-text');
+const optionsList = document.getElementById('options-list');
+const nextBtn = document.getElementById('next-btn');
+
+// Initialize the quiz
+function initQuiz() {
+    // Simulate loading from JSON file
+    setTimeout(() => {
+        loadQuizData();
+    }, 1000);
+}
+
+// Load quiz data from external JSON file
+async function loadQuizData() {
+    try {
+        // In a real application, replace this with:
+        // const response = await fetch('quiz-data.json');
+        // const data = await response.json();
+        
+        // For demonstration, using embedded data
+        const response = await fetch('questions.json').catch(() => {
+            // Fallback to embedded data if JSON file is not found
+            return {
+                json: () => Promise.resolve({
+                    "questions": [
+                        {
+                            "id": 1,
+                            "question": "What is the capital of France?",
+                            "options": ["London", "Berlin", "Paris", "Madrid"],
+                            "correct": 2
+                        },
+                        {
+                            "id": 2,
+                            "question": "Which planet is known as the Red Planet?",
+                            "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+                            "correct": 1
+                        },
+                        {
+                            "id": 3,
+                            "question": "What is the largest mammal in the world?",
+                            "options": ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+                            "correct": 1
+                        },
+                        {
+                            "id": 4,
+                            "question": "Who painted the Mona Lisa?",
+                            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+                            "correct": 2
+                        },
+                        {
+                            "id": 5,
+                            "question": "What is the chemical symbol for gold?",
+                            "options": ["Go", "Gd", "Au", "Ag"],
+                            "correct": 2
+                        },
+                        {
+                            "id": 6,
+                            "question": "Which year did World War II end?",
+                            "options": ["1944", "1945", "1946", "1947"],
+                            "correct": 1
+                        },
+                        {
+                            "id": 7,
+                            "question": "What is the smallest country in the world?",
+                            "options": ["Monaco", "Nauru", "Vatican City", "San Marino"],
+                            "correct": 2
+                        },
+                        {
+                            "id": 8,
+                            "question": "Which programming language is known as the 'language of the web'?",
+                            "options": ["Python", "Java", "JavaScript", "C++"],
+                            "correct": 2
+                        }
+                    ]
+                })
+            };
+        });
+        
+        const data = await response.json();
+        questions = data.questions;
+        loadingDiv.style.display = 'none';
+        startScreen.style.display = 'block';
+        updateCounter();
+    } catch (error) {
+        console.error('Error loading quiz data:', error);
+        loadingDiv.innerHTML = 'Error loading quiz data. Please refresh the page.';
+    }
+}
+
+// Start the quiz
+function startQuiz() {
+    startScreen.style.display = 'none';
+    questionSection.style.display = 'block';
+    quizStarted = true;
+    startTimer();
+    displayQuestion();
+}
+
+// Start the countdown timer
+function startTimer() {
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+        
+        if (timeRemaining <= 0) {
+            clearInterval(timerInterval);
+            endQuiz();
+        }
+    }, 1000);
+}
+
+// Update timer display
+function updateTimerDisplay() {
+    const minutes = Math.floor(timeRemaining / 60);
+    const seconds = timeRemaining % 60;
+    timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    
+    // Change color when time is running low
+    if (timeRemaining <= 300) { // 5 minutes
+        timerElement.style.color = '#ff6b6b';
+    }
+}
+
+// Update question counter
+function updateCounter() {
+    counterElement.textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+}
+
+// Update progress bar
+function updateProgress() {
+    const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+    progressElement.style.width = `${progress}%`;
+}
+
+// Display current question
+function displayQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+        endQuiz();
+        return;
+    }
+
+    const question = questions[currentQuestionIndex];
+    questionText.textContent = question.question;
+    
+    optionsList.innerHTML = '';
+    selectedAnswer = null;
+    nextBtn.disabled = true;
+
+    question.options.forEach((option, index) => {
+        const li = document.createElement('li');
+        li.className = 'option';
+        li.textContent = option;
+        li.onclick = () => selectOption(index, li);
+        optionsList.appendChild(li);
     });
-});
 
-function startTimer(duration) {
-  let timer = duration;
-  const countdown = document.getElementById('countdown');
-  timerInterval = setInterval(() => {
-    let minutes = String(Math.floor(timer / 60)).padStart(2, '0');
-    let seconds = String(timer % 60).padStart(2, '0');
-    countdown.textContent = `${minutes}:${seconds}`;
-    if (--timer < 0) {
-      clearInterval(timerInterval);
-      finishQuiz();
+    updateCounter();
+    updateProgress();
+}
+
+// Handle option selection
+function selectOption(index, element) {
+    // Remove previous selection
+    document.querySelectorAll('.option').forEach(opt => {
+        opt.classList.remove('selected');
+    });
+
+    // Add selection to clicked option
+    element.classList.add('selected');
+    selectedAnswer = index;
+    nextBtn.disabled = false;
+}
+
+// Move to next question
+function nextQuestion() {
+    if (selectedAnswer === null) return;
+
+    const question = questions[currentQuestionIndex];
+    const options = document.querySelectorAll('.option');
+    const isCorrect = selectedAnswer === question.correct;
+
+    // Show correct/incorrect animation
+    options[question.correct].classList.add('correct');
+    
+    if (!isCorrect) {
+        options[selectedAnswer].classList.add('incorrect');
+    } else {
+        score++;
     }
-  }, 1000);
+
+    attempted++;
+
+    // Disable all options
+    options.forEach(opt => {
+        opt.style.pointerEvents = 'none';
+    });
+
+    // Move to next question after animation
+    setTimeout(() => {
+        currentQuestionIndex++;
+        displayQuestion();
+    }, 2000);
 }
 
-function showQuestion() {
-  if (currentQuestion >= questions.length) {
-    finishQuiz();
-    return;
-  }
-  const q = questions[currentQuestion];
-  const quizDiv = document.getElementById('quiz');
-  quizDiv.innerHTML = `
-    <div class="question">${q.question}</div>
-    <ul class="options">
-      ${q.options.map((opt, idx) => `<li class="option" data-idx="${idx}">${opt}</li>`).join('')}
-    </ul>
-  `;
-
-  document.querySelectorAll('.option').forEach(optEl => {
-    optEl.addEventListener('click', handleOptionClick);
-  });
+// Skip current question
+function skipQuestion() {
+    skipped++;
+    currentQuestionIndex++;
+    displayQuestion();
 }
 
-function handleOptionClick(e) {
-  const selectedIdx = parseInt(e.currentTarget.getAttribute('data-idx'));
-  const q = questions[currentQuestion];
-
-  document.querySelectorAll('.option').forEach((optEl, idx) => {
-    optEl.removeEventListener('click', handleOptionClick);
-    if (idx === q.answer) {
-      optEl.classList.add('correct');
+// Exit quiz with confirmation
+function exitQuiz() {
+    if (confirm('Are you sure you want to exit the quiz?')) {
+        endQuiz();
     }
-    if (idx === selectedIdx && idx !== q.answer) {
-      optEl.classList.add('incorrect');
+}
+
+// End the quiz and show results
+function endQuiz() {
+    clearInterval(timerInterval);
+    questionSection.style.display = 'none';
+    resultsSection.style.display = 'block';
+    
+    const percentage = Math.round((score / questions.length) * 100);
+    document.getElementById('final-score').textContent = `${score}/${questions.length} (${percentage}%)`;
+    
+    const details = `
+        Attempted: ${attempted} questions<br>
+        Skipped: ${skipped} questions<br>
+        Time used: ${formatTime(3600 - timeRemaining)}
+    `;
+    document.getElementById('result-details').innerHTML = details;
+}
+
+// Format time display
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${minutes}:${secs.toString().padStart(2, '0')}`;
+}
+
+// Restart the quiz
+function restartQuiz() {
+    // Reset all variables
+    currentQuestionIndex = 0;
+    score = 0;
+    attempted = 0;
+    skipped = 0;
+    selectedAnswer = null;
+    timeRemaining = 3600;
+    quizStarted = false;
+
+    // Reset display
+    resultsSection.style.display = 'none';
+    startScreen.style.display = 'block';
+    timerElement.style.color = 'white';
+    progressElement.style.width = '0%';
+    
+    // Clear any running timer
+    if (timerInterval) {
+        clearInterval(timerInterval);
     }
-  });
-
-  if (selectedIdx === q.answer) score++;
-  setTimeout(() => {
-    currentQuestion++;
-    showQuestion();
-  }, 900);
+    
+    updateTimerDisplay();
+    updateCounter();
 }
 
-function finishQuiz() {
-  clearInterval(timerInterval);
-  document.getElementById('quiz').innerHTML = '';
-  document.getElementById('result').innerHTML = `
-    <strong>Quiz Finished!</strong><br>
-    Your Score: ${score} / ${questions.length}
-  `;
-}
+// Initialize the quiz when page loads
+window.onload = initQuiz;
+
+// Prevent page refresh during quiz
+window.onbeforeunload = function(e) {
+    if (quizStarted && currentQuestionIndex < questions.length) {
+        return "Are you sure you want to leave? Your progress will be lost.";
+    }
+};
