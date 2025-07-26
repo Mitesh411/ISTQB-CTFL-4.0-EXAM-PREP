@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8">
-  <title>Static Quiz App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="hero">
-    <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200"
-      alt="ISTQB CTFL 4.0 Logo" />
-    <h1>Practice Exam </h1>
-    <p>
+  <center>
+  <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200"
+      alt="ISTQB CTFL 4.0 Logo" /></center>
+    <div class="container">
+        <div class="header">
+            <h1>Practice Exam Challenge</h1>
+            <p>
       If you are preparing for ISTQB CTFL 4.0, this guide will help you with quick revision before the exam.
 
     </p>
-    <!-- <div class="btn-group">
-      <a href="#" class="btn">Dashboard</a>
-      <a href="#" class="btn">Other Certification Notes</a>
-    </div> -->
-  </header>
+            <div class="timer-section">
+                <div class="timer" id="timer">60:00</div>
+                <div class="quiz-counter" id="quiz-counter">Question 0 of 0</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+        </div>
 
-  <div class="quiz-container">
-    <div id="timer">Time Left: <span id="countdown">60:00</span></div>
-    <div id="quiz"></div>
-    <div id="result"></div>
-  </div>
-  <script src="script.js"></script>
+        <div class="quiz-content">
+            <!-- Loading Screen -->
+            <div class="loading" id="loading">
+                Loading quiz questions...
+            </div>
+
+            <!-- Start Screen -->
+            <div class="start-screen" id="start-screen" style="display: none;">
+                <h2>Welcome to the Practice Exam ! &nbsp;</h2>
+                
+                <p>Test your knowledge with our interactive quiz. You have 60 minutes to complete all questions.</p>
+                <br>
+                <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+            </div>
+
+            <!-- Question Section -->
+            <div class="question-section" id="question-section">
+                <div class="question" id="question-text"></div>
+                <ul class="options" id="options-list"></ul>
+                
+                <div class="controls">
+                    <button class="btn btn-skip" onclick="skipQuestion()">Skip</button>
+                    <button class="btn btn-next" id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+                    <button class="btn btn-exit" onclick="exitQuiz()">Exit</button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="results-section">
+                <h2>Quiz Completed!</h2>
+                <div class="score" id="final-score"></div>
+                <p id="result-details"></p>
+                <br>
+                <button class="start-btn" onclick="restartQuiz()">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 <footer>
+  &nbsp; 
   <center>
-    <p>© 2025 Practice Exam. All rights reserved.</p>
+  <p>&nbsp; Practice Exam Challenge is an interactive quiz app designed to help you prepare for the ISTQB CTFL 4.0 exam.</p>
+  <p>For more information, visit our <a href="https://www.istqb.org/">official website</a>.</p>
+  <p>Developed by Mitesh Dandade.</p>  
+  <p>© 2025 Practice Exam. All rights reserved.</p>
   </center>
-
 </html>
