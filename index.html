@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <center>
-  <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200"
-      alt="ISTQB CTFL 4.0 Logo" /></center>
-    <div class="container">
-        <div class="header">
-            <h1>Practice Exam Challenge</h1>
-            <p>
-      If you are preparing for ISTQB CTFL 4.0, this guide will help you with quick revision before the exam.
+  <div style="text-align: center;">
+    <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200"
+      alt="ISTQB CTFL 4.0 Logo" />
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>Practice Exam Challenge</h1>
+      <p>
+        If you are preparing for ISTQB CTFL 4.0, this guide will help you with quick revision before the exam.
 
-    </p>
-            <div class="timer-section">
-                <div class="timer" id="timer">60:00</div>
-                <div class="quiz-counter" id="quiz-counter">Question 0 of 0</div>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
-            </div>
-        </div>
-
-        <div class="quiz-content">
-            <!-- Loading Screen -->
-            <div class="loading" id="loading">
-                Loading quiz questions...
-            </div>
-
-            <!-- Start Screen -->
-            <div class="start-screen" id="start-screen" style="display: none;">
-                <h2>Welcome to the Practice Exam ! &nbsp;</h2>
-                
-                <p>Test your knowledge with our interactive quiz. You have 60 minutes to complete all questions.</p>
-                <br>
-                <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
-            </div>
-
-            <!-- Question Section -->
-            <div class="question-section" id="question-section">
-                <div class="question" id="question-text"></div>
-                <ul class="options" id="options-list"></ul>
-                
-                <div class="controls">
-                    <button class="btn btn-skip" onclick="skipQuestion()">Skip</button>
-                    <button class="btn btn-next" id="next-btn" onclick="nextQuestion()" disabled>Next</button>
-                    <button class="btn btn-exit" onclick="exitQuiz()">Exit</button>
-                </div>
-            </div>
-
-            <!-- Results Section -->
-            <div class="results-section" id="results-section">
-                <h2>Quiz Completed!</h2>
-                <div class="score" id="final-score"></div>
-                <p id="result-details"></p>
-                <br>
-                <button class="start-btn" onclick="restartQuiz()">Restart Quiz</button>
-            </div>
-        </div>
+      </p>
+      <div class="timer-section">
+        <div class="timer" id="timer">60:00</div>
+        <div class="quiz-counter" id="quiz-counter">Question 0 of 0</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="quiz-content">
+      <!-- Loading Screen -->
+      <div class="loading" id="loading">
+        Loading quiz questions...
+      </div>
+
+      <!-- Start Screen -->
+      <div class="start-screen" id="start-screen" style="display: none;">
+        <h2>Welcome to the Practice Exam ! &nbsp;</h2>
+
+        <p>Test your knowledge with our interactive quiz. You have 60 minutes to complete all questions.</p>
+        <br>
+        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+      </div>
+
+      <!-- Question Section -->
+      <div class="question-section" id="question-section">
+        <div class="question" id="question-text"></div>
+        <ul class="options" id="options-list"></ul>
+
+        <div class="controls">
+          <button class="btn btn-skip" onclick="skipQuestion()">Skip</button>
+          <button class="btn btn-next" id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+          <button class="btn btn-exit" onclick="exitQuiz()">Exit</button>
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div class="results-section" id="results-section">
+        <h2>Quiz Completed!</h2>
+        <div class="score" id="final-score"></div>
+        <p id="result-details"></p>
+        <br>
+        <button class="start-btn" onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-<footer>
-  &nbsp; 
-  <center>
-  <p>&nbsp; Practice Exam Challenge is an interactive quiz app designed to help you prepare for the ISTQB CTFL 4.0 exam.</p>
-  <p>For more information, visit our <a href="https://www.istqb.org/">official website </a>.&nbsp;</p>
+<footer style="text-align: center;">
+  &nbsp;
+    <p>&nbsp; Practice Exam Challenge is an interactive quiz app designed to help you prepare for the ISTQB CTFL 4.0
+      exam.</p>
+    <p>For more information, visit our <a href="https://www.istqb.org/">official website </a>.&nbsp;</p>
 
 
-  <a href="https://www.linkedin.com/in/mitesh-dandade-1a62085b"><img align="center" alt="Mitesh Dandade LinkedIn Account" width="40px" src="https://img.icons8.com/color/2x/linkedin-2--v2.gif"/> 
-</a> 
-<a href="mailto:mailme.dandademitesh@gmail.com"><img align="center" alt="Mitesh Dandade Gmail" width="40px" src="https://img.icons8.com/color/2x/gmail--v2.gif"/> 
-</a> <a href="https://github.com/Mitesh411"><img align="center" img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="50" height="50" alt="GitHub"></a>
-  
+    <a href="https://www.linkedin.com/in/mitesh-dandade-1a62085b"><img align="center"
+        alt="Mitesh Dandade LinkedIn Account" width="40px" src="https://img.icons8.com/color/2x/linkedin-2--v2.gif" />
+    </a>
+    <a href="mailto:mailme.dandademitesh@gmail.com"><img align="center" alt="Mitesh Dandade Gmail" width="40px"
+        src="https://img.icons8.com/color/2x/gmail--v2.gif" />
+    </a> <a href="https://github.com/Mitesh411"><img align="center" img
+        src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="50" height="50" alt="GitHub"></a>
 
 
 
 
-  <p> Developed by Mitesh Dandade.</p>  
-  <p>&nbsp;© 2025 Practice Exam. All rights reserved.</p>
-  </center>
+
+    <p> Developed by Mitesh Dandade.</p>
+    <p>&nbsp;© 2025 Practice Exam. All rights reserved.</p>
+</footer>
+
 </html>
