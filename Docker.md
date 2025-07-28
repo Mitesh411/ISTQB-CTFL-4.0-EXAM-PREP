@@ -21,6 +21,6 @@ CMD ["nginx", "-g", "daemon off;"]
 
 docker build -f ISTQB-CTFL-4.0-EXAM-PREP/Dockerfile -t istqb-quiz ISTQB-CTFL-4.0-EXAM-PREP/
 
-# Run with Port Mapping
+# Run with Port-Mapping
 
 docker run -p 8080:80 istqb-quiz
