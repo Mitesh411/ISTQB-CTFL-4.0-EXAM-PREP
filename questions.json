@@ -824,7 +824,106 @@
         "It offers objective coverage metrics"
       ],
       "correct": 1
+    },
+    {
+      "question": "What is the definition of the term <strong>acceptance testing<\/strong>?",
+      "answers": [
+        "A testable aspect of a component or system identified as a basis for testing.",
+        "A test level that focuses on determining whether to accept the system.",
+        "Testing that involves the execution of the test item.",
+        "A test level that focuses on individual hardware or software components."
+      ],
+      "correct_answer": 1
+    },
+    {
+      "question": "What is the name of the term defined as follows? <strong>An experience-based test technique in which test cases are designed to exercise the items of a checklist.<\/strong>",
+      "answers": [
+        "dynamic testing",
+        "risk-based testing",
+        "test design",
+        "checklist-based testing"
+      ],
+      "correct_answer": 3
+    },
+    {
+      "question": "What is the definition of the term <strong>dynamic testing<\/strong>?",
+      "answers": [
+        "Testing that involves the execution of the test item.",
+        "A description of how to perform testing to reach test objectives under given circumstances.",
+        "The activity that derives and specifies test cases from test conditions.",
+        "A specific instantiation of a test process."
+      ],
+      "correct_answer": 0
+    },
+    {
+      "question": "What is the name of the term defined as follows? <strong>A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes.<\/strong>",
+      "answers": [
+        "defect",
+        "defect report",
+        "anomaly",
+        "error guessing"
+      ],
+      "correct_answer": 3
+    },
+    {
+      "question": "What is the definition of the term <strong>exploratory testing<\/strong>?",
+      "answers": [
+        "The manner of implementing testing tasks.",
+        "An experience-based test technique in which test cases are designed to exercise the items of a checklist.",
+        "Testing that involves the execution of the test item.",
+        "An approach to testing in which the testers dynamically design and execute tests based on their knowledge, exploration of the test item and the results of previous tests."
+      ],
+      "correct_answer": 3
+    },
+    {
+      "question": "What is the definition of the term <strong>formal review<\/strong>?",
+      "answers": [
+        "A type of review that does not follow a defined process and has no formally documented output.",
+        "A type of review in which an author leads members of the review through a work product and the members ask questions and make comments about possible issues.",
+        "The set of conditions for officially completing a defined task.",
+        "A review that follows a defined process with a formally documented output."
+      ],
+      "correct_answer": 3
+    },
+    {
+      "question": "What is the definition of the term <strong>test completion report<\/strong>?",
+      "answers": [
+        "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
+        "Testing that involves the execution of the test item.",
+        "A description of how to perform testing to reach test objectives under given circumstances.",
+        "A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria."
+      ],
+      "correct_answer": 3
+    },
+    {
+      "question": "What is the name of the term defined as follows? <strong>Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.<\/strong>",
+      "answers": [
+        "test procedure",
+        "test design",
+        "test technique",
+        "test plan"
+      ],
+      "correct_answer": 3
+    },
+    {
+      "question": "What is the definition of the term <strong>test result<\/strong>?",
+      "answers": [
+        "The consequence\/outcome of the execution of a test.",
+        "The manner of implementing testing tasks.",
+        "A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria.",
+        "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution."
+      ],
+      "correct_answer": 0
+    },
+    {
+      "question": "What is the name of the term defined as follows? <strong>Testing based on an analysis of the internal structure of the component or system.<\/strong>",
+      "answers": [
+        "white-box testing",
+        "black-box test technique",
+        "system testing",
+        "testing"
+      ],
+      "correct_answer": 0
     }
-  ] 
-} 
-   
+  ]
+}

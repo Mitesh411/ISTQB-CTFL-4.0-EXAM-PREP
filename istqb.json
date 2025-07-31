@@ -1,0 +1,172 @@
+[
+  {
+    "chapter": "1",
+    "frontside": "What is the purpose of software testing?",
+    "backside": "Software testing assesses software quality. It is crucial for identifying defects, reducing risks associated with software failures, and improving software quality and reliability."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Define dynamic testing.",
+    "backside": "Dynamic testing involves the execution of software."
+  },
+  {
+    "chapter": "1",
+    "frontside": "List typical objectives of testing.",
+    "backside": "Evaluating work products, triggering failures and finding defects, ensuring required coverage, reducing risk, verifying requirements, ensuring compliance, providing information to stakeholders, building confidence, and validating completeness and functionality."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is the difference between testing and debugging?",
+    "backside": "Testing involves identifying defects by triggering failures in a software system, while debugging refers to locating, analyzing, and fixing defects identified during testing."
+  },
+  {
+    "chapter": "1",
+    "frontside": "How does testing contribute to the success of a software project?",
+    "backside": "Effective testing ensures that software meets requirements and expectations, provides crucial information for decision-making, and helps identify and mitigate risks early."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is the difference between Quality Assurance (QA) and testing?",
+    "backside": "QA encompasses the entire process of ensuring quality standards are followed, including process improvement and audits, while testing is a specific activity within QA focused on identifying defects and verifying requirements."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Define error, defect, and failure.",
+    "backside": "Error: A human action producing an incorrect result. Errors can introduce defects into the software.\nDefect: A flaw that can cause a component or system to fail when executed.\nFailure: The inability of a system or component to correctly perform its intended function or the producing of unexpected behavior."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Explain the principle 'Early testing'.",
+    "backside": "Testing activities should start as early as possible in the software development lifecycle and should be focused on defined objectives. Defects that are removed early in the process will not cause subsequent defects in derived work products."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Explain the principle 'Exhaustive testing is impossible'.",
+    "backside": "Testing all combinations of inputs and preconditions is not feasible except for trivial cases. Instead, risk and priorities should guide testing efforts."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Explain the principle 'Testing is context dependent'.",
+    "backside": "Testing is done differently in different contexts. For example, safety-critical software is tested differently from an e-commerce site."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is the 'Pesticide paradox' principle?",
+    "backside": "If the same tests are repeated over and over again, eventually these tests will no longer find new defects. To overcome this, the tests need to be regularly reviewed and revised, and new and different tests need to be written."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is the 'Absence-of-errors fallacy' principle?",
+    "backside": "Finding and fixing defects does not help if the system built is unusable and does not fulfill the user's needs and expectations."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Explain the principle 'Defect clustering'.",
+    "backside": "A small number of modules usually contain most of the defects discovered during pre-release testing or are responsible for most of the operational failures."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What are the seven testing principles?",
+    "backside": "1. Testing shows the presence of defects.\n2. Exhaustive testing is impossible.\n3. Early testing.\n4. Defect clustering.\n5. Pesticide paradox.\n6. Testing is context dependent.\n7. Absence-of-errors fallacy."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What does the principle 'Testing shows the presence of defects' mean?",
+    "backside": "Testing can show that defects are present but cannot prove that there are no defects. It reduces the probability of undiscovered defects remaining in the software but cannot guarantee that the software is defect-free."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What are the activities in test completion?",
+    "backside": "Test completion activities ensure that the testware is archived, the environment is restored, test logs are finalized, and relevant stakeholders are informed of the results."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Define test planning.",
+    "backside": "Test planning involves defining the objectives of testing and the approach for meeting those objectives within constraints."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Define test design.",
+    "backside": "Test design involves creating and prioritizing test cases and identifying the necessary test data to support the defined test conditions."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is test implementation?",
+    "backside": "Test implementation is the activity where test cases, test data, and other testware are created, assembled, and verified as complete."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Define test analysis.",
+    "backside": "The process of analyzing the test basis to identify what to test, i.e., defining the test conditions."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is involved in test monitoring and control?",
+    "backside": "Activities to track test progress and test status and to take corrective actions when needed."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What are the main activities in the test process?",
+    "backside": "Test planning, test monitoring and control, test analysis, test design, test implementation, test execution, and test completion."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is involved in test execution?",
+    "backside": "Test execution involves running the test cases according to the planned sequence and logging the outcomes."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What role does domain knowledge play in testing?",
+    "backside": "Domain knowledge helps testers understand the business context, which leads to more relevant and effective test cases."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Why are analytical skills important for testing?",
+    "backside": "Analytical skills are important for identifying defects, understanding complex systems, and creating effective test cases."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Define attention to detail in the context of testing.",
+    "backside": "Attention to detail involves carefully examining software to identify even the smallest defects and ensuring all requirements are met."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What are the generic skills required for testing?",
+    "backside": "The generic skills required for testing include analytical skills, communication skills, attention to detail, and domain knowledge."
+  },
+  {
+    "chapter": "1",
+    "frontside": "How do communication skills contribute to effective testing?",
+    "backside": "Communication skills are crucial for reporting defects clearly, collaborating with team members, and understanding requirements and specifications."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is the whole team approach?",
+    "backside": "The whole team approach involves all team member across all teams. It ensures that quality is everyone's responsibility and leverages the diverse skills and perspectives of the entire team to find defects early."
+  },
+  {
+    "chapter": "1",
+    "frontside": "How does collaboration enhance the testing process?",
+    "backside": "Collaboration improves communication, facilitates knowledge sharing, and helps to quickly resolve issues, leading to better quality software."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What are the different levels of independence in testing?",
+    "backside": "Levels of independence include tests by the developer, tests by a different developer, tests by an independent tester within the organization, and tests by an external organization."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What is meant by independence of testing?",
+    "backside": "Independence of testing refers to having tests conducted by someone who is not the author of the code being tested to avoid bias."
+  },
+  {
+    "chapter": "1",
+    "frontside": "What are the potential drawbacks of independent testing?",
+    "backside": "Drawbacks can include communication challenges, a lack of understanding of the project context, and potential delays if the independent testers are not integrated well with the development team."
+  },
+  {
+    "chapter": "1",
+    "frontside": "Why is independence important in testing?",
+    "backside": "Independence helps to ensure objectivity, as testers are more likely to find defects if they are not the ones who wrote the code."
+  }
+]

@@ -293,8 +293,4 @@ window.onbeforeunload = function(e) {
     if (quizStarted && currentQuestionIndex < questions.length) {
         return "Are you sure you want to leave? Your progress will be lost.";
     }
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 22d5f4bf4e702dfa0eba4f71318fde31f933cb22

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Testing Flashcards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #f5f6fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      
+      margin: 40px auto;
+      padding: 24px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(60,60,120,0.14);
+    }
+    .card {
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      background: #007bff;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      padding: 24px;
+      text-align: center;
+      position: relative;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .card.flipped {
+      background: #007bff;
+    }
+    .chapter {
+      color: #000205;
+      font-size: 0.9em;
+      position: absolute;
+      top: 8px;
+      right: 18px;
+      /* opacity: 0.65; */
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    button {
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-size: 2em;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.18s;
+    }
+    button:disabled {
+      background: #bac0e3;
+      cursor: not-allowed;
+    }
+    button.secondary {
+      background: #dc3545;
+      color: #ffffff;
+    }
+    .progress {
+      text-align: center;
+      margin-top: 18px;
+      color: #000000;
+      font-size: 2em;
+    }
+    @media (max-width: 600px) {
+      .container { max-width: 99vw; padding: 10px; }
+      .card { padding: 14px; font-size: 1em;}
+      button { padding: 8px 10px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="card" class="card">
+      Loading...
+    </div>
+    <div class="buttons">
+      <button id="prevBtn" class="secondary">Previous</button>
+      <button id="flipBtn">Show Answer</button>
+      <button id="nextBtn" class="secondary">Next</button>
+    </div>
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <script>
+    // Load the JSON file
+    let flashcards = [];
+    fetch('istqb.json')
+        .then(resp => resp.json())
+        .then(data => {
+            flashcards = data;
+            renderCard(); // Initial render after data is loaded
+        })
+        .catch(err => {
+            console.error('Error loading flashcards:', err);
+            document.getElementById('card').innerHTML = 'Error loading flashcards. Please check console for details.';
+        });
+
+    // Initialize variables
+
+    let current = 0;
+    let flipped = false;
+
+    // DOM elements
+    const card = document.getElementById('card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const flipBtn = document.getElementById('flipBtn');
+    const progress = document.getElementById('progress');
+
+    function renderCard() {
+      const cardData = flashcards[current];
+      card.className = 'card' + (flipped ? ' flipped' : '');
+      card.innerHTML = `
+        <span class="chapter">Chapter ${cardData.chapter}</span>
+        ${flipped ? cardData.backside.replace(/\n/g, '<br>') : cardData.frontside.replace(/\n/g, '<br>')}
+      `;
+      flipBtn.textContent = flipped ? 'Show Question' : 'Show Answer';
+      progress.textContent = `Card ${current + 1} of ${flashcards.length}`;
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === flashcards.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (current > 0) {
+        current--;
+        flipped = false;
+        renderCard();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (current < flashcards.length - 1) {
+        current++;
+        flipped = false;
+        renderCard();
+      }
+    });
+
+    flipBtn.addEventListener('click', () => {
+      flipped = !flipped;
+      renderCard();
+    });
+
+    // Keyboard navigation (optional)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') prevBtn.click();
+      if (e.key === 'ArrowRight') nextBtn.click();
+      if (e.key === ' ' || e.key === 'Enter') flipBtn.click();
+    });
+
+    // Initial render
+    renderCard();
+  </script>
+</body>
+</html>
