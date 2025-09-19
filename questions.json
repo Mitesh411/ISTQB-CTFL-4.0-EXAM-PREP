@@ -1,2811 +1,2809 @@
 {
-  "generated_at": "2025-09-19T11:14:59.712298Z",
-  "count": 170,
   "questions": [
     {
       "id": 1,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on interactions between components or systems.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on interactions between components or systems.",
+      "options": [
         "integration testing",
         "component integration testing",
         "test approach",
         "test analysis"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 2,
-      "question": "What is the name of the term defined as follows? <strong>A type of change-related testing to detect whether defects have been introduced or uncovered in unchanged areas of the software.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of change-related testing to detect whether defects have been introduced or uncovered in unchanged areas of the software.",
+      "options": [
         "test analysis",
         "regression testing",
         "test implementation",
         "test strategy"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 3,
-      "question": "What is the definition of the term <strong>risk assessment</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk assessment?",
+      "options": [
         "The measure of a risk defined by risk impact and risk likelihood.",
         "The activity that checks and reports the status of known risks to stakeholders.",
         "The process to examine identified risks and determine the risk level.",
         "The process of finding, recognizing and describing risks."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 4,
-      "question": "What is the name of the term defined as follows? <strong>The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.",
+      "options": [
         "risk mitigation",
         "risk management",
         "risk identification",
         "risk level"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 5,
-      "question": "What is the definition of the term <strong>statement coverage</strong>?",
-      "answers": [
+      "question": "What is the definition of the term statement coverage?",
+      "options": [
         "A procedure used to define test conditions, design test cases, and specify test data.",
         "Data needed for test execution.",
         "The activity that prepares the testware needed for test execution based on test analysis and design.",
         "The coverage of executable statements."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 6,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on verifying that a system as a whole meets specified requirements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on verifying that a system as a whole meets specified requirements.",
+      "options": [
         "system testing",
         "test monitoring",
         "test design",
         "testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 7,
-      "question": "What is the definition of the term <strong>test automation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test automation?",
+      "options": [
         "The use of software to perform or support test activities.",
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "The manner of implementing testing tasks.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 8,
-      "question": "What is the name of the term defined as follows? <strong>A procedure used to define test conditions, design test cases, and specify test data.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A procedure used to define test conditions, design test cases, and specify test data.",
+      "options": [
         "test process",
         "test implementation",
         "test technique",
         "test procedure"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 9,
-      "question": "What is the definition of the term <strong>testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term testing?",
+      "options": [
         "Testing performed to evaluate that a component or system complies with non-functional requirements.",
         "The activity that runs a test on a component or system producing actual results.",
         "Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.",
         "The process within the software development lifecycle that evaluates the quality of a component or system and related work products."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 10,
-      "question": "What is the definition of the term <strong>validation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term validation?",
+      "options": [
         "The work product to be tested.",
         "Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.",
         "Confirmation by examination that a work product matches a stakeholder's needs.",
         "The activity that checks and reports the status of known risks to stakeholders."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 11,
-      "question": "What is the name of the term defined as follows? <strong>Testing based on an analysis of the specification of the component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing based on an analysis of the specification of the component or system.",
+      "options": [
         "test implementation",
         "regression testing",
         "black-box testing",
         "testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 12,
-      "question": "What is the definition of the term <strong>debugging</strong>?",
-      "answers": [
+      "question": "What is the definition of the term debugging?",
+      "options": [
         "The process of recognizing, recording, classifying, investigating, resolving and disposing of defects.",
         "Documentation of the occurrence, nature, and status of a defect.",
         "A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
         "The process of finding, analyzing and removing the causes of failures in a component or system."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 13,
-      "question": "What is the name of the term defined as follows? <strong>A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards.",
+      "options": [
         "inspection",
         "technical review",
         "quality",
         "defect report"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 14,
-      "question": "What is the name of the term defined as follows? <strong>The body of knowledge used as the basis for test analysis and test design.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The body of knowledge used as the basis for test analysis and test design.",
+      "options": [
         "test basis",
         "test data",
         "testing",
         "test strategy"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 15,
-      "question": "What is the definition of the term <strong>test control</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test control?",
+      "options": [
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "The activity that develops and applies corrective actions to get a test project on track when it deviates from what was planned.",
         "The activity of establishing or updating a test plan.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 16,
-      "question": "What is the name of the term defined as follows? <strong>The activity that derives and specifies test cases from test conditions.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that derives and specifies test cases from test conditions.",
+      "options": [
         "test technique",
         "test planning",
         "testing",
         "test design"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 17,
-      "question": "What is the definition of the term <strong>test monitoring</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test monitoring?",
+      "options": [
         "The activity of establishing or updating a test plan.",
         "The activity that checks and reports the status of known risks to stakeholders.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
         "The activity that checks the status of testing activities, identifies any variances from planned or expected, and reports status to stakeholders."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 18,
-      "question": "What is the name of the term defined as follows? <strong>A type of periodic test report that includes the progress of test activities against a baseline, risks, and alternatives requiring a decision.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of periodic test report that includes the progress of test activities against a baseline, risks, and alternatives requiring a decision.",
+      "options": [
         "test process",
         "test completion report",
         "test progress report",
         "test plan"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 19,
-      "question": "What is the definition of the term <strong>test type</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test type?",
+      "options": [
         "A test technique based on the specification of a component or system.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "A test level that focuses on interactions between components or systems.",
         "A testable aspect of a component or system identified as a basis for testing."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 20,
-      "question": "What is the definition of the term <strong>component integration testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term component integration testing?",
+      "options": [
         "Testing performed to evaluate if a component or system satisfies functional requirements.",
         "Testing based on an analysis of the specification of the component or system.",
         "The integration testing of components.",
         "A test level that focuses on interactions between components or systems."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 21,
-      "question": "What is the definition of the term <strong>confirmation testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term confirmation testing?",
+      "options": [
         "A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
         "A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes.",
         "An attribute or combination of attributes derived from one or more test conditions by using a test technique.",
         "Testing that involves the execution of the test item."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 22,
-      "question": "What is the definition of the term <strong>exit criteria</strong>?",
-      "answers": [
+      "question": "What is the definition of the term exit criteria?",
+      "options": [
         "The set of conditions for officially completing a defined task.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.",
         "Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled.",
         "Activities focused on providing confidence that quality requirements will be fulfilled."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 23,
-      "question": "What is the name of the term defined as follows? <strong>Testing the changes to an operational system or the impact of a changed environment to an operational system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing the changes to an operational system or the impact of a changed environment to an operational system.",
+      "options": [
         "test process",
         "dynamic testing",
         "maintenance testing",
         "static testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 24,
-      "question": "What is the name of the term defined as follows? <strong>The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.",
+      "options": [
         "risk analysis",
         "risk identification",
         "risk mitigation",
         "risk level"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 25,
-      "question": "What is the name of the term defined as follows? <strong>Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.",
+      "options": [
         "experience-based test technique",
         "risk-based testing",
         "risk analysis",
         "risk assessment"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 26,
-      "question": "What is the name of the term defined as follows? <strong>A testable aspect of a component or system identified as a basis for testing.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A testable aspect of a component or system identified as a basis for testing.",
+      "options": [
         "test condition",
         "test approach",
         "test analysis",
         "test case"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 27,
-      "question": "What is the name of the term defined as follows? <strong>A specific instantiation of a test process.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A specific instantiation of a test process.",
+      "options": [
         "test execution",
         "testing",
         "test type",
         "test level"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 28,
-      "question": "What is the definition of the term <strong>test result</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test result?",
+      "options": [
         "The consequence/outcome of the execution of a test.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.",
         "The activity that derives and specifies test cases from test conditions.",
         "Testing that does not involve the execution of a test item."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 29,
-      "question": "What is the definition of the term <strong>test type</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test type?",
+      "options": [
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "The manner of implementing testing tasks.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
         "A description of how to perform testing to reach test objectives under given circumstances."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 30,
-      "question": "What is the definition of the term <strong>non-functional testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term non-functional testing?",
+      "options": [
         "The integration testing of components.",
         "A test technique based on the specification of a component or system.",
         "Testing based on an analysis of the specification of the component or system.",
         "Testing performed to evaluate that a component or system complies with non-functional requirements."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 31,
-      "question": "What is the name of the term defined as follows? <strong>A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
+      "options": [
         "test implementation",
         "confirmation testing",
         "test procedure",
         "test strategy"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 32,
-      "question": "What is the definition of the term <strong>dynamic testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term dynamic testing?",
+      "options": [
         "An approach to testing in which the testers dynamically design and execute tests based on their knowledge, exploration of the test item and the results of previous tests.",
         "An experience-based test technique in which test cases are designed to exercise the items of a checklist.",
         "Testing that involves the execution of the test item.",
         "The activity that derives and specifies test cases from test conditions."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 33,
-      "question": "What is the definition of the term <strong>exit criteria</strong>?",
-      "answers": [
+      "question": "What is the definition of the term exit criteria?",
+      "options": [
         "The set of conditions for officially completing a defined task.",
         "A test level that focuses on verifying that a system as a whole meets specified requirements.",
         "A set of preconditions, inputs, actions (where applicable), expected results and postconditions, developed based on test conditions.",
         "Activities focused on providing confidence that quality requirements will be fulfilled."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 34,
-      "question": "What is the definition of the term <strong>functional testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term functional testing?",
+      "options": [
         "The integration testing of components.",
         "Testing performed to evaluate if a component or system satisfies functional requirements.",
         "Testing based on an analysis of the internal structure of the component or system.",
         "Testing performed to evaluate that a component or system complies with non-functional requirements."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 35,
-      "question": "What is the definition of the term <strong>informal review</strong>?",
-      "answers": [
+      "question": "What is the definition of the term informal review?",
+      "options": [
         "A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards.",
         "Testing that does not involve the execution of a test item.",
         "The activity that runs a test on a component or system producing actual results.",
         "A type of review that does not follow a defined process and has no formally documented output."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 36,
-      "question": "What is the name of the term defined as follows? <strong>A risk that impacts project success.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A risk that impacts project success.",
+      "options": [
         "risk management",
         "risk analysis",
         "risk level",
         "project risk"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 37,
-      "question": "What is the name of the term defined as follows? <strong>The process to examine identified risks and determine the risk level.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process to examine identified risks and determine the risk level.",
+      "options": [
         "risk mitigation",
         "risk assessment",
         "risk monitoring",
         "risk management"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 38,
-      "question": "What is the definition of the term <strong>risk-based testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk-based testing?",
+      "options": [
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.",
         "The process to examine identified risks and determine the risk level.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 39,
-      "question": "What is the definition of the term <strong>test progress report</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test progress report?",
+      "options": [
         "The activity that identifies test conditions by analyzing the test basis.",
         "The activity of establishing or updating a test plan.",
         "A type of periodic test report that includes the progress of test activities against a baseline, risks, and alternatives requiring a decision.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 40,
-      "question": "What is the definition of the term <strong>white-box testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term white-box testing?",
+      "options": [
         "A test technique based on the internal structure of a component or system.",
         "A test technique based on the specification of a component or system.",
         "Testing based on an analysis of the internal structure of the component or system.",
         "Testing performed to evaluate if a component or system satisfies functional requirements."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 41,
-      "question": "What is the name of the term defined as follows? <strong>The set of conditions for officially starting a defined task.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The set of conditions for officially starting a defined task.",
+      "options": [
         "decision table testing",
         "acceptance testing",
         "acceptance criteria",
         "entry criteria"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 42,
-      "question": "What is the name of the term defined as follows? <strong>A type of formal review that uses defined team roles and measurement to identify defects in a work product, and improve the review process and the software development process. </strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of formal review that uses defined team roles and measurement to identify defects in a work product, and improve the review process and the software development process. ",
+      "options": [
         "inspection",
         "coverage",
         "test process",
         "defect report"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 43,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on interactions between components or systems.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on interactions between components or systems.",
+      "options": [
         "integration testing",
         "test implementation",
         "component integration testing",
         "test approach"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 44,
-      "question": "What is the definition of the term <strong>risk monitoring</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk monitoring?",
+      "options": [
         "Confirmation by examination that a work product matches a stakeholder's needs.",
         "The process of finding, recognizing and describing risks.",
         "The activity that checks and reports the status of known risks to stakeholders.",
         "The activity that checks the status of testing activities, identifies any variances from planned or expected, and reports status to stakeholders."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 45,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on verifying that a system as a whole meets specified requirements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on verifying that a system as a whole meets specified requirements.",
+      "options": [
         "system integration testing",
         "system testing",
         "test implementation",
         "test process"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 46,
-      "question": "What is the name of the term defined as follows? <strong>The activity that identifies test conditions by analyzing the test basis.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that identifies test conditions by analyzing the test basis.",
+      "options": [
         "test design",
         "test implementation",
         "test analysis",
         "test technique"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 47,
-      "question": "What is the name of the term defined as follows? <strong>The activity that develops and applies corrective actions to get a test project on track when it deviates from what was planned.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that develops and applies corrective actions to get a test project on track when it deviates from what was planned.",
+      "options": [
         "test control",
         "test execution",
         "system testing",
         "testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 48,
-      "question": "What is the definition of the term <strong>test plan</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test plan?",
+      "options": [
         "A type of periodic test report that includes the progress of test activities against a baseline, risks, and alternatives requiring a decision.",
         "The activity of establishing or updating a test plan.",
         "A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 49,
-      "question": "What is the name of the term defined as follows? <strong>A type of periodic test report that includes the progress of test activities against a baseline, risks, and alternatives requiring a decision.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of periodic test report that includes the progress of test activities against a baseline, risks, and alternatives requiring a decision.",
+      "options": [
         "test progress report",
         "test monitoring",
         "test process",
         "test result"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 50,
-      "question": "What is the definition of the term <strong>test strategy</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test strategy?",
+      "options": [
         "A description of how to perform testing to reach test objectives under given circumstances.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
         "The activity that derives and specifies test cases from test conditions."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 51,
-      "question": "What is the definition of the term <strong>product risk</strong>?",
-      "answers": [
+      "question": "What is the definition of the term product risk?",
+      "options": [
         "The overall process of risk mitigation and risk monitoring.",
         "A risk that impacts the quality of a product.",
         "The process of finding, recognizing and describing risks.",
         "A risk that impacts project success."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 52,
-      "question": "What is the name of the term defined as follows? <strong>A type of change-related testing to detect whether defects have been introduced or uncovered in unchanged areas of the software.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of change-related testing to detect whether defects have been introduced or uncovered in unchanged areas of the software.",
+      "options": [
         "regression testing",
         "test implementation",
         "test strategy",
         "test technique"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 53,
-      "question": "What is the definition of the term <strong>risk-based testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk-based testing?",
+      "options": [
         "The activity that identifies test conditions by analyzing the test basis.",
         "Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.",
         "The activity that derives and specifies test cases from test conditions.",
         "The process to examine identified risks and determine the risk level."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 54,
-      "question": "What is the definition of the term <strong>technical review</strong>?",
-      "answers": [
+      "question": "What is the definition of the term technical review?",
+      "options": [
         "Confirmation by examination that a work product matches a stakeholder's needs.",
         "The process within the software development lifecycle that evaluates the quality of a component or system and related work products.",
         "A test technique based on the specification of a component or system.",
         "A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 55,
-      "question": "What is the definition of the term <strong>test approach</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test approach?",
+      "options": [
         "The purpose for testing.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
         "The manner of implementing testing tasks.",
         "The use of software to perform or support test activities."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 56,
-      "question": "What is the name of the term defined as follows? <strong>The activity that makes testware available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that makes testware available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.",
+      "options": [
         "test strategy",
         "test process",
         "test plan",
         "test completion"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 57,
-      "question": "What is the name of the term defined as follows? <strong>Data needed for test execution.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Data needed for test execution.",
+      "options": [
         "testing",
         "test procedure",
         "test technique",
         "test data"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 58,
-      "question": "What is the definition of the term <strong>test monitoring</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test monitoring?",
+      "options": [
         "The activity that checks the status of testing activities, identifies any variances from planned or expected, and reports status to stakeholders.",
         "The activity that derives and specifies test cases from test conditions.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 59,
-      "question": "What is the definition of the term <strong>test plan</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test plan?",
+      "options": [
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
         "The manner of implementing testing tasks.",
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "A description of how to perform testing to reach test objectives under given circumstances."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 60,
-      "question": "What is the name of the term defined as follows? <strong>Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.",
+      "options": [
         "test design",
         "test monitoring",
         "testware",
         "system testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 61,
-      "question": "What is the definition of the term <strong>failure</strong>?",
-      "answers": [
+      "question": "What is the definition of the term failure?",
+      "options": [
         "Testing performed to evaluate if a component or system satisfies functional requirements.",
         "An event in which a component or system does not perform a required function within specified limits.",
         "The process of finding, analyzing and removing the causes of failures in a component or system.",
         "Testing performed to evaluate that a component or system complies with non-functional requirements."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 62,
-      "question": "What is the definition of the term <strong>risk management</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk management?",
+      "options": [
         "The process of finding, recognizing and describing risks.",
         "The process for handling risks.",
         "A risk that impacts project success.",
         "The activity that checks and reports the status of known risks to stakeholders."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 63,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on verifying that a system as a whole meets specified requirements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on verifying that a system as a whole meets specified requirements.",
+      "options": [
         "system testing",
         "testing",
         "test execution",
         "test monitoring"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 64,
-      "question": "What is the name of the term defined as follows? <strong>A testable aspect of a component or system identified as a basis for testing.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A testable aspect of a component or system identified as a basis for testing.",
+      "options": [
         "test analysis",
         "test process",
         "test approach",
         "test condition"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 65,
-      "question": "What is the name of the term defined as follows? <strong>The activity that develops and applies corrective actions to get a test project on track when it deviates from what was planned.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that develops and applies corrective actions to get a test project on track when it deviates from what was planned.",
+      "options": [
         "test implementation",
         "test execution",
         "test control",
         "test planning"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 66,
-      "question": "What is the definition of the term <strong>test pyramid</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test pyramid?",
+      "options": [
         "A classification model of test types/test levels in four quadrants, relating them to two dimensions of test objectives: supporting the product team versus critiquing the product, and technology-facing versus business-facing.",
         "A test level that focuses on determining whether to accept the system.",
         "A test level that focuses on individual hardware or software components.",
         "A graphical model representing the relationship of the amount of testing per level, with more at the bottom than at the top."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 67,
-      "question": "What is the name of the term defined as follows? <strong>A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
+      "options": [
         "test approach",
         "test object",
         "testing",
         "test type"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 68,
-      "question": "What is the name of the term defined as follows? <strong>The process within the software development lifecycle that evaluates the quality of a component or system and related work products.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process within the software development lifecycle that evaluates the quality of a component or system and related work products.",
+      "options": [
         "test technique",
         "testing",
         "test case",
         "test object"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 69,
-      "question": "What is the name of the term defined as follows? <strong>Confirmation by examination that a work product matches a stakeholder's needs.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Confirmation by examination that a work product matches a stakeholder's needs.",
+      "options": [
         "validation",
         "confirmation testing",
         "entry criteria",
         "testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 70,
-      "question": "What is the name of the term defined as follows? <strong>The integration testing of components.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The integration testing of components.",
+      "options": [
         "collaboration-based test approach",
         "component integration testing",
         "dynamic testing",
         "component testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 71,
-      "question": "What is the definition of the term <strong>confirmation testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term confirmation testing?",
+      "options": [
         "A type of change-related testing to detect whether defects have been introduced or uncovered in unchanged areas of the software.",
         "Testing that involves the execution of the test item.",
         "A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
         "Documentation of the occurrence, nature, and status of a defect."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 72,
-      "question": "What is the name of the term defined as follows? <strong>An attribute or combination of attributes derived from one or more test conditions by using a test technique.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? An attribute or combination of attributes derived from one or more test conditions by using a test technique.",
+      "options": [
         "test procedure",
         "inspection",
         "coverage item",
         "coverage"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 73,
-      "question": "What is the definition of the term <strong>inspection</strong>?",
-      "answers": [
+      "question": "What is the definition of the term inspection?",
+      "options": [
         "A type of formal review that uses defined team roles and measurement to identify defects in a work product, and improve the review process and the software development process. ",
         "A review that follows a defined process with a formally documented output.",
         "A test approach to perform testing and quality assurance activities as early as possible in the software development lifecycle.",
         "A type of review in which an author leads members of the review through a work product and the members ask questions and make comments about possible issues."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 74,
-      "question": "What is the definition of the term <strong>risk identification</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk identification?",
+      "options": [
         "The process to examine identified risks and determine the risk level.",
         "The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.",
         "The overall process of risk identification and risk assessment.",
         "The process of finding, recognizing and describing risks."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 75,
-      "question": "What is the definition of the term <strong>risk-based testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk-based testing?",
+      "options": [
         "The process to examine identified risks and determine the risk level.",
         "Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.",
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 76,
-      "question": "What is the name of the term defined as follows? <strong>Testing that does not involve the execution of a test item.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing that does not involve the execution of a test item.",
+      "options": [
         "test execution",
         "dynamic testing",
         "static analysis",
         "static testing"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 77,
-      "question": "What is the definition of the term <strong>test completion</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test completion?",
+      "options": [
         "The activity that makes testware available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "A test level that focuses on individual hardware or software components.",
         "The integration testing of systems."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 78,
-      "question": "What is the name of the term defined as follows? <strong>The activity that runs a test on a component or system producing actual results.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that runs a test on a component or system producing actual results.",
+      "options": [
         "test procedure",
         "testing",
         "test execution",
         "system testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 79,
-      "question": "What is the definition of the term <strong>test pyramid</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test pyramid?",
+      "options": [
         "A test level that focuses on verifying that a system as a whole meets specified requirements.",
         "The activity that identifies test conditions by analyzing the test basis.",
         "A graphical model representing the relationship of the amount of testing per level, with more at the bottom than at the top.",
         "A classification model of test types/test levels in four quadrants, relating them to two dimensions of test objectives: supporting the product team versus critiquing the product, and technology-facing versus business-facing."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 80,
-      "question": "What is the definition of the term <strong>validation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term validation?",
+      "options": [
         "A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards.",
         "Confirmation by examination that a work product matches a stakeholder's needs.",
         "Activities focused on providing confidence that quality requirements will be fulfilled.",
         "The activity that checks the status of testing activities, identifies any variances from planned or expected, and reports status to stakeholders."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 81,
-      "question": "What is the name of the term defined as follows? <strong>Documentation of the occurrence, nature, and status of a defect.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Documentation of the occurrence, nature, and status of a defect.",
+      "options": [
         "test progress report",
         "defect report",
         "anomaly",
         "error"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 82,
-      "question": "What is the name of the term defined as follows? <strong>A black-box test technique in which test conditions are equivalence partitions exercised by one representative member of each partition. </strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A black-box test technique in which test conditions are equivalence partitions exercised by one representative member of each partition. ",
+      "options": [
         "equivalence partitioning",
         "verification",
         "validation",
         "static analysis"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 83,
-      "question": "What is the definition of the term <strong>error guessing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term error guessing?",
+      "options": [
         "A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes.",
         "A description of how to perform testing to reach test objectives under given circumstances.",
         "A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
         "An approach to testing in which the testers dynamically design and execute tests based on their knowledge, exploration of the test item and the results of previous tests."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 84,
-      "question": "What is the definition of the term <strong>risk mitigation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk mitigation?",
+      "options": [
         "The overall process of risk mitigation and risk monitoring.",
         "Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.",
         "The activity that checks and reports the status of known risks to stakeholders.",
         "The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 85,
-      "question": "What is the name of the term defined as follows? <strong>A black-box test technique in which test cases are designed to exercise elements of a state transition model.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A black-box test technique in which test cases are designed to exercise elements of a state transition model.",
+      "options": [
         "state transition testing",
         "system integration testing",
         "dynamic testing",
         "functional testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 86,
-      "question": "What is the name of the term defined as follows? <strong>The coverage of executable statements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The coverage of executable statements.",
+      "options": [
         "test procedure",
         "statement coverage",
         "test condition",
         "test plan"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 87,
-      "question": "What is the name of the term defined as follows? <strong>The purpose for testing.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The purpose for testing.",
+      "options": [
         "test analysis",
         "test strategy",
         "test objective",
         "test implementation"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 88,
-      "question": "What is the name of the term defined as follows? <strong>The consequence/outcome of the execution of a test.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The consequence/outcome of the execution of a test.",
+      "options": [
         "test result",
         "test condition",
         "test analysis",
         "test technique"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 89,
-      "question": "What is the definition of the term <strong>test strategy</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test strategy?",
+      "options": [
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "Testing that involves the execution of the test item.",
         "A description of how to perform testing to reach test objectives under given circumstances.",
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 90,
-      "question": "What is the name of the term defined as follows? <strong>A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
+      "options": [
         "test type",
         "testing",
         "test implementation",
         "test design"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 91,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on determining whether to accept the system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on determining whether to accept the system.",
+      "options": [
         "test process",
         "test approach",
         "acceptance testing",
         "confirmation testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 92,
-      "question": "What is the name of the term defined as follows? <strong>A condition that deviates from expectation.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A condition that deviates from expectation.",
+      "options": [
         "anomaly",
         "verification",
         "defect",
         "risk identification"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 93,
-      "question": "What is the name of the term defined as follows? <strong>A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes.",
+      "options": [
         "defect report",
         "risk identification",
         "anomaly",
         "error guessing"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 94,
-      "question": "What is the definition of the term <strong>exit criteria</strong>?",
-      "answers": [
+      "question": "What is the definition of the term exit criteria?",
+      "options": [
         "Activities focused on providing confidence that quality requirements will be fulfilled.",
         "A test level that focuses on verifying that a system as a whole meets specified requirements.",
         "A procedure used to define test conditions, design test cases, and specify test data.",
         "The set of conditions for officially completing a defined task."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 95,
-      "question": "What is the name of the term defined as follows? <strong>The process of finding, recognizing and describing risks.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process of finding, recognizing and describing risks.",
+      "options": [
         "risk",
         "risk assessment",
         "risk control",
         "risk identification"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 96,
-      "question": "What is the name of the term defined as follows? <strong>The activity that identifies test conditions by analyzing the test basis.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that identifies test conditions by analyzing the test basis.",
+      "options": [
         "test analysis",
         "testing",
         "test design",
         "test process"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 97,
-      "question": "What is the name of the term defined as follows? <strong>The activity that derives and specifies test cases from test conditions.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that derives and specifies test cases from test conditions.",
+      "options": [
         "test design",
         "test planning",
         "testing",
         "test process"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 98,
-      "question": "What is the name of the term defined as follows? <strong>The consequence/outcome of the execution of a test.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The consequence/outcome of the execution of a test.",
+      "options": [
         "test result",
         "test execution",
         "testing",
         "test procedure"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 99,
-      "question": "What is the definition of the term <strong>testware</strong>?",
-      "answers": [
+      "question": "What is the definition of the term testware?",
+      "options": [
         "The activity that prepares the testware needed for test execution based on test analysis and design.",
         "The activity that runs a test on a component or system producing actual results.",
         "Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.",
         "The use of software to perform or support test activities."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 100,
-      "question": "What is the name of the term defined as follows? <strong>Testing based on an analysis of the internal structure of the component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing based on an analysis of the internal structure of the component or system.",
+      "options": [
         "test technique",
         "white-box test technique",
         "black-box test technique",
         "white-box testing"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 101,
-      "question": "What is the name of the term defined as follows? <strong>A human action that results in a defect.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A human action that results in a defect.",
+      "options": [
         "anomaly",
         "verification",
         "defect report",
         "error"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 102,
-      "question": "What is the name of the term defined as follows? <strong>The overall process of risk mitigation and risk monitoring.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The overall process of risk mitigation and risk monitoring.",
+      "options": [
         "risk analysis",
         "risk identification",
         "risk control",
         "risk monitoring"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 103,
-      "question": "What is the name of the term defined as follows? <strong>The process of finding, recognizing and describing risks.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process of finding, recognizing and describing risks.",
+      "options": [
         "risk control",
         "risk monitoring",
         "risk mitigation",
         "risk identification"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 104,
-      "question": "What is the name of the term defined as follows? <strong>The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.",
+      "options": [
         "risk mitigation",
         "risk assessment",
         "product risk",
         "risk analysis"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 105,
-      "question": "What is the name of the term defined as follows? <strong>The activity that identifies test conditions by analyzing the test basis.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that identifies test conditions by analyzing the test basis.",
+      "options": [
         "test technique",
         "test process",
         "test implementation",
         "test analysis"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 106,
-      "question": "What is the definition of the term <strong>test data</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test data?",
+      "options": [
         "Testing that involves the execution of the test item.",
         "The manner of implementing testing tasks.",
         "Data needed for test execution.",
         "A procedure used to define test conditions, design test cases, and specify test data."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 107,
-      "question": "What is the name of the term defined as follows? <strong>The activity that runs a test on a component or system producing actual results.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that runs a test on a component or system producing actual results.",
+      "options": [
         "test process",
         "test procedure",
         "test execution",
         "testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 108,
-      "question": "What is the name of the term defined as follows? <strong>A procedure used to define test conditions, design test cases, and specify test data.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A procedure used to define test conditions, design test cases, and specify test data.",
+      "options": [
         "test implementation",
         "test execution",
         "test technique",
         "test process"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 109,
-      "question": "What is the name of the term defined as follows? <strong>The process within the software development lifecycle that evaluates the quality of a component or system and related work products.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process within the software development lifecycle that evaluates the quality of a component or system and related work products.",
+      "options": [
         "testing",
         "test technique",
         "system testing",
         "test implementation"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 110,
-      "question": "What is the definition of the term <strong>traceability</strong>?",
-      "answers": [
+      "question": "What is the definition of the term traceability?",
+      "options": [
         "The degree to which a work product satisfies stated and implied needs of its stakeholders.",
         "An imperfection or deficiency in a work product where it does not meet its requirements or specifications.",
         "The ability to establish explicit relationships between related work products or items within work products. ",
         "A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 111,
-      "question": "What is the definition of the term <strong>acceptance testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term acceptance testing?",
+      "options": [
         "Testing that involves the execution of the test item.",
         "A test level that focuses on determining whether to accept the system.",
         "A graphical model representing the relationship of the amount of testing per level, with more at the bottom than at the top.",
         "A test level that focuses on individual hardware or software components."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 112,
-      "question": "What is the name of the term defined as follows? <strong>A test technique based on the specification of a component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test technique based on the specification of a component or system.",
+      "options": [
         "white-box testing",
         "black-box test technique",
         "system testing",
         "test approach"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 113,
-      "question": "What is the definition of the term <strong>decision table testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term decision table testing?",
+      "options": [
         "A black-box test technique in which test cases are designed to exercise the combinations of conditions and the resulting actions shown in a decision table.",
         "A black-box test technique in which test cases are designed to exercise elements of a state transition model.",
         "The activity that derives and specifies test cases from test conditions.",
         "A black-box test technique in which test conditions are equivalence partitions exercised by one representative member of each partition. "
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 114,
-      "question": "What is the name of the term defined as follows? <strong>The set of conditions for officially starting a defined task.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The set of conditions for officially starting a defined task.",
+      "options": [
         "entry criteria",
         "decision table testing",
         "validation",
         "exit criteria"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 115,
-      "question": "What is the definition of the term <strong>inspection</strong>?",
-      "answers": [
+      "question": "What is the definition of the term inspection?",
+      "options": [
         "A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards.",
         "The process within the software development lifecycle that evaluates the quality of a component or system and related work products.",
         "A review that follows a defined process with a formally documented output.",
         "A type of formal review that uses defined team roles and measurement to identify defects in a work product, and improve the review process and the software development process. "
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 116,
-      "question": "What is the name of the term defined as follows? <strong>A risk that impacts the quality of a product.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A risk that impacts the quality of a product.",
+      "options": [
         "product risk",
         "risk control",
         "risk analysis",
         "risk assessment"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 117,
-      "question": "What is the name of the term defined as follows? <strong>The measure of a risk defined by risk impact and risk likelihood.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The measure of a risk defined by risk impact and risk likelihood.",
+      "options": [
         "risk",
         "risk level",
         "risk analysis",
         "risk management"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 118,
-      "question": "What is the definition of the term <strong>test completion report</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test completion report?",
+      "options": [
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "The activity that checks the status of testing activities, identifies any variances from planned or expected, and reports status to stakeholders.",
         "Testing that involves the execution of the test item.",
         "A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 119,
-      "question": "What is the definition of the term <strong>test design</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test design?",
+      "options": [
         "The activity that runs a test on a component or system producing actual results.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.",
         "Testing that involves the execution of the test item.",
         "The activity that derives and specifies test cases from test conditions."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 120,
-      "question": "What is the definition of the term <strong>validation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term validation?",
+      "options": [
         "Confirmation by examination that a work product matches a stakeholder's needs.",
         "The activity that checks and reports the status of known risks to stakeholders.",
         "Activities focused on providing confidence that quality requirements will be fulfilled.",
         "Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 121,
-      "question": "What is the definition of the term <strong>branch coverage</strong>?",
-      "answers": [
+      "question": "What is the definition of the term branch coverage?",
+      "options": [
         "The coverage of branches in a control flow graph.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.",
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "The integration testing of systems."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 122,
-      "question": "What is the name of the term defined as follows? <strong>A human action that results in a defect.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A human action that results in a defect.",
+      "options": [
         "validation",
         "error",
         "defect report",
         "anomaly"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 123,
-      "question": "What is the name of the term defined as follows? <strong>A type of review that does not follow a defined process and has no formally documented output.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of review that does not follow a defined process and has no formally documented output.",
+      "options": [
         "quality",
         "verification",
         "confirmation testing",
         "informal review"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 124,
-      "question": "What is the name of the term defined as follows? <strong>The degree to which a work product satisfies stated and implied needs of its stakeholders.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The degree to which a work product satisfies stated and implied needs of its stakeholders.",
+      "options": [
         "quality",
         "testing",
         "failure",
         "validation"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 125,
-      "question": "What is the definition of the term <strong>risk identification</strong>?",
-      "answers": [
+      "question": "What is the definition of the term risk identification?",
+      "options": [
         "A risk that impacts the quality of a product.",
         "The overall process of risk identification and risk assessment.",
         "The process to examine identified risks and determine the risk level.",
         "The process of finding, recognizing and describing risks."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 126,
-      "question": "What is the name of the term defined as follows? <strong>The process of evaluating a component or system without executing it, based on its form, structure, content, or documentation.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process of evaluating a component or system without executing it, based on its form, structure, content, or documentation.",
+      "options": [
         "static analysis",
         "traceability",
         "debugging",
         "test analysis"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 127,
-      "question": "What is the definition of the term <strong>test automation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test automation?",
+      "options": [
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "The use of software to perform or support test activities.",
         "The activity that makes testware available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.",
         "The purpose for testing."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 128,
-      "question": "What is the name of the term defined as follows? <strong>The activity that makes testware available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that makes testware available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.",
+      "options": [
         "test process",
         "testing",
         "exploratory testing",
         "test completion"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 129,
-      "question": "What is the name of the term defined as follows? <strong>A specific instantiation of a test process.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A specific instantiation of a test process.",
+      "options": [
         "test technique",
         "test level",
         "test planning",
         "testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 130,
-      "question": "What is the definition of the term <strong>test object</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test object?",
+      "options": [
         "Testing that involves the execution of the test item.",
         "The activity that identifies test conditions by analyzing the test basis.",
         "The purpose for testing.",
         "The work product to be tested."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 131,
-      "question": "What is the name of the term defined as follows? <strong>The criteria that a component or system must satisfy in order to be accepted by a user, customer, or other authorized entity.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The criteria that a component or system must satisfy in order to be accepted by a user, customer, or other authorized entity.",
+      "options": [
         "acceptance criteria",
         "exit criteria",
         "quality",
         "validation"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 132,
-      "question": "What is the name of the term defined as follows? <strong>A test technique based on the specification of a component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test technique based on the specification of a component or system.",
+      "options": [
         "testing",
         "system testing",
         "black-box test technique",
         "black-box testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 133,
-      "question": "What is the definition of the term <strong>decision table testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term decision table testing?",
+      "options": [
         "An attribute or combination of attributes derived from one or more test conditions by using a test technique.",
         "A black-box test technique in which test cases are designed to exercise the combinations of conditions and the resulting actions shown in a decision table.",
         "A black-box test technique in which test cases are designed based on boundary values.",
         "The activity that identifies test conditions by analyzing the test basis."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 134,
-      "question": "What is the definition of the term <strong>error guessing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term error guessing?",
+      "options": [
         "A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
         "The manner of implementing testing tasks.",
         "An attribute or combination of attributes derived from one or more test conditions by using a test technique.",
         "A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 135,
-      "question": "What is the definition of the term <strong>formal review</strong>?",
-      "answers": [
+      "question": "What is the definition of the term formal review?",
+      "options": [
         "A review that follows a defined process with a formally documented output.",
         "A formal review by technical experts that examine the quality of a work product and identify discrepancies from specifications and standards.",
         "A type of review in which an author leads members of the review through a work product and the members ask questions and make comments about possible issues.",
         "A specific instantiation of a test process."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 136,
-      "question": "What is the name of the term defined as follows? <strong>Testing performed to evaluate if a component or system satisfies functional requirements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing performed to evaluate if a component or system satisfies functional requirements.",
+      "options": [
         "test execution",
         "test design",
         "test analysis",
         "functional testing"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 137,
-      "question": "What is the name of the term defined as follows? <strong>A factor that could result in future negative consequences.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A factor that could result in future negative consequences.",
+      "options": [
         "risk",
         "risk management",
         "risk identification",
         "risk analysis"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 138,
-      "question": "What is the definition of the term <strong>test automation</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test automation?",
+      "options": [
         "A test level that focuses on individual hardware or software components.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
         "The set of interrelated activities comprising of test planning, test monitoring, test control, test analysis, test design, test implementation, test execution, and test completion.",
         "The use of software to perform or support test activities."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 139,
-      "question": "What is the definition of the term <strong>test design</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test design?",
+      "options": [
         "A procedure used to define test conditions, design test cases, and specify test data.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.",
         "The activity that derives and specifies test cases from test conditions.",
         "An attribute or combination of attributes derived from one or more test conditions by using a test technique."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 140,
-      "question": "What is the name of the term defined as follows? <strong>Testing based on an analysis of the internal structure of the component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing based on an analysis of the internal structure of the component or system.",
+      "options": [
         "white-box testing",
         "testing",
         "system testing",
         "static testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 141,
-      "question": "What is the definition of the term <strong>coverage</strong>?",
-      "answers": [
+      "question": "What is the definition of the term coverage?",
+      "options": [
         "The activity of establishing or updating a test plan.",
         "The degree to which specified coverage items are exercised by a test suite, expressed as a percentage.",
         "A procedure used to define test conditions, design test cases, and specify test data.",
         "A group of test activities based on specific test objectives aimed at specific characteristics of a component or system."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 142,
-      "question": "What is the definition of the term <strong>equivalence partitioning</strong>?",
-      "answers": [
+      "question": "What is the definition of the term equivalence partitioning?",
+      "options": [
         "A black-box test technique in which test conditions are equivalence partitions exercised by one representative member of each partition. ",
         "A test technique based on the internal structure of a component or system.",
         "A black-box test technique in which test cases are designed based on boundary values.",
         "A black-box test technique in which test cases are designed to exercise the combinations of conditions and the resulting actions shown in a decision table."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 143,
-      "question": "What is the name of the term defined as follows? <strong>The measure of a risk defined by risk impact and risk likelihood.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The measure of a risk defined by risk impact and risk likelihood.",
+      "options": [
         "risk management",
         "risk level",
         "risk",
         "risk mitigation"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 144,
-      "question": "What is the definition of the term <strong>root cause</strong>?",
-      "answers": [
+      "question": "What is the definition of the term root cause?",
+      "options": [
         "Documentation of the occurrence, nature, and status of a defect.",
         "The process of finding, analyzing and removing the causes of failures in a component or system.",
         "A type of change-related testing to detect whether defects have been introduced or uncovered in unchanged areas of the software.",
         "A source of a defect such that if it is removed, the occurrence of the defect type is decreased or removed."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 145,
-      "question": "What is the definition of the term <strong>system testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term system testing?",
+      "options": [
         "Testing performed to evaluate that a component or system complies with non-functional requirements.",
         "A test technique based on the specification of a component or system.",
         "A test level that focuses on verifying that a system as a whole meets specified requirements.",
         "A test level that focuses on individual hardware or software components."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 146,
-      "question": "What is the name of the term defined as follows? <strong>The use of software to perform or support test activities.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The use of software to perform or support test activities.",
+      "options": [
         "test monitoring",
         "test automation",
         "dynamic testing",
         "test execution"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 147,
-      "question": "What is the definition of the term <strong>test execution</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test execution?",
+      "options": [
         "The process of evaluating a component or system without executing it, based on its form, structure, content, or documentation.",
         "A test level that focuses on interactions between components or systems.",
         "The activity that identifies test conditions by analyzing the test basis.",
         "The activity that runs a test on a component or system producing actual results."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 148,
-      "question": "What is the name of the term defined as follows? <strong>The activity that prepares the testware needed for test execution based on test analysis and design.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The activity that prepares the testware needed for test execution based on test analysis and design.",
+      "options": [
         "test design",
         "testing",
         "test process",
         "test implementation"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 149,
-      "question": "What is the name of the term defined as follows? <strong>The purpose for testing.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The purpose for testing.",
+      "options": [
         "testing",
         "test objective",
         "test design",
         "test analysis"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 150,
-      "question": "What is the name of the term defined as follows? <strong>A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A group of test activities based on specific test objectives aimed at specific characteristics of a component or system.",
+      "options": [
         "test type",
         "test design",
         "test approach",
         "test level"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 151,
-      "question": "What is the definition of the term <strong>acceptance criteria</strong>?",
-      "answers": [
+      "question": "What is the definition of the term acceptance criteria?",
+      "options": [
         "Testing performed to evaluate that a component or system complies with non-functional requirements.",
         "Testing based on an analysis of the specification of the component or system.",
         "The set of conditions for officially completing a defined task.",
         "The criteria that a component or system must satisfy in order to be accepted by a user, customer, or other authorized entity."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 152,
-      "question": "What is the definition of the term <strong>acceptance testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term acceptance testing?",
+      "options": [
         "The manner of implementing testing tasks.",
         "A test level that focuses on determining whether to accept the system.",
         "Testing that involves the execution of the test item.",
         "A test level that focuses on individual hardware or software components."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 153,
-      "question": "What is the name of the term defined as follows? <strong>A test technique based on the specification of a component or system.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test technique based on the specification of a component or system.",
+      "options": [
         "test approach",
         "testing",
         "test strategy",
         "black-box test technique"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 154,
-      "question": "What is the definition of the term <strong>confirmation testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term confirmation testing?",
+      "options": [
         "A source of a defect such that if it is removed, the occurrence of the defect type is decreased or removed.",
         "A type of change-related testing performed after fixing a defect to confirm that a failure caused by that defect does not reoccur.",
         "Testing that involves the execution of the test item.",
         "Documentation of the occurrence, nature, and status of a defect."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 155,
-      "question": "What is the name of the term defined as follows? <strong>Testing performed to evaluate if a component or system satisfies functional requirements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Testing performed to evaluate if a component or system satisfies functional requirements.",
+      "options": [
         "functional testing",
         "testing",
         "test implementation",
         "test technique"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 156,
-      "question": "What is the definition of the term <strong>project risk</strong>?",
-      "answers": [
+      "question": "What is the definition of the term project risk?",
+      "options": [
         "The process of finding, recognizing and describing risks.",
         "The process through which decisions are reached and protective measures are implemented for reducing or maintaining risks to specified levels.",
         "The activity that checks and reports the status of known risks to stakeholders.",
         "A risk that impacts project success."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 157,
-      "question": "What is the name of the term defined as follows? <strong>A set of preconditions, inputs, actions (where applicable), expected results and postconditions, developed based on test conditions.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A set of preconditions, inputs, actions (where applicable), expected results and postconditions, developed based on test conditions.",
+      "options": [
         "test case",
         "test process",
         "test execution",
         "test condition"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 158,
-      "question": "What is the definition of the term <strong>test design</strong>?",
-      "answers": [
+      "question": "What is the definition of the term test design?",
+      "options": [
         "Testing that involves the execution of the test item.",
         "A procedure used to define test conditions, design test cases, and specify test data.",
         "The activity that derives and specifies test cases from test conditions.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 159,
-      "question": "What is the name of the term defined as follows? <strong>A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution.",
+      "options": [
         "test design",
         "test approach",
         "test technique",
         "test procedure"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 160,
-      "question": "What is the definition of the term <strong>shift left</strong>?",
-      "answers": [
+      "question": "What is the definition of the term shift left?",
+      "options": [
         "A test approach to perform testing and quality assurance activities as early as possible in the software development lifecycle.",
         "The process within the software development lifecycle that evaluates the quality of a component or system and related work products.",
         "Testing in which the management, selection, prioritization, and use of testing activities and resources are based on corresponding risk types and risk levels.",
         "A description of how to perform testing to reach test objectives under given circumstances."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 161,
-      "question": "What is the name of the term defined as follows? <strong>The process of recognizing, recording, classifying, investigating, resolving and disposing of defects.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The process of recognizing, recording, classifying, investigating, resolving and disposing of defects.",
+      "options": [
         "inspection",
         "defect management",
         "risk management",
         "failure"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 162,
-      "question": "What is the name of the term defined as follows? <strong>The set of conditions for officially starting a defined task.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The set of conditions for officially starting a defined task.",
+      "options": [
         "risk identification",
         "validation",
         "statement coverage",
         "entry criteria"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 163,
-      "question": "What is the name of the term defined as follows? <strong>A test technique based on the tester's experience, knowledge and intuition.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test technique based on the tester's experience, knowledge and intuition.",
+      "options": [
         "exploratory testing",
         "experience-based test technique",
         "testing",
         "risk-based testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 164,
-      "question": "What is the name of the term defined as follows? <strong>A risk that impacts project success.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A risk that impacts project success.",
+      "options": [
         "risk analysis",
         "project risk",
         "risk mitigation",
         "risk level"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 165,
-      "question": "What is the definition of the term <strong>static testing</strong>?",
-      "answers": [
+      "question": "What is the definition of the term static testing?",
+      "options": [
         "The activity that derives and specifies test cases from test conditions.",
         "Testing that does not involve the execution of a test item.",
         "A description of how to perform testing to reach test objectives under given circumstances.",
         "A testable aspect of a component or system identified as a basis for testing."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 166,
-      "question": "What is the name of the term defined as follows? <strong>The integration testing of systems.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The integration testing of systems.",
+      "options": [
         "system integration testing",
         "test monitoring",
         "integration testing",
         "collaboration-based test approach"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 167,
-      "question": "What is the name of the term defined as follows? <strong>A test level that focuses on verifying that a system as a whole meets specified requirements.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A test level that focuses on verifying that a system as a whole meets specified requirements.",
+      "options": [
         "test implementation",
         "system testing",
         "test control",
         "test monitoring"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 168,
-      "question": "What is the name of the term defined as follows? <strong>A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria.",
+      "options": [
         "test completion report",
         "test progress report",
         "exploratory testing",
         "test process"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 169,
-      "question": "What is the name of the term defined as follows? <strong>The ability to establish explicit relationships between related work products or items within work products. </strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? The ability to establish explicit relationships between related work products or items within work products. ",
+      "options": [
         "traceability",
         "static analysis",
         "inspection",
         "debugging"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
       "id": 170,
-      "question": "What is the name of the term defined as follows? <strong>Confirmation by examination that a work product matches a stakeholder's needs.</strong>",
-      "answers": [
+      "question": "What is the name of the term defined as follows? Confirmation by examination that a work product matches a stakeholder's needs.",
+      "options": [
         "acceptance testing",
         "confirmation testing",
         "verification",
         "validation"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
 	{
       "id": 171,
       "question": "What is a primary objective of software testing?",
-      "answers": [
+      "options": [
         "To ensure the software is completely defect-free",
         "To validate that the software meets stakeholder needs",
         "To replace the need for debugging",
         "To eliminate the need for quality assurance"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 172,
       "question": "How does testing differ from debugging?",
-      "answers": [
+      "options": [
         "Testing fixes defects, while debugging identifies them",
         "Testing identifies defects or triggers failures, while debugging diagnoses and fixes defects",
         "Testing is performed only statically, while debugging is dynamic",
         "Testing is a process-oriented activity, while debugging is product-oriented"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 173,
       "question": "Which of the following is a testing principle?",
-      "answers": [
+      "options": [
         "Testing proves the absence of defects",
         "Exhaustive testing is always feasible",
         "Defects cluster together in a small number of components",
         "Testing is independent of context"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 174,
       "question": "What is the main difference between testing and quality assurance (QA)?",
-      "answers": [
+      "options": [
         "Testing is process-oriented, while QA is product-oriented",
         "Testing focuses on defect detection, while QA focuses on process improvement",
         "Testing is performed only by testers, while QA is performed by developers",
         "Testing ensures compliance with regulations, while QA does not"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 175,
       "question": "Which activity is part of the test implementation phase?",
-      "answers": [
+      "options": [
         "Defining test objectives and approach",
         "Creating test data and test scripts",
         "Comparing actual progress against the test plan",
         "Analyzing lessons learned for future projects"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 176,
       "question": "Why is traceability between the test basis and testware important?",
-      "answers": [
+      "options": [
         "It ensures all defects are fixed during debugging",
         "It supports coverage evaluation and impact analysis",
         "It eliminates the need for test automation",
         "It replaces the need for test planning"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 177,
       "question": "Which skill is particularly relevant for testers to effectively identify defects?",
-      "answers": [
+      "options": [
         "Project management",
         "Thoroughness and attention to detail",
         "Knowledge of hardware design",
         "Financial analysis"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 178,
       "question": "What is a benefit of the whole team approach in testing?",
-      "answers": [
+      "options": [
         "It ensures complete independence of testers",
         "It enhances collaboration and leverages diverse skill sets",
         "It eliminates the need for test automation",
         "It reduces the need for stakeholder involvement"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 179,
       "question": "What is a drawback of high independence in testing?",
-      "answers": [
+      "options": [
         "Independent testers may find fewer defects",
         "It may lead to isolation from the development team",
         "It eliminates the need for communication skills",
         "It ensures all defects are found"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 180,
       "question": "What does the testing principle \"absence-of-defects fallacy\" imply?",
-      "answers": [
+      "options": [
         "Defect-free software guarantees user satisfaction",
         "Testing can prove the absence of defects",
         "Fixing all defects may not meet user needs or business goals",
         "Defects are evenly distributed across components"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 181,
       "question": "What is the main purpose of testing?",
-      "answers": [
+      "options": [
         "To ensure the code runs without errors",
         "To find and fix all the bugs",
         "To evaluate quality and reduce the risk of software failure",
         "To write perfect software"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 182,
       "question": "Which of the following is a typical test objective?",
-      "answers": [
+      "options": [
         "Reduce code size",
         "Find and fix all bugs",
         "Build confidence in software quality",
         "Reduce the number of developers"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 183,
       "question": "How is testing different from debugging?",
-      "answers": [
+      "options": [
         "Testing is done only after debugging",
         "Debugging is a static process, while testing is dynamic",
         "Testing finds failures; debugging identifies and fixes the causes",
         "Testing involves fixing defects; debugging reports them"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 184,
       "question": "What is the correct order in the cause-effect chain?",
-      "answers": [
+      "options": [
         "Failure → Defect → Error → Root cause",
         "Error → Defect → Failure → Root cause",
         "Root cause → Error → Defect → Failure",
         "Defect → Error → Root cause → Failure"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 185,
       "question": "Which principle states that testing everything is impossible?",
-      "answers": [
+      "options": [
         "Testing shows presence, not absence of defects",
         "Exhaustive testing is impossible",
         "Defects cluster together",
         "Early testing saves time and money"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 186,
       "question": "What is the main benefit of early testing?",
-      "answers": [
+      "options": [
         "It reduces the amount of code written",
         "It saves time and cost by identifying defects early",
         "It delays the project until code is written",
         "It ensures zero defects"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 187,
       "question": "What is the purpose of test traceability?",
-      "answers": [
+      "options": [
         "To map code to test environments",
         "To monitor software performance",
         "To link test cases to requirements and risks",
         "To replace documentation"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 188,
       "question": "What is meant by \"testware\"?",
-      "answers": [
+      "options": [
         "Test automation tools",
         "The people performing the testing",
         "All artifacts produced during testing",
         "The test object"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 189,
       "question": "Which of the following is a benefit of independent testing?",
-      "answers": [
+      "options": [
         "Developers get more control",
         "Testers can find different defects due to different perspectives",
         "No communication is needed",
         "Development time increases"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 190,
       "question": "What is the “whole team approach” in testing?",
-      "answers": [
+      "options": [
         "Only the QA team is responsible for testing",
         "Everyone in the team contributes to quality and testing",
         "Developers test; testers code",
         "Testing is outsourced to another company"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 191,
       "question": "How does the choice of SDLC impact testing?",
-      "answers": [
+      "options": [
         "It has no impact on testing activities",
         "It affects the scope, timing, and automation of test activities",
         "It eliminates the need for regression testing",
         "It ensures testing is only performed at the end of the SDLC"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 192,
       "question": "Which is a good testing practice applicable to all SDLC models?",
-      "answers": [
+      "options": [
         "Performing only dynamic testing",
         "Aligning test activities with development activities",
         "Avoiding regression testing",
         "Limiting testing to acceptance testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 193,
       "question": "Which of the following is an example of a test-first approach?",
-      "answers": [
+      "options": [
         "Waterfall model",
         "Test-Driven Development (TDD)",
         "V-model",
         "Big-bang integration"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 194,
       "question": "What is a benefit of DevOps for testing?",
-      "answers": [
+      "options": [
         "It eliminates the need for manual testing",
         "It reduces regression risk through automated testing",
         "It removes the need for test environments",
         "It ensures all testing is performed manually"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 195,
       "question": "What does the \"shift left\" approach in testing emphasize?",
-      "answers": [
+      "options": [
         "Performing testing only at the end of the SDLC",
         "Conducting testing earlier in the SDLC",
         "Eliminating the need for non-functional testing",
         "Focusing solely on regression testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 196,
       "question": "What is a key benefit of retrospectives in testing?",
-      "answers": [
+      "options": [
         "They ensure all defects are fixed",
         "They support continuous process improvement",
         "They eliminate the need for test planning",
         "They replace the need for test automation"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 197,
       "question": "Which test level focuses on testing the interfaces between components?",
-      "answers": [
+      "options": [
         "Component testing",
         "System testing",
         "Component integration testing",
         "Acceptance testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 198,
       "question": "What is the main objective of non-functional testing?",
-      "answers": [
+      "options": [
         "To verify what the system does",
         "To check how well the system behaves",
         "To test the internal structure of the system",
         "To ensure all defects are fixed"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 199,
       "question": "How does confirmation testing differ from regression testing?",
-      "answers": [
+      "options": [
         "Confirmation testing checks for new defects, while regression testing fixes defects",
         "Confirmation testing verifies defect fixes, while regression testing ensures no new issues from changes",
         "Confirmation testing is always automated, while regression testing is manual",
         "Confirmation testing is performed only at the system level, while regression testing is at the component level"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 200,
       "question": "What is a common trigger for maintenance testing?",
-      "answers": [
+      "options": [
         "Developing a new system from scratch",
         "Modifying an operational system with enhancements or fixes",
         "Eliminating the need for regression testing",
         "Performing only black-box testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 201,
       "question": "Which of the following work products is typically NOT suitable for static testing?",
-      "answers": [
+      "options": [
         "Requirement specification documents",
         "Source code",
         "Third-party executable code",
         "Test plans"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 202,
       "question": "What is a key difference between static testing and dynamic testing?",
-      "answers": [
+      "options": [
         "Static testing requires executable code, while dynamic testing does not.",
         "Static testing finds defects directly, while dynamic testing identifies defects through failures.",
         "Static testing can only be applied to executable work products.",
         "Dynamic testing is performed early in the SDLC, while static testing is performed later."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 203,
       "question": "What is a primary benefit of early and frequent stakeholder feedback in static testing?",
-      "answers": [
+      "options": [
         "It increases the cost of the review process.",
         "It ensures defects are only found during dynamic testing.",
         "It prevents misunderstandings about requirements and reduces rework.",
         "It eliminates the need for formal reviews."
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
       "id": 204,
       "question": "Which role in a review process is responsible for ensuring effective review meetings and creating a safe environment for discussion?",
-      "answers": [
+      "options": [
         "Author",
         "Moderator",
         "Scribe",
         "Manager"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 205,
       "question": "Which review type is the most formal and follows the complete generic review process to maximize anomaly detection?",
-      "answers": [
+      "options": [
         "Informal review",
         "Walkthrough",
         "Technical review",
         "Inspection"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
       "id": 206,
       "question": "Which test technique is based on the internal structure of the test object and requires knowledge of the code?",
-      "answers": [
+      "options": [
         "Black-box testing",
         "White-box testing",
         "Experience-based testing",
         "Equivalence partitioning"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 207,
       "question": "In equivalence partitioning, what is the coverage criterion for achieving 100% coverage?",
-      "answers": [
+      "options": [
         "Test all possible combinations of partitions.",
         "Test one value from each partition, including valid and invalid partitions.",
         "Test only the boundary values of each partition.",
         "Test all states in the system."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 208,
       "question": "What is the main focus of Boundary Value Analysis (BVA)?",
-      "answers": [
+      "options": [
         "Testing all possible combinations of conditions.",
         "Testing the boundaries of equivalence partitions.",
         "Testing the internal logic of the code.",
         "Testing based on tester experience."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
       "id": 209,
       "question": "In decision table testing, what does a column represent?",
-      "answers": [
+      "options": [
         "A single state in the system.",
         "A unique combination of conditions and associated actions.",
         "A single test case covering all conditions.",
         "A boundary value for an input."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 300,
+      "id": 210,
       "question": "Which coverage criterion in state transition testing ensures that both valid and invalid transitions are tested?",
-      "answers": [
+      "options": [
         "All states coverage",
         "Valid transitions coverage",
         "All transitions coverage",
         "0-switch coverage"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
-      "id": 301,
+      "id": 211,
       "question": "What does 100% branch coverage guarantee in white-box testing?",
-      "answers": [
+      "options": [
         "All defects in the code are detected.",
         "All statements and branches are exercised.",
         "All possible paths through the code are tested.",
         "All requirements are implemented."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 302,
+      "id": 212,
       "question": "Which experience-based test technique involves simultaneously designing, executing, and evaluating tests while learning about the system?",
-      "answers": [
+      "options": [
         "Error guessing",
         "Exploratory testing",
         "Checklist-based testing",
         "Boundary value analysis"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 303,
+      "id": 213,
       "question": "What is a key characteristic of a good user story according to the INVEST criteria?",
-      "answers": [
+      "options": [
         "It should be large and complex.",
         "It should be testable.",
         "It should depend on other user stories.",
         "It should avoid stakeholder collaboration."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 304,
+      "id": 214,
       "question": "In Acceptance Test-driven Development (ATDD), when are test cases created?",
-      "answers": [
+      "options": [
         "After the user story is implemented.",
         "Before the user story is implemented.",
         "During the execution of the user story.",
         "Only after defects are found."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 305,
+      "id": 215,
       "question": "Which format is commonly used for writing scenario-oriented acceptance criteria?",
-      "answers": [
+      "options": [
         "Bullet point verification list",
         "Given/When/Then format",
         "Tabulated input-output mapping",
         "Free-form text"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 306,
+      "id": 216,
       "question": "Which test design technique is most suitable when the system behavior depends on different combinations of inputs?",
-      "answers": [
+      "options": [
         "State Transition Testing",
         "Decision Table Testing",
         "Boundary Value Analysis",
         "Checklist-based Testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 307,
+      "id": 217,
       "question": "What is the primary benefit of Equivalence Partitioning?",
-      "answers": [
+      "options": [
         "Reduces the number of test cases",
         "Ensures code coverage",
         "Identifies boundary defects",
         "Increases exploratory coverage"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
-      "id": 308,
+      "id": 218,
       "question": "Which technique would be most useful for validating navigation flows in an application?",
-      "answers": [
+      "options": [
         "Decision Tables",
         "Equivalence Partitioning",
         "State Transition Testing",
         "Statement Testing"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
-      "id": 309,
+      "id": 219,
       "question": "A tester designs tests to ensure each line of code is executed at least once. Which technique is being used?",
-      "answers": [
+      "options": [
         "Statement Testing",
         "Branch Testing",
         "Decision Table Testing",
         "State Transition Testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
-      "id": 400,
+      "id": 220,
       "question": "Error Guessing is primarily based on:",
-      "answers": [
+      "options": [
         "Coverage metrics",
         "Tester’s domain knowledge and intuition",
         "Acceptance criteria",
         "Code structure"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 401,
+      "id": 221,
       "question": "What is the primary purpose of a test plan?",
-      "answers": [
+      "options": [
         "To execute test cases automatically",
         "To document test objectives, resources, and processes for a test project",
         "To track defects found during testing",
         "To define the coding standards for development"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 402,
+      "id": 222,
       "question": "How do testers contribute to release planning in an iterative SDLC?",
-      "answers": [
+      "options": [
         "By writing code for the product backlog",
         "By participating in writing testable user stories and estimating test effort",
         "By managing the project budget",
         "By deploying the software to production"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 403,
+      "id": 223,
       "question": "Which of the following is a typical exit criterion for a test level?",
-      "answers": [
+      "options": [
         "Availability of test data",
         "All planned tests have been executed",
         "Availability of the test environment",
         "Completion of code development"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 404,
+      "id": 224,
       "question": "Which estimation technique uses historical data to derive ratios for test effort?",
-      "answers": [
+      "options": [
         "Wideband Delphi",
         "Three-point estimation",
         "Estimation based on ratios",
         "Extrapolation"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
-      "id": 405,
+      "id": 225,
       "question": "What is the main factor considered in risk-based test case prioritization?",
-      "answers": [
+      "options": [
         "The availability of test tools",
         "The results of risk analysis",
         "The number of test cases",
         "The experience of the testers"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 406,
+      "id": 226,
       "question": "In the test pyramid model, what characterizes tests at the bottom layer?",
-      "answers": [
+      "options": [
         "They are slow and check large functionalities",
         "They are fast, isolated, and numerous",
         "They are manual and business-facing",
         "They focus on user acceptance testing"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 407,
+      "id": 227,
       "question": "Which testing quadrant includes exploratory and usability testing?",
-      "answers": [
+      "options": [
         "Q1 (Technology-facing, support team)",
         "Q2 (Business-facing, support team)",
         "Q3 (Business-facing, critique product)",
         "Q4 (Technology-facing, critique product)"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
-      "id": 408,
+      "id": 228,
       "question": "How is risk level determined in risk management?",
-      "answers": [
+      "options": [
         "By the number of test cases executed",
         "By combining risk likelihood and risk impact",
         "By the availability of test resources",
         "By the number of defects found"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 409,
+      "id": 229,
       "question": "Which of the following is an example of a project risk?",
-      "answers": [
+      "options": [
         "Incorrect calculations in the software",
         "Delays in work product deliveries",
         "Poor user experience",
         "Security vulnerabilities"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 500,
+      "id": 230,
       "question": "How does product risk analysis influence testing?",
-      "answers": [
+      "options": [
         "It determines the programming language used",
         "It influences the thoroughness and scope of testing",
         "It defines the test environment setup",
         "It sets the project budget"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 501,
+      "id": 231,
       "question": "Which metric is commonly used in test monitoring?",
-      "answers": [
+      "options": [
         "Number of lines of code written",
         "Defect detection percentage",
         "Number of developers in the team",
         "Project budget allocation"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 502,
+      "id": 232,
       "question": "What is typically included in a test progress report?",
-      "answers": [
+      "options": [
         "Detailed code review findings",
         "Test progress and impediments for testing",
         "Final product deployment plan",
         "Employee performance evaluations"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 503,
+      "id": 233,
       "question": "Which method is suitable for communicating test status in a distributed team?",
-      "answers": [
+      "options": [
         "Face-to-face meetings only",
         "Formal test reports",
         "Code comments",
         "Whiteboard sketches"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 504,
+      "id": 234,
       "question": "How does configuration management support testing?",
-      "answers": [
+      "options": [
         "By writing test cases for developers",
         "By ensuring traceability and version control of test items",
         "By automating test execution",
         "By defining test objectives"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 505,
+      "id": 235,
       "question": "What is a key objective of a defect report?",
-      "answers": [
+      "options": [
         "To allocate project budget",
         "To provide sufficient information for defect resolution",
         "To define test case priorities",
         "To document the test environment setup"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 506,
+      "id": 236,
       "question": "Which of the following tools is used to facilitate the management of the Software Development Life Cycle (SDLC)?",
-      "answers": [
+      "options": [
         "Non-functional testing tools",
         "Test execution and test coverage tools",
         "Test management tools",
         "Collaboration tools"
       ],
-      "correct_answer": 2
+      "correct": 2
     },
     {
-      "id": 507,
+      "id": 237,
       "question": "What type of test tool supports the generation of test cases and test data?",
-      "answers": [
+      "options": [
         "Static testing tools",
         "Test design and test implementation tools",
         "DevOps tools",
         "Tools supporting scalability and deployment"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 508,
+      "id": 238,
       "question": "Which tool category supports non-functional testing that is difficult to perform manually?",
-      "answers": [
+      "options": [
         "Collaboration tools",
         "Non-functional testing tools",
         "Test management tools",
         "Static testing tools"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 509,
+      "id": 239,
       "question": "In the context of testing, which of the following can be considered a test tool?",
-      "answers": [
+      "options": [
         "A programming IDE",
         "A spreadsheet used for tracking test progress",
         "A word processor for writing code",
         "A database management system for development"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 600,
+      "id": 240,
       "question": "Which type of tool supports the automated build processes in a DevOps pipeline?",
-      "answers": [
+      "options": [
         "Test execution and test coverage tools",
         "DevOps tools",
         "Static testing tools",
         "Tools supporting scalability and deployment"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 601,
+      "id": 241,
       "question": "What is a key benefit of test automation?",
-      "answers": [
+      "options": [
         "Increased manual testing effort",
         "Reduced test execution times for earlier defect detection",
         "Higher dependency on vendor support",
         "Increased human errors in test execution"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 602,
+      "id": 242,
       "question": "How does test automation improve consistency in testing?",
-      "answers": [
+      "options": [
         "By requiring more manual intervention",
         "By executing tests in the same order with the same frequency",
         "By increasing the complexity of test scripts",
         "By relying on human critical thinking"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 603,
+      "id": 243,
       "question": "What is a potential risk of test automation?",
-      "answers": [
+      "options": [
         "Easier access to test progress data",
         "Unrealistic expectations about tool benefits",
         "Reduced time for designing new tests",
         "More objective coverage assessment"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 604,
+      "id": 244,
       "question": "What risk is associated with using an open-source test automation tool?",
-      "answers": [
+      "options": [
         "Improved compatibility with development platforms",
         "Potential abandonment with no further updates",
         "Reduced maintenance effort for test scripts",
         "Faster test execution times"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 605,
+      "id": 245,
       "question": "Why might a test automation tool fail to deliver expected benefits?",
-      "answers": [
+      "options": [
         "It provides more time for testers to design new tests",
         "It is incompatible with the development platform",
         "It reduces repetitive manual work",
         "It offers objective coverage metrics"
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 606,
+      "id": 246,
       "question": "What is the definition of the term acceptance testing ?",
-      "answers": [
+      "options": [
         "A testable aspect of a component or system identified as a basis for testing.",
         "A test level that focuses on determining whether to accept the system.",
         "Testing that involves the execution of the test item.",
         "A test level that focuses on individual hardware or software components."
       ],
-      "correct_answer": 1
+      "correct": 1
     },
     {
-      "id": 607,
+      "id": 247,
       "question": "What is the name of the term defined as follows? An experience-based test technique in which test cases are designed to exercise the items of a checklist.",
-      "answers": [
+      "options": [
         "dynamic testing",
         "risk-based testing",
         "test design",
         "checklist-based testing"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
-      "id": 608,
+      "id": 248,
       "question": "What is the definition of the term dynamic testing?",
-      "answers": [
+      "options": [
         "Testing that involves the execution of the test item.",
         "A description of how to perform testing to reach test objectives under given circumstances.",
         "The activity that derives and specifies test cases from test conditions.",
         "A specific instantiation of a test process."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
-      "id": 609,
+      "id": 249,
       "question": "What is the name of the term defined as follows? A test technique in which tests are derived on the basis of the tester's knowledge of past failures, or general knowledge of failure modes.",
-      "answers": [
+      "options": [
         "defect",
         "defect report",
         "anomaly",
         "error guessing"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
-      "id": 700,
+      "id": 250,
       "question": "What is the definition of the term exploratory testing ?",
-      "answers": [
+      "options": [
         "The manner of implementing testing tasks.",
         "An experience-based test technique in which test cases are designed to exercise the items of a checklist.",
         "Testing that involves the execution of the test item.",
         "An approach to testing in which the testers dynamically design and execute tests based on their knowledge, exploration of the test item and the results of previous tests."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
-      "id": 701,
+      "id": 251,
       "question": "What is the definition of the term formal review?",
-      "answers": [
+      "options": [
         "A type of review that does not follow a defined process and has no formally documented output.",
         "A type of review in which an author leads members of the review through a work product and the members ask questions and make comments about possible issues.",
         "The set of conditions for officially completing a defined task.",
         "A review that follows a defined process with a formally documented output."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
-      "id": 702,
+      "id": 252,
       "question": "What is the definition of the term test completion report?",
-      "answers": [
+      "options": [
         "Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
         "Testing that involves the execution of the test item.",
         "A description of how to perform testing to reach test objectives under given circumstances.",
         "A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria."
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
-      "id": 703,
+      "id": 253,
       "question": "What is the name of the term defined as follows? Documentation describing the test objectives to be achieved and the means and the schedule for achieving them, organized to coordinate testing.",
-      "answers": [
+      "options": [
         "test procedure",
         "test design",
         "test technique",
         "test plan"
       ],
-      "correct_answer": 3
+      "correct": 3
     },
     {
-      "id": 704,
+      "id": 254,
       "question": "What is the definition of the term test result?",
-      "answers": [
+      "options": [
         "The consequence\/outcome of the execution of a test.",
         "The manner of implementing testing tasks.",
         "A type of test report produced at completion milestones that provides an evaluation of the corresponding test items against exit criteria.",
         "A sequence of test cases in execution order and any associated actions that may be required to set up the initial preconditions and any wrap-up activities after execution."
       ],
-      "correct_answer": 0
+      "correct": 0
     },
     {
-      "id": 705,
+      "id": 255,
       "question": "What is the name of the term defined as follows? Testing based on an analysis of the internal structure of the component or system.",
-      "answers": [
+      "options": [
         "white-box testing",
         "black-box test technique",
         "system testing",
         "testing"
       ],
-      "correct_answer": 0
+      "correct": 0
     }
   ]
 }
