@@ -21,7 +21,9 @@ const questionText = document.getElementById('question-text');
 const optionsList = document.getElementById('options-list');
 const nextBtn = document.getElementById('next-btn');
 
-// Initialize the quiz
+/**
+ * Initializes the quiz by loading the quiz data.
+ */
 function initQuiz() {
     // Simulate loading from JSON file
     setTimeout(() => {
@@ -29,7 +31,11 @@ function initQuiz() {
     }, 1000);
 }
 
-// Load quiz data from external JSON file
+/**
+ * Loads quiz data from an external JSON file.
+ * If the file fails to load, it falls back to embedded data.
+ * @async
+ */
 async function loadQuizData() {
     try {
         // In a real application, replace this with:
@@ -106,7 +112,10 @@ async function loadQuizData() {
     }
 }
 
-// Start the quiz
+/**
+ * Starts the quiz by hiding the start screen, showing the question section,
+ * starting the timer, and displaying the first question.
+ */
 function startQuiz() {
     startScreen.style.display = 'none';
     questionSection.style.display = 'block';
@@ -115,7 +124,9 @@ function startQuiz() {
     displayQuestion();
 }
 
-// Start the countdown timer
+/**
+ * Starts the countdown timer for the quiz.
+ */
 function startTimer() {
     timerInterval = setInterval(() => {
         timeRemaining--;
@@ -128,7 +139,9 @@ function startTimer() {
     }, 1000);
 }
 
-// Update timer display
+/**
+ * Updates the timer display with the remaining time.
+ */
 function updateTimerDisplay() {
     const minutes = Math.floor(timeRemaining / 60);
     const seconds = timeRemaining % 60;
@@ -140,18 +153,24 @@ function updateTimerDisplay() {
     }
 }
 
-// Update question counter
+/**
+ * Updates the question counter to show the current question number.
+ */
 function updateCounter() {
     counterElement.textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 }
 
-// Update progress bar
+/**
+ * Updates the progress bar to reflect the quiz progress.
+ */
 function updateProgress() {
     const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
     progressElement.style.width = `${progress}%`;
 }
 
-// Display current question
+/**
+ * Displays the current question and its options.
+ */
 function displayQuestion() {
     if (currentQuestionIndex >= questions.length) {
         endQuiz();
@@ -177,7 +196,11 @@ function displayQuestion() {
     updateProgress();
 }
 
-// Handle option selection
+/**
+ * Handles the selection of an answer option.
+ * @param {number} index - The index of the selected option.
+ * @param {HTMLElement} element - The HTML element of the selected option.
+ */
 function selectOption(index, element) {
     // Remove previous selection
     document.querySelectorAll('.option').forEach(opt => {
@@ -190,7 +213,9 @@ function selectOption(index, element) {
     nextBtn.disabled = false;
 }
 
-// Move to next question
+/**
+ * Moves to the next question after an answer has been selected.
+ */
 function nextQuestion() {
     if (selectedAnswer === null) return;
 
@@ -221,21 +246,27 @@ function nextQuestion() {
     }, 2000);
 }
 
-// Skip current question
+/**
+ * Skips the current question and moves to the next one.
+ */
 function skipQuestion() {
     skipped++;
     currentQuestionIndex++;
     displayQuestion();
 }
 
-// Exit quiz with confirmation
+/**
+ * Exits the quiz after confirming with the user.
+ */
 function exitQuiz() {
     if (confirm('Are you sure you want to exit the quiz?')) {
         endQuiz();
     }
 }
 
-// End the quiz and show results
+/**
+ * Ends the quiz and displays the results.
+ */
 function endQuiz() {
     clearInterval(timerInterval);
     questionSection.style.display = 'none';
@@ -252,14 +283,20 @@ function endQuiz() {
     document.getElementById('result-details').innerHTML = details;
 }
 
-// Format time display
+/**
+ * Formats the time in seconds to a mm:ss format.
+ * @param {number} seconds - The time in seconds.
+ * @returns {string} The formatted time string.
+ */
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${minutes}:${secs.toString().padStart(2, '0')}`;
 }
 
-// Restart the quiz
+/**
+ * Restarts the quiz by resetting all state variables and the display.
+ */
 function restartQuiz() {
     // Reset all variables
     currentQuestionIndex = 0;
@@ -285,10 +322,16 @@ function restartQuiz() {
     updateCounter();
 }
 
-// Initialize the quiz when page loads
+/**
+ * Initializes the quiz when the page loads.
+ */
 window.onload = initQuiz;
 
-// Prevent page refresh during quiz
+/**
+ * Prevents page refresh during the quiz.
+ * @param {Event} e - The beforeunload event.
+ * @returns {string} A message to confirm leaving the page.
+ */
 window.onbeforeunload = function(e) {
     if (quizStarted && currentQuestionIndex < questions.length) {
         return "Are you sure you want to leave? Your progress will be lost.";
