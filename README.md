@@ -22,6 +22,43 @@ The ISTQB Certified Tester Foundation Level (CTFL) 4.0 certification is a global
 
 If you're a software tester looking to advance your career, obtaining the ISTQB CTFL 4.0 certification is an excellent step forward.
 
+## 🚀 Interactive Quiz Application
+
+This repository includes an interactive quiz application to help you test your knowledge and prepare for the ISTQB CTFL 4.0 exam.
+
+### Purpose
+
+The quiz application is designed to simulate the real exam experience. It features:
+- A timed quiz of 60 minutes.
+- A progress bar to track your advancement.
+- A variety of multiple-choice questions based on the ISTQB syllabus.
+- Instant feedback on your answers.
+- A final score and results summary.
+
+### Setup
+
+To run the quiz application locally, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Mitesh411/ISTQB-CTFL-4.0-EXAM-PREP.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd ISTQB-CTFL-4.0-EXAM-PREP
+    ```
+3.  **Open `index.html` in your web browser.**
+
+That's it! No complex setup or dependencies are required.
+
+### Usage
+
+1.  Open `index.html` in your browser.
+2.  Click the "Start Quiz" button to begin.
+3.  Select an answer for each question and click "Next".
+4.  You can skip questions and come back to them later if you wish.
+5.  Your final score will be displayed at the end of the quiz.
+
 ## 📚 Syllabus Content
 
 The ISTQB CTFL 4.0 syllabus covers six key areas:
