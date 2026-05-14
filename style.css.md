@@ -1,0 +1,464 @@
+# style.css
+
+Stylesheet for the ISTQB CTFL 4.0 Practice Exam quiz application. Defines responsive layout, gradient backgrounds, timer and progress bar styling, option selection and correct/incorrect shake animations, button styles, and mobile-friendly media queries.
+
+```css
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background: linear-gradient(135deg, #2196f3 0%, #4caf50 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(45deg, #000204 0%, #000000 100%);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.timer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.quiz-counter {
+    font-size: 18px;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Quiz Content */
+.quiz-content {
+    padding: 30px;
+}
+
+/* Start Screen */
+.start-screen {
+    text-align: center;
+}
+
+.start-btn {
+    background: linear-gradient(45deg, #fe0000, #ff0f02);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Question Section */
+.question-section {
+    display: none;
+}
+
+.question {
+    font-size: 22px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Options Styling */
+.options {
+    list-style: none;
+}
+
+.option {
+    background: #f8f9fa;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.option.selected {
+    background: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.option.correct {
+    background: limegreen !important;
+    color: white !important;
+    border-color: #32cd32 !important;
+    animation: shake-correct 0.6s ease-in-out;
+}
+
+.option.incorrect {
+    background: tomato !important;
+    color: white !important;
+    border-color: #ff4500 !important;
+    animation: shake-incorrect 0.6s ease-in-out;
+<<<<<<< HEAD
+=======
+}
+
+/* Shake Animations */
+@keyframes shake-correct {
+    0%, 100% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-5px) scale(1.02); 
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(5px) scale(0.98); 
+    }
+}
+
+@keyframes shake-incorrect {
+    0%, 100% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-8px) scale(1.05); 
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(8px) scale(0.95); 
+    }
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-skip {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-next {
+    background: #28a745;
+    color: white;
+}
+
+.btn-exit {
+    background: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Results Section */
+.results-section {
+    display: none;
+    text-align: center;
+}
+
+.score {
+    font-size: 48px;
+    color: #28a745;
+    margin: 20px 0;
+}
+
+/* Loading Screen */
+.loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .quiz-content {
+        padding: 20px;
+    }
+    
+    .timer-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .timer {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+    
+    .quiz-counter {
+        font-size: 16px;
+    }
+    
+    .question {
+        font-size: 20px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+    
+    .quiz-content {
+        padding: 15px;
+    }
+    
+    .question {
+        font-size: 18px;
+    }
+    
+    .option {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    .score {
+        font-size: 36px;
+    }
+>>>>>>> 22d5f4bf4e702dfa0eba4f71318fde31f933cb22
+}
+
+/* Shake Animations */
+@keyframes shake-correct {
+    0%, 100% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-5px) scale(1.02); 
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(5px) scale(0.98); 
+    }
+}
+
+@keyframes shake-incorrect {
+    0%, 100% { 
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateX(-8px) scale(1.05); 
+    }
+    20%, 40%, 60%, 80% { 
+        transform: translateX(8px) scale(0.95); 
+    }
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-skip {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-next {
+    background: #28a745;
+    color: white;
+}
+
+.btn-exit {
+    background: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Results Section */
+.results-section {
+    display: none;
+    text-align: center;
+}
+
+.score {
+    font-size: 48px;
+    color: #28a745;
+    margin: 20px 0;
+}
+
+/* Loading Screen */
+.loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .quiz-content {
+        padding: 20px;
+    }
+    
+    .timer-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .timer {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+    
+    .quiz-counter {
+        font-size: 16px;
+    }
+    
+    .question {
+        font-size: 20px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+    
+    .quiz-content {
+        padding: 15px;
+    }
+    
+    .question {
+        font-size: 18px;
+    }
+    
+    .option {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    .score {
+        font-size: 36px;
+    }
+}
+```
