@@ -170,6 +170,246 @@
     "backside": "Independence helps to ensure objectivity, as testers are more likely to find defects if they are not the ones who wrote the code."
   },
   {
+    "chapter": "2",
+    "frontside": "How does the choice of SDLC model affect testing?",
+    "backside": "It shapes the scope and timing of test activities, the level of test documentation, the choice of test techniques and automation, and the role of testers."
+  },
+  {
+    "chapter": "2",
+    "frontside": "How is testing done in sequential SDLC models (e.g., waterfall, V-model)?",
+    "backside": "Testers take part in reviews and test design early in the project; dynamic testing happens in later phases, once code exists."
+  },
+  {
+    "chapter": "2",
+    "frontside": "How is testing done in iterative and incremental SDLC models?",
+    "backside": "Each iteration includes both static and dynamic testing, which calls for fast feedback and extensive regression testing."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What characterises testing in Agile development?",
+    "backside": "Lightweight work product documentation, extensive test automation, and experience-based test techniques, because change is frequent."
+  },
+  {
+    "chapter": "2",
+    "frontside": "Name two good testing practices that apply to any SDLC.",
+    "backside": "Every development activity has a corresponding test activity, and each test level has specific objectives so testing is comprehensive without redundancy."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What do test-first approaches like TDD, ATDD and BDD have in common?",
+    "backside": "Tests are written before the code and are used to guide development."
+  },
+  {
+    "chapter": "2",
+    "frontside": "How does DevOps support testing?",
+    "backside": "It promotes CI/CD with fast feedback, stable test environments, automated regression testing, and more visibility of non-functional characteristics like performance and reliability."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What are the challenges of DevOps for testing?",
+    "backside": "Setting up the delivery pipeline, introducing and maintaining CI/CD tools, and the resources needed for test automation. Manual testing from the user's perspective is still needed."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is shift left?",
+    "backside": "Doing testing earlier in the SDLC, for example reviewing specifications, writing test cases before code, and using CI/CD."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is the trade-off of shift left?",
+    "backside": "It saves effort and cost later in the project, but needs early investment and stakeholder buy-in."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What are the benefits of retrospectives for testing?",
+    "backside": "Better test effectiveness and efficiency, better testware, team bonding and learning, and better cooperation between development and testing."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is component testing?",
+    "backside": "Testing components in isolation, usually done by developers in their own environment, often with test harnesses or unit test frameworks."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is component integration testing?",
+    "backside": "Testing the interfaces and interactions between components, guided by an integration strategy such as bottom-up, top-down or big-bang."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is system testing?",
+    "backside": "Testing the overall behaviour and capabilities of the whole system, including functional and non-functional characteristics, often by an independent test team."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is system integration testing?",
+    "backside": "Testing the interfaces of the system under test with other systems and external services, ideally in environments similar to operations."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is acceptance testing?",
+    "backside": "Validating that the system is ready for deployment and meets users' business needs, ideally done by the intended users."
+  },
+  {
+    "chapter": "2",
+    "frontside": "Name the main forms of acceptance testing.",
+    "backside": "User acceptance testing (UAT), operational acceptance testing, contractual and regulatory acceptance testing, and alpha and beta testing."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is the difference between functional and non-functional testing?",
+    "backside": "Functional testing checks what the system should do (completeness, correctness, appropriateness). Non-functional testing checks how well it behaves, e.g., performance, usability, security (ISO/IEC 25010)."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is the difference between black-box and white-box testing?",
+    "backside": "Black-box testing is based on specifications and ignores internal structure. White-box testing is based on the system's internal structure, such as code."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is confirmation testing?",
+    "backside": "Testing that confirms a defect has been fixed, by re-running the tests that failed or by adding new tests that cover the fix."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is regression testing?",
+    "backside": "Testing that confirms a change (a fix or enhancement) has not caused new problems. Regression suites grow over time, so they are good candidates for automation."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What is maintenance testing?",
+    "backside": "Testing changes to a system in operation, such as enhancements, fixes, environment changes, or retirement."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What are the triggers for maintenance testing?",
+    "backside": "Modifications (planned enhancements, corrective fixes, hot fixes), upgrades or migrations of the operational environment, and retirement of the system."
+  },
+  {
+    "chapter": "2",
+    "frontside": "What determines the scope of maintenance testing?",
+    "backside": "The risk of the change, the size of the existing system, and the size of the change. Impact analysis helps identify affected areas."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What is static testing?",
+    "backside": "Evaluating work products without executing code, through manual reviews or tool-based static analysis."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Which work products can be examined by static testing?",
+    "backside": "Almost any readable work product, e.g., requirements, source code, test plans, test cases, product backlog items and contracts."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Which work products are suitable for static analysis?",
+    "backside": "Work products with a formal structure, such as code or models."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Which work products are usually not suitable for static testing?",
+    "backside": "Third-party executable code, often for legal reasons."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Why is static testing valuable?",
+    "backside": "It finds defects early when they are cheaper to fix, finds defects dynamic testing cannot, improves communication with stakeholders, and helps confirm requirements match needs."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What do static and dynamic testing have in common?",
+    "backside": "Both aim to detect defects and evaluate the quality of work products."
+  },
+  {
+    "chapter": "3",
+    "frontside": "How does static testing find defects compared to dynamic testing?",
+    "backside": "Static testing finds defects directly in work products; dynamic testing finds failures, from which defects are then identified."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What can static testing do that dynamic testing cannot?",
+    "backside": "Evaluate non-executable work products and find defects in code paths that are rarely executed."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What can dynamic testing do that static testing cannot?",
+    "backside": "Measure characteristics that depend on executing code, such as performance."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Name typical defects found by static testing.",
+    "backside": "Requirement defects (ambiguities, inconsistencies), design defects, coding defects (e.g., undefined variables, unreachable code), security vulnerabilities, gaps in test basis coverage, and coding standard violations."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Why is early and frequent stakeholder feedback important?",
+    "backside": "It prevents misunderstandings about requirements, reduces rework, and keeps development focused on the features that bring the most value."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What are the activities of the review process (ISO/IEC 20246)?",
+    "backside": "Planning, review initiation, individual review, communication and analysis, and fixing and reporting."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What happens during review planning?",
+    "backside": "The scope, purpose, work product, quality characteristics, focus areas, exit criteria and resources (including effort and timeframe) are defined."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What happens during individual review?",
+    "backside": "Each reviewer assesses the work product, often using techniques like checklist-based or scenario-based reviewing, and logs anomalies, recommendations and questions."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What happens during communication and analysis in a review?",
+    "backside": "Anomalies are discussed, usually in a review meeting, to decide their status, ownership and required actions, and to assess the quality of the work product."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What does the author do in a review?",
+    "backside": "Creates the work product and fixes it."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What does the moderator (facilitator) do in a review?",
+    "backside": "Makes review meetings run effectively and creates a safe environment where everyone can speak freely."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What does the scribe (recorder) do in a review?",
+    "backside": "Collects anomalies from reviewers and records review information such as decisions and new anomalies found during the meeting."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What is the difference between the manager and the review leader?",
+    "backside": "The manager decides what is reviewed and provides resources. The review leader takes overall responsibility for organising the review and its participants."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What is an informal review?",
+    "backside": "A review with no defined process and no formal documented output; its main objective is detecting anomalies."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What is a walkthrough?",
+    "backside": "A review led by the author, which can serve to educate reviewers, gain consensus, generate ideas, and detect anomalies."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What is a technical review?",
+    "backside": "A review by technically qualified reviewers, led by a moderator, aimed at gaining consensus, evaluating quality and detecting anomalies."
+  },
+  {
+    "chapter": "3",
+    "frontside": "What is an inspection?",
+    "backside": "The most formal review type. It follows the full generic process, aims to find as many anomalies as possible, and collects metrics to improve the SDLC."
+  },
+  {
+    "chapter": "3",
+    "frontside": "Name success factors for reviews.",
+    "backside": "Clear objectives and measurable exit criteria, the right review type, reviewing small chunks, constructive feedback, enough preparation time, management support, training, and making reviews part of the culture."
+  },
+  {
     "chapter": "4",
     "frontside": "What is test analysis?",
     "backside": "The process of identifying test conditions from the test basis such as requirements, user stories, and risks."
@@ -318,5 +558,55 @@
     "chapter": "5",
     "frontside": "Why is defect lifecycle important?",
     "backside": "It ensures proper tracking and resolution of defects from discovery to closure."
+  },
+  {
+    "chapter": "6",
+    "frontside": "What do test management tools support?",
+    "backside": "Managing the SDLC, requirements, tests, defects and configuration."
+  },
+  {
+    "chapter": "6",
+    "frontside": "What do static testing tools support?",
+    "backside": "Reviews and static analysis."
+  },
+  {
+    "chapter": "6",
+    "frontside": "What do test design and implementation tools do?",
+    "backside": "Help generate test cases, test data and test procedures."
+  },
+  {
+    "chapter": "6",
+    "frontside": "What do test execution and coverage tools do?",
+    "backside": "Support automated test execution and measure coverage."
+  },
+  {
+    "chapter": "6",
+    "frontside": "Name other categories of test tools besides management, static, design and execution tools.",
+    "backside": "Non-functional testing tools, DevOps tools (CI/CD pipelines), collaboration tools, scalability and deployment tools (virtual machines, containers), and general tools like spreadsheets."
+  },
+  {
+    "chapter": "6",
+    "frontside": "Name benefits of test automation.",
+    "backside": "Less repetitive manual work (e.g., regression tests, data entry), more consistency with fewer human errors, objective metrics like coverage, better test management data, and faster execution for earlier defect detection."
+  },
+  {
+    "chapter": "6",
+    "frontside": "How does test automation benefit testers themselves?",
+    "backside": "It frees them from repetitive work so they can spend time designing new, deeper and more effective tests."
+  },
+  {
+    "chapter": "6",
+    "frontside": "Name risks of test automation related to expectations and effort.",
+    "backside": "Unrealistic expectations of what the tool can do, and underestimating the time, cost and effort to introduce the tool, maintain test scripts and change the test process."
+  },
+  {
+    "chapter": "6",
+    "frontside": "Name risks of test automation related to how the tool is used.",
+    "backside": "Using it where manual testing is more appropriate, and relying on it too much, ignoring the need for human critical thinking."
+  },
+  {
+    "chapter": "6",
+    "frontside": "Name risks of test automation related to the tool's supplier or platform.",
+    "backside": "Dependency on a vendor that may go out of business or give poor support, open-source projects being abandoned or updated often, incompatibility with the development platform, and failing to meet regulatory or safety standards."
   }
 ]
