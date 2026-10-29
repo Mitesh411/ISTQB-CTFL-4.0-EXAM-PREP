@@ -456,3 +456,68 @@ body {
         font-size: 36px;
     }
 }
+/* Flashcard Section */
+.flashcard-container {
+    margin-top: 30px;
+}
+
+.flashcard-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.flashcard-filter select {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.flashcard {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 25px 25px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #2196f3 0%, #1976d2 100%);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s ease;
+}
+
+.flashcard.flipped {
+    background: linear-gradient(45deg, #4caf50 0%, #2e7d32 100%);
+}
+
+.flashcard-chapter {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.flashcard-counter {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+}
+
+@media (max-width: 480px) {
+    .flashcard {
+        font-size: 17px;
+        min-height: 160px;
+    }
+}

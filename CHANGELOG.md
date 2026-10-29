@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Flashcards on the main page** — `index.html` now shows an ISTQB CTFL 4.0 flashcard deck below the Practice Exam Challenge card, with a chapter filter, flip, and previous/next controls. Cards load from the new `flashcard.json` (64 cards: chapter 1 from `istqb.json`, chapters 4 and 5 from `FlashCard/`). The Docker image now includes `flashcard.json`.
+
 ### Removed
 - **Markdown versions of non-Markdown files** — Removed the `.md` copies added in 2.0.0 (`Dockerfile.md`, `LICENSE.md`, `index.html.md`, `istqb.json.md`, `questions.json.md`, `script.js.md`, `style.css.md`, `test.html.md`). They duplicated the source files and had to be kept in sync by hand; the original files remain the single source. This also drops the 2.0.0 plan to phase out the original file formats.
 

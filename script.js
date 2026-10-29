@@ -285,8 +285,96 @@ function restartQuiz() {
     updateCounter();
 }
 
-// Initialize the quiz when page loads
-window.onload = initQuiz;
+// Flashcard state variables
+let flashcards = [];
+let visibleFlashcards = [];
+let currentFlashcard = 0;
+let flashcardFlipped = false;
+
+// Load flashcards from external JSON file
+async function loadFlashcards() {
+    const textElement = document.getElementById('fc-text');
+    try {
+        const response = await fetch('flashcard.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        flashcards = await response.json();
+
+        // Add one filter option per chapter found in the data
+        const select = document.getElementById('fc-chapter');
+        const chapters = [...new Set(flashcards.map(card => card.chapter))]
+            .sort((a, b) => Number(a) - Number(b));
+        chapters.forEach(chapter => {
+            const option = document.createElement('option');
+            option.value = chapter;
+            option.textContent = `Chapter ${chapter}`;
+            select.appendChild(option);
+        });
+
+        filterFlashcards();
+    } catch (error) {
+        console.error('Error loading flashcards:', error);
+        textElement.textContent = 'Error loading flashcards. Please refresh the page.';
+    }
+}
+
+// Show only the cards for the selected chapter
+function filterFlashcards() {
+    const chapter = document.getElementById('fc-chapter').value;
+    visibleFlashcards = chapter === 'all'
+        ? flashcards
+        : flashcards.filter(card => card.chapter === chapter);
+    currentFlashcard = 0;
+    flashcardFlipped = false;
+    displayFlashcard();
+}
+
+// Display current flashcard
+function displayFlashcard() {
+    const card = visibleFlashcards[currentFlashcard];
+    if (!card) return;
+
+    document.getElementById('fc-card').classList.toggle('flipped', flashcardFlipped);
+    document.getElementById('fc-chapter-label').textContent = `Chapter ${card.chapter}`;
+    document.getElementById('fc-text').textContent = flashcardFlipped ? card.backside : card.frontside;
+    document.getElementById('fc-flip').textContent = flashcardFlipped ? 'Show Question' : 'Show Answer';
+    document.getElementById('fc-counter').textContent =
+        `Card ${currentFlashcard + 1} of ${visibleFlashcards.length}`;
+
+    document.getElementById('fc-flip').disabled = false;
+    document.getElementById('fc-prev').disabled = currentFlashcard === 0;
+    document.getElementById('fc-next').disabled = currentFlashcard === visibleFlashcards.length - 1;
+}
+
+// Flip between question and answer
+function flipFlashcard() {
+    if (!visibleFlashcards.length) return;
+    flashcardFlipped = !flashcardFlipped;
+    displayFlashcard();
+}
+
+// Move to previous flashcard
+function prevFlashcard() {
+    if (currentFlashcard > 0) {
+        currentFlashcard--;
+        flashcardFlipped = false;
+        displayFlashcard();
+    }
+}
+
+// Move to next flashcard
+function nextFlashcard() {
+    if (currentFlashcard < visibleFlashcards.length - 1) {
+        currentFlashcard++;
+        flashcardFlipped = false;
+        displayFlashcard();
+    }
+}
+
+// Initialize the quiz and flashcards when page loads
+window.onload = () => {
+    initQuiz();
+    loadFlashcards();
+};
 
 // Prevent page refresh during quiz
 window.onbeforeunload = function(e) {
