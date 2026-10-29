@@ -6,6 +6,7 @@ COPY --chown=nginx:nginx index.html /usr/share/nginx/html/index.html
 COPY --chown=nginx:nginx style.css /usr/share/nginx/html/
 COPY --chown=nginx:nginx script.js /usr/share/nginx/html/
 COPY --chown=nginx:nginx questions.json /usr/share/nginx/html/
+COPY --chown=nginx:nginx flashcard.json /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80

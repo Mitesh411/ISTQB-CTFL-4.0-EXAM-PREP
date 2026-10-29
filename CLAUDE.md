@@ -21,20 +21,21 @@ docker build -t istqb-quiz .
 docker run -p 8080:80 istqb-quiz
 ```
 
-The `Dockerfile` copies only `index.html`, `style.css`, `script.js`, and `questions.json`. `test.html` and `istqb.json` are not in the image; add `COPY` lines if they need to be served.
+The `Dockerfile` copies only `index.html`, `style.css`, `script.js`, `questions.json`, and `flashcard.json`. `test.html` and `istqb.json` are not in the image; add `COPY` lines if they need to be served. Any new file `index.html` loads needs its own `COPY` line.
 
 ## Architecture
 
 Two independent static pages, no framework, no backend:
 
-- **Timed mock exam**: `index.html` + `style.css` + `script.js` + `questions.json`. `script.js` uses global state and functions called from inline `onclick` handlers. It fetches `questions.json` (shape: `{"questions": [{id, question, options[4], correct}]}`, where `correct` is the 0-based option index) and runs a 60-minute countdown, matching the real exam. If the fetch rejects, it falls back to embedded placeholder trivia questions, so seeing "capital of France" means `questions.json` failed to load. Every question in the file is shown in file order: there's no shuffling and no 40-question limit, and the score is out of the total count, so editing the bank changes the exam directly.
+- **Main page** (`index.html` + `style.css` + `script.js`) holds two cards that share `window.onload`: the timed mock exam (`questions.json`) and, below it, a flashcard deck with a chapter filter (`flashcard.json`, same `{chapter, frontside, backside}` shape as `istqb.json`). Flashcard functions and DOM ids use a `Flashcard`/`fc-` prefix to stay clear of the quiz's globals (`nextBtn` etc.).
+- **Timed mock exam**: `script.js` uses global state and functions called from inline `onclick` handlers. It fetches `questions.json` (shape: `{"questions": [{id, question, options[4], correct}]}`, where `correct` is the 0-based option index) and runs a 60-minute countdown, matching the real exam. If the fetch rejects, it falls back to embedded placeholder trivia questions, so seeing "capital of France" means `questions.json` failed to load. Every question in the file is shown in file order: there's no shuffling and no 40-question limit, and the score is out of the total count, so editing the bank changes the exam directly.
 - **Flashcards**: `test.html` has inline script and styles and fetches `istqb.json`, which is a top-level array of `{chapter, frontside, backside}`.
 
 There are no tests. After editing either JSON file, check that it still parses and that each `correct` index points to an option (an out-of-range index breaks `nextQuestion()`):
 
 ```bash
 python -c "import json; q=json.load(open('questions.json',encoding='utf8'))['questions']; bad=[x['id'] for x in q if not 0<=x['correct']<len(x['options'])]; print(len(q),'questions; bad ids:',bad)"
-python -c "import json; print(len(json.load(open('istqb.json',encoding='utf8'))),'flashcards')"
+python -c "import json; print(len(json.load(open('flashcard.json',encoding='utf8'))),'flashcards')"
 ```
 
 ## Study content layout

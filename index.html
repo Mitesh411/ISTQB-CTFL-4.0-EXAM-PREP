@@ -79,6 +79,35 @@
     </div>
   </div>
 
+  <!-- flashcard section: cards are loaded from flashcard.json by script.js -->
+  <div class="container flashcard-container">
+    <div class="header">
+      <h1>ISTQB CTFL 4.0 Flashcards</h1>
+      <p>Click the card or press "Show Answer" to flip it.</p>
+    </div>
+
+    <div class="quiz-content">
+      <div class="flashcard-filter">
+        <label for="fc-chapter">Chapter:</label>
+        <select id="fc-chapter" onchange="filterFlashcards()">
+          <option value="all">All chapters</option>
+        </select>
+      </div>
+
+      <div class="flashcard" id="fc-card" onclick="flipFlashcard()">
+        <span class="flashcard-chapter" id="fc-chapter-label"></span>
+        <div class="flashcard-text" id="fc-text">Loading flashcards...</div>
+      </div>
+
+      <div class="controls">
+        <button class="btn btn-exit" id="fc-prev" onclick="prevFlashcard()" disabled>Previous</button>
+        <button class="btn btn-next" id="fc-flip" onclick="flipFlashcard()" disabled>Show Answer</button>
+        <button class="btn btn-exit" id="fc-next" onclick="nextFlashcard()" disabled>Next</button>
+      </div>
+      <div class="flashcard-counter" id="fc-counter"></div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 <!-- footer metadata and developer attribution -->
