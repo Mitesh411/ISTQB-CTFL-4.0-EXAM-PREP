@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Removed
+- **Markdown versions of non-Markdown files** — Removed the `.md` copies added in 2.0.0 (`Dockerfile.md`, `LICENSE.md`, `index.html.md`, `istqb.json.md`, `questions.json.md`, `script.js.md`, `style.css.md`, `test.html.md`). They duplicated the source files and had to be kept in sync by hand; the original files remain the single source. This also drops the 2.0.0 plan to phase out the original file formats.
+
 ## [2.0.0] - 2026-06-15
 
 ### Added
