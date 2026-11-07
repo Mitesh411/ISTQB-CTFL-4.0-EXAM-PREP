@@ -20,6 +20,13 @@ const progressElement = document.getElementById('progress-fill');
 const questionText = document.getElementById('question-text');
 const optionsList = document.getElementById('options-list');
 const nextBtn = document.getElementById('next-btn');
+const skipBtn = document.getElementById('skip-btn');
+const timerAnnouncer = document.getElementById('timer-announcer');
+const progressBar = document.getElementById('progress-bar');
+const answerFeedback = document.getElementById('answer-feedback');
+
+// Screen reader announcements at these seconds remaining
+const TIMER_WARNINGS = { 300: '5 minutes remaining.', 60: '1 minute remaining.', 0: 'Time is up.' };
 
 // Initialize the quiz
 function initQuiz() {
@@ -90,6 +97,11 @@ function updateTimerDisplay() {
     if (timeRemaining <= 300) { // 5 minutes
         timerElement.style.color = '#ff6b6b';
     }
+
+    // The timer itself is silent to screen readers, so announce key moments instead
+    if (quizStarted && timeRemaining in TIMER_WARNINGS) {
+        timerAnnouncer.textContent = TIMER_WARNINGS[timeRemaining];
+    }
 }
 
 // Update question counter
@@ -101,6 +113,9 @@ function updateCounter() {
 function updateProgress() {
     const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
     progressElement.style.width = `${progress}%`;
+    progressBar.setAttribute('aria-valuemax', questions.length);
+    progressBar.setAttribute('aria-valuenow', Math.min(currentQuestionIndex + 1, questions.length));
+    progressBar.setAttribute('aria-valuetext', counterElement.textContent);
 }
 
 // Display current question
@@ -114,19 +129,31 @@ function displayQuestion() {
     questionText.textContent = question.question;
     
     optionsList.innerHTML = '';
+    answerFeedback.textContent = '';
     selectedAnswer = null;
     nextBtn.disabled = true;
+    skipBtn.disabled = false;
 
+    // Each answer is a native radio button inside its label, so it works with the keyboard and screen readers
     question.options.forEach((option, index) => {
-        const li = document.createElement('li');
-        li.className = 'option';
-        li.textContent = option;
-        li.onclick = () => selectOption(index, li);
-        optionsList.appendChild(li);
+        const label = document.createElement('label');
+        label.className = 'option';
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = 'answer';
+        input.value = index;
+        input.addEventListener('change', () => selectOption(index, label));
+        const text = document.createElement('span');
+        text.textContent = option;
+        label.append(input, text);
+        optionsList.appendChild(label);
     });
 
     updateCounter();
     updateProgress();
+
+    // Move focus to the new question so screen readers read it
+    questionText.focus();
 }
 
 // Handle option selection
@@ -144,11 +171,16 @@ function selectOption(index, element) {
 
 // Move to next question
 function nextQuestion() {
-    if (selectedAnswer === null) return;
+    // Next is disabled while feedback shows; ignore repeat calls until the next question loads
+    if (selectedAnswer === null || nextBtn.disabled) return;
 
     const question = questions[currentQuestionIndex];
     const options = document.querySelectorAll('.option');
     const isCorrect = selectedAnswer === question.correct;
+
+    // Lock the controls during feedback so a second click can't score this answer twice
+    nextBtn.disabled = true;
+    skipBtn.disabled = true;
 
     // Show correct/incorrect animation
     options[question.correct].classList.add('correct');
@@ -161,9 +193,14 @@ function nextQuestion() {
 
     attempted++;
 
+    // Say the result in words too, so it doesn't rely on colour alone
+    answerFeedback.textContent = isCorrect
+        ? 'Correct!'
+        : `Incorrect. The correct answer is: ${question.options[question.correct]}`;
+
     // Disable all options
     options.forEach(opt => {
-        opt.style.pointerEvents = 'none';
+        opt.querySelector('input').disabled = true;
     });
 
     // Move to next question after animation
@@ -202,6 +239,7 @@ function endQuiz() {
         Time used: ${formatTime(3600 - timeRemaining)}
     `;
     document.getElementById('result-details').innerHTML = details;
+    document.getElementById('results-heading').focus();
 }
 
 // Format time display
@@ -227,6 +265,9 @@ function restartQuiz() {
     startScreen.style.display = 'block';
     timerElement.style.color = 'white';
     progressElement.style.width = '0%';
+    progressBar.setAttribute('aria-valuenow', 0);
+    progressBar.removeAttribute('aria-valuetext');
+    timerAnnouncer.textContent = '';
     
     // Clear any running timer
     if (timerInterval) {
@@ -235,6 +276,7 @@ function restartQuiz() {
     
     updateTimerDisplay();
     updateCounter();
+    document.getElementById('start-btn').focus();
 }
 
 // Flashcard settings and state variables
