@@ -461,12 +461,42 @@ body {
     margin-top: 30px;
 }
 
+/* Clicking inside the section focuses it; only show the outline for keyboard focus */
+.flashcard-container:focus {
+    outline: none;
+}
+
+.flashcard-container:focus-visible {
+    outline: 3px solid #2196f3;
+    outline-offset: 3px;
+}
+
+.flashcard-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
 .flashcard-filter {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
     color: #333;
+}
+
+.flashcard-tools {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-tool {
+    background: #e9ecef;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 14px;
 }
 
 .flashcard-filter select {
@@ -519,5 +549,41 @@ body {
     .flashcard {
         font-size: 17px;
         min-height: 160px;
+    }
+}
+
+.flashcard-box {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.flashcard-retry {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.flashcard-status {
+    text-align: center;
+    margin-top: 8px;
+    min-height: 1.4em;
+    color: #2e7d32;
+}
+
+.flashcard-hint {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .flashcard-tools .btn {
+        width: auto;
+        padding: 8px 16px;
     }
 }

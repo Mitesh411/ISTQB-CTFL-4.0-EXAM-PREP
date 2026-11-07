@@ -43,7 +43,8 @@
     <div class="quiz-content">
       <!-- loading indicator shown while questions are fetched or parsed -->
       <div class="loading" id="loading">
-        Loading quiz questions...
+        <p id="loading-message">Loading quiz questions...</p>
+        <button class="start-btn" id="retry-btn" onclick="retryLoadQuiz()" style="display: none;">Retry</button>
       </div>
 
       <!-- initial start screen visible before quiz begins -->
@@ -80,23 +81,35 @@
   </div>
 
   <!-- flashcard section: cards are loaded from flashcard.json by script.js -->
-  <div class="container flashcard-container">
+  <!-- tabindex lets the section take focus so its keyboard shortcuts don't fire during the exam -->
+  <div class="container flashcard-container" id="fc-section" tabindex="0">
     <div class="header">
       <h1>ISTQB CTFL 4.0 Flashcards</h1>
-      <p>Click the card or press "Show Answer" to flip it.</p>
+      <p>Flip a card, then mark whether you knew it. Cards you need to review come back sooner, and your progress
+        is saved in this browser.</p>
     </div>
 
     <div class="quiz-content">
-      <div class="flashcard-filter">
-        <label for="fc-chapter">Chapter:</label>
-        <select id="fc-chapter" onchange="filterFlashcards()">
-          <option value="all">All chapters</option>
-        </select>
+      <div class="flashcard-toolbar">
+        <div class="flashcard-filter">
+          <label for="fc-chapter">Chapter:</label>
+          <select id="fc-chapter" onchange="filterFlashcards()">
+            <option value="all">All chapters</option>
+          </select>
+        </div>
+        <div class="flashcard-tools">
+          <button class="btn btn-tool" onclick="shuffleFlashcards()">Shuffle</button>
+          <button class="btn btn-tool" onclick="resetFlashcardProgress()">Reset progress</button>
+        </div>
       </div>
 
       <div class="flashcard" id="fc-card" onclick="flipFlashcard()">
+        <span class="flashcard-box" id="fc-box-label"></span>
         <span class="flashcard-chapter" id="fc-chapter-label"></span>
         <div class="flashcard-text" id="fc-text">Loading flashcards...</div>
+      </div>
+      <div class="flashcard-retry">
+        <button class="start-btn" id="fc-retry" onclick="loadFlashcards()" style="display: none;">Retry</button>
       </div>
 
       <div class="controls">
@@ -104,7 +117,13 @@
         <button class="btn btn-next" id="fc-flip" onclick="flipFlashcard()" disabled>Show Answer</button>
         <button class="btn btn-exit" id="fc-next" onclick="nextFlashcard()" disabled>Next</button>
       </div>
+      <div class="controls">
+        <button class="btn btn-skip" id="fc-review" onclick="markFlashcard(false)" disabled>Review again</button>
+        <button class="btn btn-next" id="fc-knew" onclick="markFlashcard(true)" disabled>Knew it</button>
+      </div>
       <div class="flashcard-counter" id="fc-counter"></div>
+      <div class="flashcard-status" id="fc-status" aria-live="polite"></div>
+      <p class="flashcard-hint">Keyboard: &larr; &rarr; to move, Space to flip, K for "Knew it", R for "Review again".</p>
     </div>
   </div>
 

@@ -14,12 +14,21 @@ The content is broad, but the practice exam does not yet behave like the real ex
 
 Total estimated effort: **292 development hours and 131 testing hours** across 28 tasks.
 
+## Progress
+
+| ID | Task | Status | Date |
+|---|---|---|---|
+| R1 | Deduplicate and rebalance the question bank | ✅ Done | 2026-11-07 |
+| R2 | Tag questions with chapter, learning objective and K-level | 🟡 In progress: all questions tagged; expert review of a 20% sample still needed | – |
+| R5 | Replace placeholder fallback with an error and retry | ✅ Done | 2026-11-07 |
+| R16 | Flashcard upgrades (shuffle, spaced repetition, keyboard) | ✅ Done | 2026-11-07 |
+
 ## Current state
 
 ### Strengths
 
 - Covers all six syllabus chapters with notes, chapter quizzes, a chapter-wise summary and an 8-week study plan.
-- 255-question practice exam with a 60-minute timer, progress bar and skip/exit controls.
+- 193-question practice exam with a 60-minute timer, progress bar and skip/exit controls. Every question is tagged with its chapter, learning objective and K-level.
 - 122 flashcards covering all six chapters, with a chapter filter, on the same page as the exam.
 - Runs anywhere: plain HTML/CSS/JavaScript, no backend, Docker image available.
 - Open-source basics in place: README, CONTRIBUTING, CODE_OF_CONDUCT, LICENSE, CHANGELOG, issue templates.
@@ -28,10 +37,10 @@ Total estimated effort: **292 development hours and 131 testing hours** across 2
 
 | Area | Finding |
 |---|---|
-| Question bank quality | 47 questions appear more than once (61 extra copies), so only about 194 are unique. 99 of 255 (39%) are "define this term" glossary questions, while the real exam leans on scenarios and K2/K3 application. The correct answer is option B in 37% of questions, which candidates can learn to exploit. |
-| Question metadata | Questions have no chapter, learning objective or K-level, and no explanations. This blocks per-chapter scoring, weighted exams and targeted practice. |
-| Exam realism | Every question is shown, in file order (255 questions in 60 minutes). There is no shuffling, no pass/fail verdict at 65%, no flag-for-review, and no review of answers afterwards. |
-| Misleading fallback | If `questions.json` fails to load over the network, the app silently shows placeholder trivia ("What is the capital of France?") instead of an error. |
+| Question bank quality | ~~47 questions appear more than once (61 extra copies). The correct answer is option B in 37% of questions.~~ Fixed by R1: the bank now has 193 unique questions with answers spread evenly across A–D. **Still open:** 115 of 193 (60%) are "define this term" glossary questions, while the real exam leans on scenarios and K2/K3 application. There are no K3 questions at all. |
+| Question metadata | ~~Questions have no chapter, learning objective or K-level.~~ Tagged by R2 (expert review pending). 57 of the 64 learning objectives have at least one question. FL-1.2.1, FL-1.4.2, FL-1.4.5, FL-3.1.2, FL-3.2.2, FL-3.2.5 and FL-4.3.3 have none. **Still open:** questions have no explanations (R9). |
+| Exam realism | Every question is shown, in file order (193 questions in 60 minutes). There is no shuffling, no pass/fail verdict at 65%, no flag-for-review, and no review of answers afterwards. |
+| Misleading fallback | ~~If `questions.json` fails to load over the network, the app silently shows placeholder trivia ("What is the capital of France?") instead of an error.~~ Fixed by R5. |
 | Content consistency | Chapter quizzes use two different Markdown formats, and only chapters 3 and 4 include explanations. Quiz size does not follow exam weight: Chapter 4 is 27% of the exam but has 10 quiz questions. Chapter 3 has only 5. Markdown flashcards exist only for chapters 1, 4 and 5. The sample paper (Set A) has no answer key. |
 | Accessibility | Answer options and flashcards are clickable `div`/`li` elements with no keyboard support or ARIA attributes. The page footer sits outside `<body>`. |
 | Distribution | There is no hosted version. Users must clone the repo and run a local server or Docker. |
@@ -55,11 +64,11 @@ Estimates are in hours for one developer familiar with vanilla JavaScript. Conte
 
 | ID | Task | Priority | Dev (h) | Test (h) | Depends on |
 |---|---|---|---:|---:|---|
-| R1 | Deduplicate and rebalance the question bank | P0 | 4 | 3 | – |
-| R2 | Tag questions with chapter, learning objective and K-level | P0 | 20 | 6 | R1 |
+| ~~R1~~ | ~~Deduplicate and rebalance the question bank~~ ✅ | P0 | 4 | 3 | – |
+| R2 | Tag questions with chapter, learning objective and K-level 🟡 | P0 | 20 | 6 | R1 |
 | R3 | Realistic exam mode (40 weighted questions, shuffled, pass/fail) | P0 | 10 | 6 | R2 |
 | R4 | Results review with per-chapter breakdown | P0 | 8 | 5 | R2 |
-| R5 | Replace placeholder fallback with an error and retry | P0 | 1 | 1 | – |
+| ~~R5~~ | ~~Replace placeholder fallback with an error and retry~~ ✅ | P0 | 1 | 1 | – |
 | R6 | CI: validate data and check links | P0 | 6 | 2 | – |
 | R7 | Repository hygiene fixes | P0 | 3 | 1 | – |
 | R8 | Check ISTQB content licensing and attribution | P0 | 2 | 1 | – |
@@ -70,7 +79,7 @@ Estimates are in hours for one developer familiar with vanilla JavaScript. Conte
 | R13 | Save progress and attempt history | P1 | 10 | 6 | R4 |
 | R14 | Accessibility to WCAG 2.1 AA | P1 | 10 | 6 | – |
 | R15 | Publish on GitHub Pages | P1 | 4 | 2 | R6 |
-| R16 | Flashcard upgrades (shuffle, spaced repetition, keyboard) | P1 | 12 | 6 | – |
+| ~~R16~~ | ~~Flashcard upgrades (shuffle, spaced repetition, keyboard)~~ ✅ | P1 | 12 | 6 | – |
 | R17 | Chapter 4 worked K3 exercises | P1 | 24 | 8 | – |
 | R18 | Harden the Docker image | P1 | 3 | 2 | – |
 | R19 | Retire the legacy flashcard page | P1 | 1 | 1 | – |
@@ -87,19 +96,25 @@ Estimates are in hours for one developer familiar with vanilla JavaScript. Conte
 
 ## Now (P0): trustworthy practice
 
-### R1. Deduplicate and rebalance the question bank
+### ~~R1. Deduplicate and rebalance the question bank~~ ✅ Done (2026-11-07)
 
-Remove the 61 duplicate copies from `questions.json` and renumber the ids. Reorder options so the correct answer is spread roughly evenly across A–D (today 37% are B).
+~~Remove the 61 duplicate copies from `questions.json` and renumber the ids. Reorder options so the correct answer is spread roughly evenly across A–D (today 37% are B).~~
 
 - **Done when:** no two questions share the same text, and each option position holds 20–30% of correct answers.
 - **Development:** 4 h · **Testing:** 3 h
+- **Outcome:** removed 62 duplicates; one was a near-duplicate that differed only by a space before the "?". The bank is down from 255 to 193 questions, with ids renumbered. Correct answers are now 49 / 49 / 48 / 47 across A–D (25% each). Duplicates kept the first copy. Every copy had the same correct answer, so no answer key changed.
 
-### R2. Tag questions with chapter, learning objective and K-level
+### R2. Tag questions with chapter, learning objective and K-level 🟡 In progress
 
 Add `chapter`, `lo` (for example `FL-4.2.1`) and `kLevel` fields to every question. Note which chapters are thin, for example K3 questions for Chapter 4.
 
 - **Done when:** every question has all three fields and a CTFL-certified reviewer has checked a 20% sample.
 - **Development:** 20 h (4 h for the schema and tooling, 16 h for tagging) · **Testing:** 6 h
+- **Progress:** all 193 questions are tagged. Glossary questions are tagged by the term they test and set to K1. The other 78 were tagged by hand at the level each question actually tests.
+  - By chapter: 55 / 29 / 16 / 35 / 46 / 12.
+  - By K-level: 138 K1, 55 K2, no K3.
+  - Seven learning objectives have no questions (see Gaps).
+  - **Remaining:** a CTFL-certified reviewer checks a 20% sample (about 39 questions).
 
 ### R3. Realistic exam mode
 
@@ -107,6 +122,7 @@ Draw 40 questions using the official chapter weights (8 / 6 / 4 / 11 / 9 / 2). S
 
 - **Done when:** every new attempt draws a different set with the correct chapter counts, and the verdict matches the score.
 - **Development:** 10 h · **Testing:** 6 h
+- **Note:** the bank has no K3 questions yet. The real exam includes K3 questions, mostly in Chapter 4, so a weighted draw will be easier than the real exam until R17 adds them.
 
 ### R4. Results review with per-chapter breakdown
 
@@ -115,12 +131,13 @@ After the exam, list each question with the candidate's answer, the correct answ
 - **Done when:** a candidate can see every wrong answer and the chapter it belongs to.
 - **Development:** 8 h · **Testing:** 5 h
 
-### R5. Replace the placeholder fallback
+### ~~R5. Replace the placeholder fallback~~ ✅ Done (2026-11-07)
 
-Remove the embedded trivia questions from `script.js`. If loading fails, show a clear error and a **Retry** button.
+~~Remove the embedded trivia questions from `script.js`. If loading fails, show a clear error and a **Retry** button.~~
 
 - **Done when:** blocking `questions.json` shows the error and never trivia.
 - **Development:** 1 h · **Testing:** 1 h
+- **Outcome:** the trivia questions are gone. Network errors, HTTP errors and an empty question list all show an error with a **Retry** button that reloads the questions. The flashcard deck got the same error-and-retry treatment.
 
 ### R6. CI: validate data and check links
 
@@ -204,15 +221,21 @@ Deploy the app from `main` with GitHub Actions and put the live link at the top 
 - **Done when:** a merge to `main` updates the live site automatically.
 - **Development:** 4 h · **Testing:** 2 h
 
-### R16. Flashcard upgrades
+### ~~R16. Flashcard upgrades~~ ✅ Done (2026-11-07)
 
-- Shuffle.
-- "Knew it / Review again" buttons with simple Leitner-box spaced repetition.
-- Keyboard shortcuts (arrow keys, space).
-- Remember progress per chapter.
+- ~~Shuffle.~~
+- ~~"Knew it / Review again" buttons with simple Leitner-box spaced repetition.~~
+- ~~Keyboard shortcuts (arrow keys, space).~~
+- ~~Remember progress per chapter.~~
 
 - **Done when:** cards marked "Review again" come back more often than known ones, and progress survives a refresh.
 - **Development:** 12 h · **Testing:** 6 h
+- **Outcome:**
+  - Cards move between three boxes (To learn, Known, Mastered), and each card shows its box as a badge.
+  - "Review again" brings a card back three cards later. Each new round and each shuffle puts cards to learn first.
+  - Shortcuts: ← → to move, Space to flip, K for "Knew it", R for "Review again". They only work while the flashcard section has focus, so they never affect the exam.
+  - Each card's box and the last chapter studied are saved in the browser. A **Reset progress** button clears the selected chapter.
+  - Verified in headless Chrome, including a reload and corrupted saved data.
 
 ### R17. Chapter 4 worked K3 exercises
 
@@ -266,7 +289,7 @@ Add a web app manifest and a service worker so candidates can install the app an
 
 ### R23. Searchable ISTQB glossary
 
-39% of the bank tests terminology. A searchable glossary page linked from explanations would support this directly. Its content depends on the outcome of R8.
+60% of the bank (115 of 193 questions) tests terminology. A searchable glossary page linked from explanations would support this directly. Its content depends on the outcome of R8.
 
 - **Done when:** terms used in the exam are searchable and linked from explanations.
 - **Development:** 16 h · **Testing:** 3 h
@@ -314,6 +337,10 @@ Make interface text translatable and support question banks in other languages. 
 | Next (P1) | 11 | 118 | 54 | 172 |
 | Later (P2) | 9 | 120 | 52 | 172 |
 | **Total** | **28** | **292** | **131** | **423** |
+| Completed so far (R1, R5, R16) | 3 | 17 | 10 | 27 |
+| **Remaining** | **25** | **275** | **121** | **396** |
+
+R2's 20 development hours are largely spent, but it stays in "Remaining" until the expert review is done.
 
 ## Open decisions
 
