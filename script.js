@@ -31,79 +31,31 @@ function initQuiz() {
 
 // Load quiz data from external JSON file
 async function loadQuizData() {
+    const messageElement = document.getElementById('loading-message');
+    const retryButton = document.getElementById('retry-btn');
     try {
-        // In a real application, replace this with:
-        // const response = await fetch('quiz-data.json');
-        // const data = await response.json();
-        
-        // For demonstration, using embedded data
-        const response = await fetch('questions.json').catch(() => {
-            // Fallback to embedded data if JSON file is not found
-            return {
-                json: () => Promise.resolve({
-                    "questions": [
-                        {
-                            "id": 1,
-                            "question": "What is the capital of France?",
-                            "options": ["London", "Berlin", "Paris", "Madrid"],
-                            "correct": 2
-                        },
-                        {
-                            "id": 2,
-                            "question": "Which planet is known as the Red Planet?",
-                            "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-                            "correct": 1
-                        },
-                        {
-                            "id": 3,
-                            "question": "What is the largest mammal in the world?",
-                            "options": ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-                            "correct": 1
-                        },
-                        {
-                            "id": 4,
-                            "question": "Who painted the Mona Lisa?",
-                            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-                            "correct": 2
-                        },
-                        {
-                            "id": 5,
-                            "question": "What is the chemical symbol for gold?",
-                            "options": ["Go", "Gd", "Au", "Ag"],
-                            "correct": 2
-                        },
-                        {
-                            "id": 6,
-                            "question": "Which year did World War II end?",
-                            "options": ["1944", "1945", "1946", "1947"],
-                            "correct": 1
-                        },
-                        {
-                            "id": 7,
-                            "question": "What is the smallest country in the world?",
-                            "options": ["Monaco", "Nauru", "Vatican City", "San Marino"],
-                            "correct": 2
-                        },
-                        {
-                            "id": 8,
-                            "question": "Which programming language is known as the 'language of the web'?",
-                            "options": ["Python", "Java", "JavaScript", "C++"],
-                            "correct": 2
-                        }
-                    ]
-                })
-            };
-        });
-        
+        const response = await fetch('questions.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
+        if (!Array.isArray(data.questions) || data.questions.length === 0) {
+            throw new Error('questions.json has no questions');
+        }
         questions = data.questions;
         loadingDiv.style.display = 'none';
         startScreen.style.display = 'block';
         updateCounter();
     } catch (error) {
         console.error('Error loading quiz data:', error);
-        loadingDiv.innerHTML = 'Error loading quiz data. Please refresh the page.';
+        messageElement.textContent = 'Could not load the exam questions. Check your connection and try again.';
+        retryButton.style.display = 'inline-block';
     }
+}
+
+// Retry loading quiz data after a failure
+function retryLoadQuiz() {
+    document.getElementById('loading-message').textContent = 'Loading quiz questions...';
+    document.getElementById('retry-btn').style.display = 'none';
+    loadQuizData();
 }
 
 // Start the quiz
@@ -285,22 +237,69 @@ function restartQuiz() {
     updateCounter();
 }
 
-// Flashcard state variables
+// Flashcard settings and state variables
+const FLASHCARD_BOXES_KEY = 'istqb-flashcard-boxes';
+const FLASHCARD_CHAPTER_KEY = 'istqb-flashcard-chapter';
+const FLASHCARD_MAX_BOX = 3;       // Leitner boxes: 1 = to learn, 2 = known, 3 = mastered
+const FLASHCARD_REVIEW_GAP = 3;    // a "Review again" card comes back after this many cards
+const FLASHCARD_BOX_LABELS = { 1: 'To learn', 2: 'Known', 3: 'Mastered' };
 let flashcards = [];
-let visibleFlashcards = [];
+let flashcardDeck = [];
 let currentFlashcard = 0;
 let flashcardFlipped = false;
+let flashcardBoxes = {};
+
+// Browser storage can be unavailable (private mode, blocked site data), so never let it break the deck
+function readStorage(key, fallback) {
+    try {
+        const value = localStorage.getItem(key);
+        return value === null ? fallback : JSON.parse(value);
+    } catch (error) {
+        return fallback;
+    }
+}
+
+function writeStorage(key, value) {
+    try {
+        localStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+        // Progress is not saved, but the deck keeps working
+    }
+}
+
+function flashcardKey(card) {
+    return `${card.chapter}|${card.frontside}`;
+}
+
+function flashcardBox(card) {
+    const box = flashcardBoxes[flashcardKey(card)];
+    return Number.isInteger(box) && box >= 1 && box <= FLASHCARD_MAX_BOX ? box : 1;
+}
+
+function shuffleArray(items) {
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+    }
+    return items;
+}
 
 // Load flashcards from external JSON file
 async function loadFlashcards() {
     const textElement = document.getElementById('fc-text');
+    const retryButton = document.getElementById('fc-retry');
+    textElement.textContent = 'Loading flashcards...';
+    retryButton.style.display = 'none';
     try {
         const response = await fetch('flashcard.json');
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         flashcards = await response.json();
+        const savedBoxes = readStorage(FLASHCARD_BOXES_KEY, {});
+        flashcardBoxes = savedBoxes && typeof savedBoxes === 'object' && !Array.isArray(savedBoxes) ? savedBoxes : {};
 
         // Add one filter option per chapter found in the data
         const select = document.getElementById('fc-chapter');
+        select.length = 1; // keep only "All chapters" in case this is a retry
         const chapters = [...new Set(flashcards.map(card => card.chapter))]
             .sort((a, b) => Number(a) - Number(b));
         chapters.forEach(chapter => {
@@ -310,44 +309,93 @@ async function loadFlashcards() {
             select.appendChild(option);
         });
 
+        // Reopen the chapter the user was last studying
+        const savedChapter = readStorage(FLASHCARD_CHAPTER_KEY, 'all');
+        if ([...select.options].some(option => option.value === savedChapter)) {
+            select.value = savedChapter;
+        }
+
         filterFlashcards();
     } catch (error) {
         console.error('Error loading flashcards:', error);
-        textElement.textContent = 'Error loading flashcards. Please refresh the page.';
+        textElement.textContent = 'Could not load the flashcards. Check your connection and try again.';
+        retryButton.style.display = 'inline-block';
     }
+}
+
+// Cards for the selected chapter
+function chapterFlashcards() {
+    const chapter = document.getElementById('fc-chapter').value;
+    return chapter === 'all' ? flashcards : flashcards.filter(card => card.chapter === chapter);
+}
+
+// Build the deck with the cards that need the most review first
+function buildFlashcardDeck(shuffle) {
+    const cards = [...chapterFlashcards()];
+    if (shuffle) shuffleArray(cards);
+    flashcardDeck = cards.sort((a, b) => flashcardBox(a) - flashcardBox(b)); // stable sort keeps order within a box
+    currentFlashcard = 0;
+    flashcardFlipped = false;
+}
+
+function setFlashcardStatus(message) {
+    document.getElementById('fc-status').textContent = message;
 }
 
 // Show only the cards for the selected chapter
 function filterFlashcards() {
-    const chapter = document.getElementById('fc-chapter').value;
-    visibleFlashcards = chapter === 'all'
-        ? flashcards
-        : flashcards.filter(card => card.chapter === chapter);
-    currentFlashcard = 0;
-    flashcardFlipped = false;
+    writeStorage(FLASHCARD_CHAPTER_KEY, document.getElementById('fc-chapter').value);
+    buildFlashcardDeck(false);
+    setFlashcardStatus('');
+    displayFlashcard();
+}
+
+// Shuffle the deck, still keeping cards to review first
+function shuffleFlashcards() {
+    if (!flashcards.length) return;
+    buildFlashcardDeck(true);
+    setFlashcardStatus('Deck shuffled. Cards you still need to learn come first.');
+    displayFlashcard();
+}
+
+// Forget progress for the cards in the selected chapter
+function resetFlashcardProgress() {
+    if (!flashcards.length) return;
+    if (!confirm('Reset your progress for the cards in this chapter selection?')) return;
+    chapterFlashcards().forEach(card => delete flashcardBoxes[flashcardKey(card)]);
+    writeStorage(FLASHCARD_BOXES_KEY, flashcardBoxes);
+    buildFlashcardDeck(false);
+    setFlashcardStatus('Progress reset.');
     displayFlashcard();
 }
 
 // Display current flashcard
 function displayFlashcard() {
-    const card = visibleFlashcards[currentFlashcard];
+    const card = flashcardDeck[currentFlashcard];
     if (!card) return;
+
+    const cards = chapterFlashcards();
+    const known = cards.filter(c => flashcardBox(c) > 1).length;
 
     document.getElementById('fc-card').classList.toggle('flipped', flashcardFlipped);
     document.getElementById('fc-chapter-label').textContent = `Chapter ${card.chapter}`;
+    document.getElementById('fc-box-label').textContent = FLASHCARD_BOX_LABELS[flashcardBox(card)];
     document.getElementById('fc-text').textContent = flashcardFlipped ? card.backside : card.frontside;
     document.getElementById('fc-flip').textContent = flashcardFlipped ? 'Show Question' : 'Show Answer';
     document.getElementById('fc-counter').textContent =
-        `Card ${currentFlashcard + 1} of ${visibleFlashcards.length}`;
+        `Card ${currentFlashcard + 1} of ${flashcardDeck.length} · Known ${known} of ${cards.length}`;
 
     document.getElementById('fc-flip').disabled = false;
     document.getElementById('fc-prev').disabled = currentFlashcard === 0;
-    document.getElementById('fc-next').disabled = currentFlashcard === visibleFlashcards.length - 1;
+    document.getElementById('fc-next').disabled = currentFlashcard === flashcardDeck.length - 1;
+    // Rate a card only after seeing its answer
+    document.getElementById('fc-knew').disabled = !flashcardFlipped;
+    document.getElementById('fc-review').disabled = !flashcardFlipped;
 }
 
 // Flip between question and answer
 function flipFlashcard() {
-    if (!visibleFlashcards.length) return;
+    if (!flashcardDeck.length) return;
     flashcardFlipped = !flashcardFlipped;
     displayFlashcard();
 }
@@ -363,10 +411,58 @@ function prevFlashcard() {
 
 // Move to next flashcard
 function nextFlashcard() {
-    if (currentFlashcard < visibleFlashcards.length - 1) {
+    if (currentFlashcard < flashcardDeck.length - 1) {
         currentFlashcard++;
         flashcardFlipped = false;
         displayFlashcard();
+    }
+}
+
+// Record whether the user knew the answer, then move on
+function markFlashcard(knewIt) {
+    const card = flashcardDeck[currentFlashcard];
+    if (!card || !flashcardFlipped) return;
+
+    const key = flashcardKey(card);
+    if (knewIt) {
+        flashcardBoxes[key] = Math.min(flashcardBox(card) + 1, FLASHCARD_MAX_BOX);
+    } else {
+        flashcardBoxes[key] = 1;
+        // Bring the card back a few cards later in this round
+        flashcardDeck.splice(currentFlashcard + 1 + FLASHCARD_REVIEW_GAP, 0, card);
+    }
+    writeStorage(FLASHCARD_BOXES_KEY, flashcardBoxes);
+
+    if (currentFlashcard < flashcardDeck.length - 1) {
+        currentFlashcard++;
+        flashcardFlipped = false;
+        setFlashcardStatus('');
+    } else {
+        buildFlashcardDeck(true);
+        setFlashcardStatus('Round complete. Starting a new round with the cards to learn first.');
+    }
+    displayFlashcard();
+}
+
+// Keyboard shortcuts while the flashcard section has focus
+function handleFlashcardKeys(event) {
+    const tag = event.target.tagName;
+    if (tag === 'SELECT') return;
+    // Buttons already respond to Space and Enter on their own
+    if (tag === 'BUTTON' && (event.key === ' ' || event.key === 'Enter')) return;
+
+    const actions = {
+        ArrowLeft: prevFlashcard,
+        ArrowRight: nextFlashcard,
+        ' ': flipFlashcard,
+        Enter: flipFlashcard,
+        k: () => markFlashcard(true),
+        r: () => markFlashcard(false),
+    };
+    const action = actions[event.key.length === 1 ? event.key.toLowerCase() : event.key];
+    if (action) {
+        event.preventDefault();
+        action();
     }
 }
 
@@ -374,6 +470,7 @@ function nextFlashcard() {
 window.onload = () => {
     initQuiz();
     loadFlashcards();
+    document.getElementById('fc-section').addEventListener('keydown', handleFlashcardKeys);
 };
 
 // Prevent page refresh during quiz

@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Flashcards on the main page** — `index.html` now shows an ISTQB CTFL 4.0 flashcard deck below the Practice Exam Challenge card, with a chapter filter, flip, and previous/next controls. Cards load from the new `flashcard.json` (122 cards covering all six chapters: chapter 1 from `istqb.json`, chapters 4 and 5 from `FlashCard/`, and new cards for chapters 2, 3 and 6 written from `Notes/`). The Docker image now includes `flashcard.json`.
+- **Question metadata** — Every question in `questions.json` now has `chapter`, `lo` (CTFL 4.0 learning objective, e.g. `FL-4.2.1`) and `kLevel` fields.
+- **Flashcard spaced repetition** — "Knew it" / "Review again" buttons with three Leitner boxes. "Review again" cards come back three cards later, and cards to learn come first. Also adds a Shuffle button, a Reset progress button, keyboard shortcuts (← → Space K R) and progress saved in the browser, including the last chapter studied.
+- **`ProductRoadmap.md`** — Prioritized product roadmap with development and testing estimates.
+
+### Changed
+- **Question bank cleanup** — Removed 62 duplicate questions (255 → 193) and renumbered the ids. Moved correct answers so they are spread evenly across options A–D; previously 37% were B.
+
+### Fixed
+- **No more placeholder trivia** — If `questions.json` fails to load, the exam now shows an error and a Retry button instead of silently running eight unrelated general-knowledge questions. The flashcard deck also gets an error and a Retry button.
 
 ### Removed
 - **Markdown versions of non-Markdown files** — Removed the `.md` copies added in 2.0.0 (`Dockerfile.md`, `LICENSE.md`, `index.html.md`, `istqb.json.md`, `questions.json.md`, `script.js.md`, `style.css.md`, `test.html.md`). They duplicated the source files and had to be kept in sync by hand; the original files remain the single source. This also drops the 2.0.0 plan to phase out the original file formats.

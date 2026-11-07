@@ -27,14 +27,24 @@ The `Dockerfile` copies only `index.html`, `style.css`, `script.js`, `questions.
 
 Two independent static pages, no framework, no backend:
 
-- **Main page** (`index.html` + `style.css` + `script.js`) holds two cards that share `window.onload`: the timed mock exam (`questions.json`) and, below it, a flashcard deck with a chapter filter (`flashcard.json`, same `{chapter, frontside, backside}` shape as `istqb.json`). Flashcard functions and DOM ids use a `Flashcard`/`fc-` prefix to stay clear of the quiz's globals (`nextBtn` etc.).
-- **Timed mock exam**: `script.js` uses global state and functions called from inline `onclick` handlers. It fetches `questions.json` (shape: `{"questions": [{id, question, options[4], correct}]}`, where `correct` is the 0-based option index) and runs a 60-minute countdown, matching the real exam. If the fetch rejects, it falls back to embedded placeholder trivia questions, so seeing "capital of France" means `questions.json` failed to load. Every question in the file is shown in file order: there's no shuffling and no 40-question limit, and the score is out of the total count, so editing the bank changes the exam directly.
-- **Flashcards**: `test.html` has inline script and styles and fetches `istqb.json`, which is a top-level array of `{chapter, frontside, backside}`.
+- **Main page** (`index.html` + `style.css` + `script.js`) holds two cards that share `window.onload`: the timed mock exam (`questions.json`) and, below it, a flashcard deck (`flashcard.json`, same `{chapter, frontside, backside}` shape as `istqb.json`). Flashcard functions and DOM ids use a `Flashcard`/`fc-` prefix to stay clear of the quiz's globals (`nextBtn` etc.).
+- **Timed mock exam**: `script.js` uses global state and functions called from inline `onclick` handlers. It fetches `questions.json` and runs a 60-minute countdown. If loading fails it shows an error with a Retry button; there is no fallback data. Every question in the file is shown in file order: there's no shuffling and no 40-question limit, and the score is out of the total count, so editing the bank changes the exam directly.
+- **Flashcard deck** (main page): Leitner spaced repetition. After flipping, "Knew it" moves a card up a box (1 to learn, 2 known, 3 mastered) and "Review again" resets it to box 1 and re-inserts it `FLASHCARD_REVIEW_GAP` cards later. Decks are ordered by box, lowest first. Boxes and the selected chapter are saved in `localStorage` (`istqb-flashcard-boxes`, `istqb-flashcard-chapter`). All storage access goes through `readStorage`/`writeStorage`, which tolerate blocked or corrupted storage. Progress is keyed by `chapter|frontside`, so editing a card's front text resets its progress. Keyboard shortcuts (arrows, Space, K, R) are attached to the focusable `#fc-section` only, so they never fire during the exam.
+- **Legacy flashcards**: `test.html` has inline script and styles and fetches `istqb.json`, which is a top-level array of `{chapter, frontside, backside}`.
 
-There are no tests. After editing either JSON file, check that it still parses and that each `correct` index points to an option (an out-of-range index breaks `nextQuestion()`):
+## Question bank (`questions.json`)
+
+Shape: `{"questions": [{id, chapter, lo, kLevel, question, options[4], correct}]}`.
+- `correct` is the 0-based option index.
+- `chapter` is a string (`"1"`–`"6"`), and `lo` is the CTFL 4.0 learning objective (`"FL-4.2.1"`), whose first digit must match `chapter`.
+- `kLevel` is the level the question actually tests, which can be lower than its learning objective's level. Glossary questions ("What is the definition of the term…" / "What is the name of the term defined as follows?") are always `K1`.
+
+The bank has no duplicate questions, and correct answers are spread evenly across positions A–D. Keep it that way when adding questions: don't make the new answer always A. Ids are sequential from 1.
+
+There are no tests. After editing either JSON file, run these checks. An out-of-range `correct` index breaks `nextQuestion()`.
 
 ```bash
-python -c "import json; q=json.load(open('questions.json',encoding='utf8'))['questions']; bad=[x['id'] for x in q if not 0<=x['correct']<len(x['options'])]; print(len(q),'questions; bad ids:',bad)"
+python -c "import json,collections; q=json.load(open('questions.json',encoding='utf8'))['questions']; t=[' '.join(x['question'].lower().split()) for x in q]; bad=[x['id'] for x in q if not 0<=x['correct']<len(x['options']) or not x.get('lo','').startswith('FL-'+x.get('chapter','?')+'.') or x.get('kLevel') not in ('K1','K2','K3')]; print(len(q),'questions; duplicates:',len(t)-len(set(t)),'; bad ids:',bad,'; answer positions:',sorted(collections.Counter(x['correct'] for x in q).items()))"
 python -c "import json; print(len(json.load(open('flashcard.json',encoding='utf8'))),'flashcards')"
 ```
 
