@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Question bank cleanup** — Removed 62 duplicate questions (255 → 193) and renumbered the ids. Moved correct answers so they are spread evenly across options A–D; previously 37% were B.
 
 ### Fixed
+- **Repository hygiene** —
+  - `SECURITY.md` now has a real scope and reporting contact, replacing GitHub's boilerplate that listed versions that don't exist.
+  - The blank "custom" issue template is replaced by a **Content correction** template.
+  - `CONTRIBUTING.md` renders as formatted text instead of one big code block, tells contributors to clone their own fork, and no longer points to a missing `/diagrams/` folder.
+  - The page footer is now inside `<body>`, and its broken GitHub icon is replaced.
+  - The README's shortened `lnkd.in` course link is replaced with the full YouTube URL.
 - **No more placeholder trivia** — If `questions.json` fails to load, the exam now shows an error and a Retry button instead of silently running eight unrelated general-knowledge questions. The flashcard deck also gets an error and a Retry button.
 
 ### Removed

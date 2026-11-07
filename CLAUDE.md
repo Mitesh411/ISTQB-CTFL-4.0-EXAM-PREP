@@ -58,7 +58,13 @@ Content is organized by the six syllabus chapters (1 Fundamentals, 2 SDLC, 3 Sta
 - `ISTQB_Sample_paper/`, `Chapter-wise-Summary.md`, `Time-Table.md`: exam paper and revision aids
 - `wiki_clone/`: copies of the GitHub wiki pages
 
-Chapter numbers are spelled out in filenames (`ChapterOne`, not `Chapter1`). Follow the existing format of a file when adding questions or cards. Per `CONTRIBUTING.md`, keep content simple, clear, and exam-focused, and put diagrams in `/diagrams/`.
+Chapter numbers are spelled out in filenames (`ChapterOne`, not `Chapter1`). Follow the existing format of a file when adding questions or cards. Per `CONTRIBUTING.md`, keep content simple, clear, and exam-focused. Put diagrams in a `diagrams/` folder at the repo root; the folder doesn't exist yet, so create it with the first diagram.
+
+## Security and repo conventions
+
+- `SECURITY.md` defines the scope as a static site with no backend. Its main risks are HTML injection from question or flashcard content, and malicious or hijacked external links and resources. Render content with `textContent`, never `innerHTML`; the only `innerHTML` uses in `script.js` clear the options list or insert numbers the script computes. Security reports go to the email in `SECURITY.md`, because GitHub private vulnerability reporting is turned off for this repo.
+- Content mistakes (wrong answers, typos) have their own issue template, `.github/ISSUE_TEMPLATE/content_correction.md`. It asks for the syllabus learning objective as evidence.
+- The page footer loads its icons from `img.icons8.com`. Check that any new external image or link actually loads: the old GitHub icon host went dead and showed as broken text.
 
 ## Changelog
 

@@ -1,8 +1,3 @@
-
-
----
-
-```markdown
 # 🤝 Contributing to ISTQB-CTFL-4.0-EXAM-PREP
 
 Thank you for considering contributing to this project!  
@@ -29,9 +24,9 @@ We welcome contributions in the form of:
 ### 2. 🌱 Getting Started
 
 1. **Fork** the repository
-2. **Clone** your fork to your local machine:
+2. **Clone** your fork to your local machine (replace `<your-username>` with your GitHub username):
    ```bash
-   git clone https://github.com/Mitesh411/ISTQB-CTFL-4.0-EXAM-PREP.git
+   git clone https://github.com/<your-username>/ISTQB-CTFL-4.0-EXAM-PREP.git
    ```
 3. **Create a new branch** for your feature/fix:
    ```bash
@@ -55,7 +50,7 @@ We welcome contributions in the form of:
 - Use **Markdown** for summaries (`.md` files)
 - Keep tone **simple**, **clear**, and **exam-focused**
 - Use bullet points and tables for better readability
-- Diagrams should be placed in the `/diagrams/` folder (PNG, SVG, or JPEG preferred)
+- Put diagrams in a `diagrams/` folder at the repository root, and create it if it doesn't exist yet (PNG, SVG, or JPEG preferred)
 - Practice questions should follow the format:
   ```
   Q: What is the purpose of static testing?

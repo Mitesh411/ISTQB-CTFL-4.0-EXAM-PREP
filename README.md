@@ -110,7 +110,7 @@ The ISTQB CTFL 4.0 syllabus covers six key areas:
     -   [ISTQB Syllabus](https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/)
     -   Official glossary and sample exams
 2.  **Online Courses**
-    -   [Free Video Course](https://lnkd.in/d3UE5nKh)
+    -   [Free Video Course (TM SQUARE, YouTube)](https://www.youtube.com/watch?v=bmdmZXMYrmo&list=PLj5VKaW115t1o1hk5ZbNWFr4sW5mBpvmv)
     -   Udemy courses (SAJO Academy, TM2)
 3.  **Mock Exams**
     -   CTFL 4.0 Online Mock Exam — Set A
