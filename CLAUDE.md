@@ -29,6 +29,8 @@ Two independent static pages, no framework, no backend:
 
 - **Main page** (`index.html` + `style.css` + `script.js`) holds two cards that share `window.onload`: the timed mock exam (`questions.json`) and, below it, a flashcard deck (`flashcard.json`, same `{chapter, frontside, backside}` shape as `istqb.json`). Flashcard functions and DOM ids use a `Flashcard`/`fc-` prefix to stay clear of the quiz's globals (`nextBtn` etc.).
 - **Timed mock exam**: `script.js` uses global state and functions called from inline `onclick` handlers. It fetches `questions.json` and runs a 60-minute countdown. If loading fails it shows an error with a Retry button; there is no fallback data. Every question in the file is shown in file order: there's no shuffling and no 40-question limit, and the score is out of the total count, so editing the bank changes the exam directly.
+  - Each answer is a native `<input type="radio" name="answer">` inside a `<label class="option">`, in a `role="radiogroup"` named by the question. Selection is handled by the radio's `change` event (`selectOption`).
+  - `nextQuestion()` disables Next and Skip during the 2-second feedback and returns early while Next is disabled. Keep that guard, or a second call scores the same answer twice and skips a question.
 - **Flashcard deck** (main page): Leitner spaced repetition. After flipping, "Knew it" moves a card up a box (1 to learn, 2 known, 3 mastered) and "Review again" resets it to box 1 and re-inserts it `FLASHCARD_REVIEW_GAP` cards later. Decks are ordered by box, lowest first. Boxes and the selected chapter are saved in `localStorage` (`istqb-flashcard-boxes`, `istqb-flashcard-chapter`). All storage access goes through `readStorage`/`writeStorage`, which tolerate blocked or corrupted storage. Progress is keyed by `chapter|frontside`, so editing a card's front text resets its progress. Keyboard shortcuts (arrows, Space, K, R) are attached to the focusable `#fc-section` only, so they never fire during the exam.
 - **Legacy flashcards**: `test.html` has inline script and styles and fetches `istqb.json`, which is a top-level array of `{chapter, frontside, backside}`.
 
@@ -65,6 +67,19 @@ Chapter numbers are spelled out in filenames (`ChapterOne`, not `Chapter1`). Fol
 - `SECURITY.md` defines the scope as a static site with no backend. Its main risks are HTML injection from question or flashcard content, and malicious or hijacked external links and resources. Render content with `textContent`, never `innerHTML`; the only `innerHTML` uses in `script.js` clear the options list or insert numbers the script computes. Security reports go to the email in `SECURITY.md`, because GitHub private vulnerability reporting is turned off for this repo.
 - Content mistakes (wrong answers, typos) have their own issue template, `.github/ISSUE_TEMPLATE/content_correction.md`. It asks for the syllabus learning objective as evidence.
 - The page footer loads its icons from `img.icons8.com`. Check that any new external image or link actually loads: the old GitHub icon host went dead and showed as broken text.
+
+## Accessibility (WCAG 2.1 AA)
+
+The main page targets WCAG 2.1 AA. Keep these properties when changing it:
+
+- **Contrast:** text needs 4.5:1 (3:1 for 24px+, or 18.66px+ bold). Check every gradient stop, not just one colour. The current colours were chosen to pass. For example, use `#1e7e34` not `#28a745` behind white text, and `#0056b3` not `#007bff`. Disabled buttons are exempt.
+- **Feedback isn't colour-only:** the result of an answer is also written in `#answer-feedback`.
+- **Live regions:** screen readers hear changes through `#answer-feedback` (`role="status"`), `#timer-announcer` (`TIMER_WARNINGS`: 5 minutes, 1 minute, time up), `#loading-message`, the flashcard `#fc-card` (`aria-live`) and `#fc-status`. Don't make the timer itself live, or it would announce every second.
+- **Focus management:** focus moves to `#question-text` for each new question, to `#results-heading` when the exam ends, and to `#start-btn` on restart. These targets use `tabindex="-1"`.
+- **Focus style:** the global `:focus-visible` outline is navy `#0b1f4b` (at least 5:1 on white and on the page gradient). Don't remove outlines without a replacement.
+- **Screen-reader-only text:** use the `.visually-hidden` class.
+- **Motion:** animations and transitions are cut under `prefers-reduced-motion`.
+- **Flashcard card:** clicking the card is only a mouse shortcut; the "Show Answer" button is the keyboard control.
 
 ## Changelog
 

@@ -22,6 +22,7 @@ Total estimated effort: **292 development hours and 131 testing hours** across 2
 | R2 | Tag questions with chapter, learning objective and K-level | 🟡 In progress: all questions tagged; expert review of a 20% sample still needed | – |
 | R5 | Replace placeholder fallback with an error and retry | ✅ Done | 2026-11-07 |
 | R7 | Repository hygiene fixes | ✅ Done | 2026-11-07 |
+| R14 | Accessibility to WCAG 2.1 AA | 🟡 In progress: all fixes made and checked by automated tests; an axe-core run and an NVDA screen reader pass still needed | – |
 | R16 | Flashcard upgrades (shuffle, spaced repetition, keyboard) | ✅ Done | 2026-11-07 |
 
 ## Current state
@@ -43,7 +44,7 @@ Total estimated effort: **292 development hours and 131 testing hours** across 2
 | Exam realism | Every question is shown, in file order (193 questions in 60 minutes). There is no shuffling, no pass/fail verdict at 65%, no flag-for-review, and no review of answers afterwards. |
 | Misleading fallback | ~~If `questions.json` fails to load over the network, the app silently shows placeholder trivia ("What is the capital of France?") instead of an error.~~ Fixed by R5. |
 | Content consistency | Chapter quizzes use two different Markdown formats, and only chapters 3 and 4 include explanations. Quiz size does not follow exam weight: Chapter 4 is 27% of the exam but has 10 quiz questions. Chapter 3 has only 5. Markdown flashcards exist only for chapters 1, 4 and 5. The sample paper (Set A) has no answer key. |
-| Accessibility | Answer options and flashcards are clickable `div`/`li` elements with no keyboard support or ARIA attributes. The page footer sits outside `<body>`. |
+| Accessibility | ~~Answer options and flashcards are clickable `div`/`li` elements with no keyboard support or ARIA attributes. The page footer sits outside `<body>`.~~ Fixed by R7 (footer) and R14 (keyboard, ARIA, contrast, focus). **Still open:** confirmation with axe-core and the NVDA screen reader. |
 | Distribution | There is no hosted version. Users must clone the repo and run a local server or Docker. |
 | Engineering | No automated tests or CI. JSON data is not validated. The legacy `test.html`/`istqb.json` flashcard page duplicates the main page. |
 | Repository hygiene | ~~`SECURITY.md` is unedited GitHub boilerplate listing versions that don't exist (4.0.x, 5.1.x). The "custom" issue template is blank. CONTRIBUTING points to a `/diagrams/` folder that doesn't exist.~~ Fixed by R7. |
@@ -78,7 +79,7 @@ Estimates are in hours for one developer familiar with vanilla JavaScript. Conte
 | R11 | Chapter practice mode with instant feedback | P1 | 10 | 6 | R2 |
 | R12 | Flag for review and question navigator | P1 | 8 | 5 | – |
 | R13 | Save progress and attempt history | P1 | 10 | 6 | R4 |
-| R14 | Accessibility to WCAG 2.1 AA | P1 | 10 | 6 | – |
+| R14 | Accessibility to WCAG 2.1 AA 🟡 | P1 | 10 | 6 | – |
 | R15 | Publish on GitHub Pages | P1 | 4 | 2 | R6 |
 | ~~R16~~ | ~~Flashcard upgrades (shuffle, spaced repetition, keyboard)~~ ✅ | P1 | 12 | 6 | – |
 | R17 | Chapter 4 worked K3 exercises | P1 | 24 | 8 | – |
@@ -215,14 +216,32 @@ Store attempts in the browser (`localStorage`): resume an exam interrupted by a 
 - **Done when:** refreshing mid-exam resumes it, and past attempts appear on the start screen.
 - **Development:** 10 h · **Testing:** 6 h
 
-### R14. Accessibility to WCAG 2.1 AA
+### R14. Accessibility to WCAG 2.1 AA 🟡 In progress
 
-- Make answer options and flashcards real buttons or radio inputs that work with the keyboard.
-- Add ARIA labels and announce the timer's last five minutes to screen readers.
-- Add visible focus styles and fix colour contrast.
+- ~~Make answer options and flashcards real buttons or radio inputs that work with the keyboard.~~
+- ~~Add ARIA labels and announce the timer's last five minutes to screen readers.~~
+- ~~Add visible focus styles and fix colour contrast.~~
 
 - **Done when:** the whole exam and flashcard flow works with the keyboard and a screen reader (NVDA), and axe reports no critical issues.
 - **Development:** 10 h · **Testing:** 6 h
+- **Progress (2026-11-07):**
+  - **Answers:** native radio buttons in a group named by the question. Arrow keys and Space work, and each radio is named by its answer text.
+  - **Feedback:** an answer's result is written out ("Incorrect. The correct answer is: …") as well as shown by colour.
+  - **Announcements:** the timer is named "Time remaining" and announces 5 minutes left, 1 minute left and time up. The progress bar reports "Question N of M". Loading errors, answer feedback and flashcard changes are read aloud.
+  - **Focus:** moves to each new question, to the results, and back to Start on restart. A visible navy focus outline appears on every control.
+  - **Contrast:** 10 failing colour pairs fixed, the worst being 2.1:1 (correct-answer green) and 2.8:1 (flipped card). Every replacement is at least 5.1:1.
+  - **Structure:** the page has a `<main>` landmark and a descriptive title. The flashcard section is a named region.
+  - **Reflow and motion:** no horizontal scrolling at 320 px, and animations are cut under "reduce motion".
+  - **Fixed along the way:** clicking Next twice during feedback scored the answer twice and skipped a question. `style.css` contained leftover merge-conflict markers and a duplicated 150-line block.
+  - **Checks run:**
+    - an automated keyboard-only run through the exam and flashcards;
+    - a contrast check of all text in every exam and flashcard state, including gradient backgrounds;
+    - the accessible name of every control, read from Chrome's accessibility tree.
+
+    All 51 checks pass. The previous version failed 7 text-contrast checks plus the structure checks.
+  - **Remaining:**
+    - Run axe-core. It couldn't be run here because the tool environment blocks downloading and executing the library. Use the axe DevTools browser extension, or `npx @axe-core/cli http://localhost:8080`.
+    - Do a manual pass with NVDA, covering exam start, answering, the time warnings, results, and flashcards.
 
 ### R15. Publish on GitHub Pages
 
@@ -350,7 +369,7 @@ Make interface text translatable and support question banks in other languages. 
 | Completed so far (R1, R5, R7, R16) | 4 | 20 | 11 | 31 |
 | **Remaining** | **24** | **272** | **120** | **392** |
 
-R2's 20 development hours are largely spent, but it stays in "Remaining" until the expert review is done.
+R2's and R14's development hours are largely spent, but both stay in "Remaining" until their manual checks are done: R2's expert review, and R14's axe-core and NVDA passes.
 
 ## Open decisions
 

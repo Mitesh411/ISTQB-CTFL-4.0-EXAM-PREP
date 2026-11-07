@@ -12,11 +12,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Question metadata** — Every question in `questions.json` now has `chapter`, `lo` (CTFL 4.0 learning objective, e.g. `FL-4.2.1`) and `kLevel` fields.
 - **Flashcard spaced repetition** — "Knew it" / "Review again" buttons with three Leitner boxes. "Review again" cards come back three cards later, and cards to learn come first. Also adds a Shuffle button, a Reset progress button, keyboard shortcuts (← → Space K R) and progress saved in the browser, including the last chapter studied.
 - **`ProductRoadmap.md`** — Prioritized product roadmap with development and testing estimates.
+- **Accessibility (WCAG 2.1 AA)** —
+  - Exam answers are now real radio buttons, so arrow keys and Space work and screen readers announce them.
+  - Answer results are written out, not just coloured.
+  - The timer announces 5 minutes left, 1 minute left and time up. The progress bar, loading messages and flashcard changes are read aloud.
+  - Focus moves to each new question and to the results.
+  - All controls have a visible focus outline.
+  - The page has a `<main>` landmark and a descriptive title, and animations respect "reduce motion".
 
 ### Changed
 - **Question bank cleanup** — Removed 62 duplicate questions (255 → 193) and renumbered the ids. Moved correct answers so they are spread evenly across options A–D; previously 37% were B.
+- **Colours for readable contrast** — Darker green and red for the Next button, the selected, correct and incorrect answers, the flipped flashcard and the Start button. Darker blue for the flashcard. Darker hint text and footer link. All text now meets WCAG AA contrast (at least 4.5:1).
 
 ### Fixed
+- **Double-counted answers** — Clicking Next twice during the 2-second answer feedback scored the same answer twice and skipped the following question.
+- **Broken stylesheet** — `style.css` contained leftover merge-conflict markers and a duplicated 150-line block; both are removed.
 - **Repository hygiene** —
   - `SECURITY.md` now has a real scope and reporting contact, replacing GitHub's boilerplate that listed versions that don't exist.
   - The blank "custom" issue template is replaced by a **Content correction** template.

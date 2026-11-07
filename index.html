@@ -11,12 +11,13 @@
   <!-- Document metadata and resource links -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Quiz App</title>
+  <title>ISTQB CTFL 4.0 Practice Exam and Flashcards</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+  <main>
   <!-- header/logo section: displays ISTQB logo and quiz title -->
   <div style="text-align: center;">
     <img src="https://www.istqb.org/wp-content/uploads/2024/10/istqb-ctfl-4-logo.jpg.avif" width="200"
@@ -31,11 +32,14 @@
       </p>
       <!-- timer section shows remaining time and current question index -->
       <div class="timer-section">
-        <div class="timer" id="timer">60:00</div>
+        <div class="timer" id="timer" role="timer" aria-label="Time remaining">60:00</div>
         <div class="quiz-counter" id="quiz-counter">Question 0 of 0</div>
       </div>
+      <!-- announces 5 minutes left, 1 minute left and time up to screen readers -->
+      <div class="visually-hidden" id="timer-announcer" aria-live="assertive"></div>
       <!-- progress bar visualizes how many questions have been answered -->
-      <div class="progress-bar">
+      <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="Exam progress" aria-valuemin="0"
+        aria-valuemax="0" aria-valuenow="0">
         <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
       </div>
     </div>
@@ -43,7 +47,7 @@
     <div class="quiz-content">
       <!-- loading indicator shown while questions are fetched or parsed -->
       <div class="loading" id="loading">
-        <p id="loading-message">Loading quiz questions...</p>
+        <p id="loading-message" role="status">Loading quiz questions...</p>
         <button class="start-btn" id="retry-btn" onclick="retryLoadQuiz()" style="display: none;">Retry</button>
       </div>
 
@@ -53,17 +57,20 @@
         <p>Test your knowledge with our interactive quiz. You have 60 minutes to complete all questions.</p>
         <br>
         <!-- start button triggers the startQuiz() function defined in script.js -->
-        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+        <button class="start-btn" id="start-btn" onclick="startQuiz()">Start Quiz</button>
       </div>
 
       <!-- question display area including options and control buttons -->
       <div class="question-section" id="question-section">
-        <div class="question" id="question-text"></div>
-        <ul class="options" id="options-list"></ul>
+        <!-- tabindex="-1" lets the script move focus here so screen readers read each new question -->
+        <div class="question" id="question-text" tabindex="-1"></div>
+        <!-- answers are native radio buttons: arrow keys move between them, Space selects -->
+        <div class="options" id="options-list" role="radiogroup" aria-labelledby="question-text"></div>
+        <p class="answer-feedback" id="answer-feedback" role="status"></p>
 
         <div class="controls">
           <!-- skip, next and exit buttons invoke corresponding JS handlers -->
-          <button class="btn btn-skip" onclick="skipQuestion()">Skip</button>
+          <button class="btn btn-skip" id="skip-btn" onclick="skipQuestion()">Skip</button>
           <button class="btn btn-next" id="next-btn" onclick="nextQuestion()" disabled>Next</button>
           <button class="btn btn-exit" onclick="exitQuiz()">Exit</button>
         </div>
@@ -71,7 +78,7 @@
 
       <!-- results shown after the quiz is completed -->
       <div class="results-section" id="results-section">
-        <h2>Quiz Completed!</h2>
+        <h2 id="results-heading" tabindex="-1">Quiz Completed!</h2>
         <div class="score" id="final-score"></div>
         <p id="result-details"></p>
         <br>
@@ -82,9 +89,10 @@
 
   <!-- flashcard section: cards are loaded from flashcard.json by script.js -->
   <!-- tabindex lets the section take focus so its keyboard shortcuts don't fire during the exam -->
-  <div class="container flashcard-container" id="fc-section" tabindex="0">
+  <div class="container flashcard-container" id="fc-section" tabindex="0" role="region"
+    aria-labelledby="fc-title">
     <div class="header">
-      <h1>ISTQB CTFL 4.0 Flashcards</h1>
+      <h1 id="fc-title">ISTQB CTFL 4.0 Flashcards</h1>
       <p>Flip a card, then mark whether you knew it. Cards you need to review come back sooner, and your progress
         is saved in this browser.</p>
     </div>
@@ -103,7 +111,9 @@
         </div>
       </div>
 
-      <div class="flashcard" id="fc-card" onclick="flipFlashcard()">
+      <!-- clicking the card is a mouse shortcut; the Show Answer button is the keyboard control.
+           aria-live reads the card aloud whenever it flips or changes. -->
+      <div class="flashcard" id="fc-card" onclick="flipFlashcard()" aria-live="polite" aria-atomic="true">
         <span class="flashcard-box" id="fc-box-label"></span>
         <span class="flashcard-chapter" id="fc-chapter-label"></span>
         <div class="flashcard-text" id="fc-text">Loading flashcards...</div>
@@ -126,6 +136,8 @@
       <p class="flashcard-hint">Keyboard: &larr; &rarr; to move, Space to flip, K for "Knew it", R for "Review again".</p>
     </div>
   </div>
+
+  </main>
 
   <script src="script.js"></script>
 <!-- footer metadata and developer attribution -->

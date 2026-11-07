@@ -82,7 +82,7 @@ body {
 }
 
 .start-btn {
-    background: linear-gradient(45deg, #fe0000, #ff0f02);
+    background: linear-gradient(45deg, #c40000, #b30000);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -114,6 +114,9 @@ body {
 }
 
 .option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     background: #f8f9fa;
     margin: 10px 0;
     padding: 15px 20px;
@@ -123,31 +126,41 @@ body {
     border: 2px solid transparent;
 }
 
+.option input[type="radio"] {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    accent-color: #0056b3;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:disabled {
+    cursor: default;
+}
+
 .option:hover {
     background: #e9ecef;
     transform: translateX(5px);
 }
 
 .option.selected {
-    background: #007bff;
+    background: #0056b3;
     color: white;
-    border-color: #0056b3;
+    border-color: #003d80;
 }
 
 .option.correct {
-    background: limegreen !important;
+    background: #1e7e34 !important;
     color: white !important;
-    border-color: #32cd32 !important;
+    border-color: #155d27 !important;
     animation: shake-correct 0.6s ease-in-out;
 }
 
 .option.incorrect {
-    background: tomato !important;
+    background: #c82333 !important;
     color: white !important;
-    border-color: #ff4500 !important;
+    border-color: #a71d2a !important;
     animation: shake-incorrect 0.6s ease-in-out;
-<<<<<<< HEAD
-=======
 }
 
 /* Shake Animations */
@@ -200,161 +213,7 @@ body {
 }
 
 .btn-next {
-    background: #28a745;
-    color: white;
-}
-
-.btn-exit {
-    background: #dc3545;
-    color: white;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    transform: none;
-}
-
-/* Results Section */
-.results-section {
-    display: none;
-    text-align: center;
-}
-
-.score {
-    font-size: 48px;
-    color: #28a745;
-    margin: 20px 0;
-}
-
-/* Loading Screen */
-.loading {
-    text-align: center;
-    padding: 50px;
-    font-size: 18px;
-    color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        border-radius: 15px;
-    }
-    
-    .quiz-content {
-        padding: 20px;
-    }
-    
-    .timer-section {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .timer {
-        font-size: 20px;
-        padding: 8px 16px;
-    }
-    
-    .quiz-counter {
-        font-size: 16px;
-    }
-    
-    .question {
-        font-size: 20px;
-    }
-    
-    .controls {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .btn {
-        width: 100%;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 15px;
-    }
-    
-    .quiz-content {
-        padding: 15px;
-    }
-    
-    .question {
-        font-size: 18px;
-    }
-    
-    .option {
-        padding: 12px 15px;
-        font-size: 16px;
-    }
-    
-    .score {
-        font-size: 36px;
-    }
->>>>>>> 22d5f4bf4e702dfa0eba4f71318fde31f933cb22
-}
-
-/* Shake Animations */
-@keyframes shake-correct {
-    0%, 100% { 
-        transform: translateX(0); 
-    }
-    10%, 30%, 50%, 70%, 90% { 
-        transform: translateX(-5px) scale(1.02); 
-    }
-    20%, 40%, 60%, 80% { 
-        transform: translateX(5px) scale(0.98); 
-    }
-}
-
-@keyframes shake-incorrect {
-    0%, 100% { 
-        transform: translateX(0); 
-    }
-    10%, 30%, 50%, 70%, 90% { 
-        transform: translateX(-8px) scale(1.05); 
-    }
-    20%, 40%, 60%, 80% { 
-        transform: translateX(8px) scale(0.95); 
-    }
-}
-
-/* Controls Section */
-.controls {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    gap: 10px;
-}
-
-/* Button Styles */
-.btn {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.btn-skip {
-    background: #ffc107;
-    color: #333;
-}
-
-.btn-next {
-    background: #28a745;
+    background: #1e7e34;
     color: white;
 }
 
@@ -467,7 +326,7 @@ body {
 }
 
 .flashcard-container:focus-visible {
-    outline: 3px solid #2196f3;
+    outline: 3px solid #0b1f4b;
     outline-offset: 3px;
 }
 
@@ -515,7 +374,7 @@ body {
     justify-content: center;
     padding: 40px 25px 25px;
     border-radius: 15px;
-    background: linear-gradient(45deg, #2196f3 0%, #1976d2 100%);
+    background: linear-gradient(45deg, #1565c0 0%, #0d47a1 100%);
     color: white;
     text-align: center;
     font-size: 20px;
@@ -526,7 +385,7 @@ body {
 }
 
 .flashcard.flipped {
-    background: linear-gradient(45deg, #4caf50 0%, #2e7d32 100%);
+    background: linear-gradient(45deg, #2e7d32 0%, #1b5e20 100%);
 }
 
 .flashcard-chapter {
@@ -534,7 +393,7 @@ body {
     top: 10px;
     right: 15px;
     font-size: 14px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.25);
     padding: 4px 12px;
     border-radius: 20px;
 }
@@ -557,7 +416,7 @@ body {
     top: 10px;
     left: 15px;
     font-size: 14px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.25);
     padding: 4px 12px;
     border-radius: 20px;
 }
@@ -578,12 +437,70 @@ body {
     text-align: center;
     margin-top: 8px;
     font-size: 14px;
-    color: #888;
+    color: #595959;
 }
 
 @media (max-width: 768px) {
     .flashcard-tools .btn {
         width: auto;
         padding: 8px 16px;
+    }
+}
+
+/* Accessibility */
+
+/* Hidden visually but still read by screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Visible keyboard focus; the dark navy has at least 5:1 contrast on white and on the blue/green page background */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+    outline: 3px solid #0b1f4b;
+    outline-offset: 2px;
+}
+
+/* Headings that only receive focus from the script don't need a focus ring */
+.question:focus,
+#results-heading:focus {
+    outline: none;
+}
+
+.answer-feedback {
+    min-height: 1.5em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer a {
+    color: #0b1f4b;
+    font-weight: bold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .option:hover,
+    .btn:hover,
+    .start-btn:hover {
+        transform: none;
     }
 }
