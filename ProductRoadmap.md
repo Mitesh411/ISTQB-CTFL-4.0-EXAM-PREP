@@ -21,6 +21,7 @@ Total estimated effort: **292 development hours and 131 testing hours** across 2
 | R1 | Deduplicate and rebalance the question bank | ✅ Done | 2026-11-07 |
 | R2 | Tag questions with chapter, learning objective and K-level | 🟡 In progress: all questions tagged; expert review of a 20% sample still needed | – |
 | R5 | Replace placeholder fallback with an error and retry | ✅ Done | 2026-11-07 |
+| R7 | Repository hygiene fixes | ✅ Done | 2026-11-07 |
 | R16 | Flashcard upgrades (shuffle, spaced repetition, keyboard) | ✅ Done | 2026-11-07 |
 
 ## Current state
@@ -45,7 +46,7 @@ Total estimated effort: **292 development hours and 131 testing hours** across 2
 | Accessibility | Answer options and flashcards are clickable `div`/`li` elements with no keyboard support or ARIA attributes. The page footer sits outside `<body>`. |
 | Distribution | There is no hosted version. Users must clone the repo and run a local server or Docker. |
 | Engineering | No automated tests or CI. JSON data is not validated. The legacy `test.html`/`istqb.json` flashcard page duplicates the main page. |
-| Repository hygiene | `SECURITY.md` is unedited GitHub boilerplate listing versions that don't exist (4.0.x, 5.1.x). The "custom" issue template is blank. CONTRIBUTING points to a `/diagrams/` folder that doesn't exist. |
+| Repository hygiene | ~~`SECURITY.md` is unedited GitHub boilerplate listing versions that don't exist (4.0.x, 5.1.x). The "custom" issue template is blank. CONTRIBUTING points to a `/diagrams/` folder that doesn't exist.~~ Fixed by R7. |
 | Licensing | `ISTQB_Sample_paper/Question_Paper_A.md` reproduces ISTQB Sample Exam Set A v1.7. Its use and attribution have not been checked against ISTQB's terms. |
 
 ## How tasks are prioritized
@@ -70,7 +71,7 @@ Estimates are in hours for one developer familiar with vanilla JavaScript. Conte
 | R4 | Results review with per-chapter breakdown | P0 | 8 | 5 | R2 |
 | ~~R5~~ | ~~Replace placeholder fallback with an error and retry~~ ✅ | P0 | 1 | 1 | – |
 | R6 | CI: validate data and check links | P0 | 6 | 2 | – |
-| R7 | Repository hygiene fixes | P0 | 3 | 1 | – |
+| ~~R7~~ | ~~Repository hygiene fixes~~ ✅ | P0 | 3 | 1 | – |
 | R8 | Check ISTQB content licensing and attribution | P0 | 2 | 1 | – |
 | R9 | Explanations for every question | P1 | 30 | 10 | R1 |
 | R10 | Answer key and rationale for Sample Paper A | P1 | 6 | 2 | R8 |
@@ -150,16 +151,25 @@ Add a GitHub Actions workflow that runs on every pull request. It should:
 - **Done when:** a pull request that breaks the JSON or a link fails CI.
 - **Development:** 6 h · **Testing:** 2 h
 
-### R7. Repository hygiene fixes
+### ~~R7. Repository hygiene fixes~~ ✅ Done (2026-11-07)
 
-- Replace the boilerplate `SECURITY.md` with a real reporting contact.
-- Fill in or delete the blank "custom" issue template.
-- Create `/diagrams/` or remove the reference to it from CONTRIBUTING.
-- Move the footer inside `<body>` in `index.html`.
-- Replace the shortened `lnkd.in` link in the README with the full URL.
+- ~~Replace the boilerplate `SECURITY.md` with a real reporting contact.~~
+- ~~Fill in or delete the blank "custom" issue template.~~
+- ~~Create `/diagrams/` or remove the reference to it from CONTRIBUTING.~~
+- ~~Move the footer inside `<body>` in `index.html`.~~
+- ~~Replace the shortened `lnkd.in` link in the README with the full URL.~~
 
 - **Done when:** none of the files above contain placeholder text or broken references.
 - **Development:** 3 h · **Testing:** 1 h
+- **Outcome:**
+  - **`SECURITY.md`:** states the scope (a static site with no backend) and that only `main` is supported. Reports go to the maintainer's email already published in the site footer. GitHub private vulnerability reporting is turned off for this repo; turning it on in the repo settings would give reporters a private channel without email.
+  - **Issue templates:** the blank "custom" template is replaced by a **Content correction** template for wrong answers and typos, which asks for the syllabus learning objective as evidence.
+  - **`CONTRIBUTING.md`:** no longer points to a missing folder; it now says to create `diagrams/` with the first diagram. Also fixed:
+    - the whole guide was wrapped in a code block, so GitHub showed it as raw text;
+    - step 2 said "clone your fork" but gave the upstream URL.
+  - **Footer:** now inside `<body>`. Its GitHub icon pointed at a host that no longer serves it (HTTP 402) and showed as broken text; it's replaced with an icon from the same set as the other footer icons.
+  - **README:** the `lnkd.in` link now uses the full YouTube URL it redirected to.
+  - **Verification:** every link in the touched files returns HTTP 200, except the README's "ISTQB Certified Tester" badge. Its Diplomasafe certificate page returns 404 to scripted requests and needs a manual check in a browser.
 
 ### R8. Check ISTQB content licensing and attribution
 
@@ -337,8 +347,8 @@ Make interface text translatable and support question banks in other languages. 
 | Next (P1) | 11 | 118 | 54 | 172 |
 | Later (P2) | 9 | 120 | 52 | 172 |
 | **Total** | **28** | **292** | **131** | **423** |
-| Completed so far (R1, R5, R16) | 3 | 17 | 10 | 27 |
-| **Remaining** | **25** | **275** | **121** | **396** |
+| Completed so far (R1, R5, R7, R16) | 4 | 20 | 11 | 31 |
+| **Remaining** | **24** | **272** | **120** | **392** |
 
 R2's 20 development hours are largely spent, but it stays in "Remaining" until the expert review is done.
 
