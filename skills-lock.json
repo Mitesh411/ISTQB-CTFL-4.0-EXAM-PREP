@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "skills": {
+    "performance-optimization": {
+      "source": "registry:addyosmani/performance-optimization",
+      "commit_sha": "8c6530305396f341b5da7201cf1f7e390fdb863f",
+      "digest": "sha256:99ad93f7836654db07cc46f94bedd5d1da1bd774fcaf0b0ea10012f669eb6cb6",
+      "agents": [
+        "claude-code",
+        "github-copilot"
+      ],
+      "mode": {
+        "claude-code": "junction",
+        "github-copilot": "junction"
+      }
+    },
+    "wiki-changelog": {
+      "source": "registry:microsoft/wiki-changelog",
+      "commit_sha": "32cad4ee689c95c309e61aeefcbc6af356f1e6a7",
+      "digest": "sha256:b1f95ffa2c4c3bac804a5bc6ec8265abaa51bb27611df1deabaeb18f5eec5702",
+      "agents": [
+        "claude-code",
+        "github-copilot"
+      ],
+      "mode": {
+        "claude-code": "junction",
+        "github-copilot": "junction"
+      }
+    }
+  }
+}

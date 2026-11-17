@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-11-17
+
+### ⚠️ Breaking changes
+- **Question ids renumbered** — Removing 62 duplicates (255 → 193) renumbered the ids in `questions.json` from 1, so the exam is shorter and any outside reference to a question id now points to a different question.
+- **No offline fallback** — The exam needs `questions.json` to load. Serve the page over HTTP (for example `python -m http.server 8080`), not `file://`.
+- **`.md` copies removed** — The `.md` copies of code files added in 2.0.0 are gone. Use the original files.
+
 ### Added
 - **Flashcards on the main page** — `index.html` now shows an ISTQB CTFL 4.0 flashcard deck below the Practice Exam Challenge card, with a chapter filter, flip, and previous/next controls. Cards load from the new `flashcard.json` (122 cards covering all six chapters: chapter 1 from `istqb.json`, chapters 4 and 5 from `FlashCard/`, and new cards for chapters 2, 3 and 6 written from `Notes/`). The Docker image now includes `flashcard.json`.
 - **Question metadata** — Every question in `questions.json` now has `chapter`, `lo` (CTFL 4.0 learning objective, e.g. `FL-4.2.1`) and `kLevel` fields.

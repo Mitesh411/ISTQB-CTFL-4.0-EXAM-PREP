@@ -13,6 +13,7 @@ Welcome to the project wiki for `ISTQB-CTFL-4.0-EXAM-PREP`.
 
 - **[Getting Started](Getting-Started)** — how to use the repository and run the quiz locally.
 - **[Architecture and Tools](Architecture-and-Tools)** — repository structure, content model, and toolchain.
+- **[Changelog](Changelog)** — what changed, newest first, with breaking changes and migration notes.
 
 ## Recommended learning path
 
